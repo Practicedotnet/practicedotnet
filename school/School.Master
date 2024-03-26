@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="School.master.cs" Inherits="school.School" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+    <title> school website</title>
+
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    </head>
+    <body>
+         <form id="form2" runat="server">
+                <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">school</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a href="#"> <span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
+          <input class="mainLoginInput" type="text" placeholder="&#61442;"/>
+        <li><a href="#"> <span class="glyphicon glyphicon-flag"></span></a></li>
+        <li><a href="#"> <span class="glyphicon glyphicon-globe"></"></a></li>
+        <li><a href="#"> <span class="glyphicon glyphicon-bell"></span></a></li>
+        <li><a href="#"> <span class="glyphicon glyphicon-calendar"></span></a></li>
+       <li><a href="#"> <span class="glyphicon glyphicon-school"></span></a></li></ul>
+
+     </div>
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        footer
+        
+
+    </form>
+</body>
+</html>
