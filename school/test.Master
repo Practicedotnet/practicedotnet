@@ -1,9 +1,8 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="School.master.cs" Inherits="school.School" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="test.master.cs" Inherits="school.test" %>
 
 <!DOCTYPE html>
 
 <html>
-
 <head runat="server">
     <title></title>
      <meta charset="utf-8">
@@ -58,11 +57,8 @@ overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 
     </style>
 </head>
-
-
-    <body>
-
-         <form id="form1" runat="server">
+<body>
+    <form id="form1" runat="server">
         <div>
             <!--Main Navigation-->
 <header>

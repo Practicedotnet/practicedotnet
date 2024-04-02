@@ -23,7 +23,8 @@
     </div>
       </div>
      </nav>
-  
+  <main style="margin-top: 58px;">
+  <div class="container pt-4"></div>
     <div class ="container">
          <h3 class="school-icon-heading">
     <i class="fas fa-school"></i> Acadamic Details
@@ -325,4 +326,5 @@
 <br />
       
     </div>
+      </main>
 </asp:Content>
