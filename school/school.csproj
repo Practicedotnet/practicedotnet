@@ -226,6 +226,7 @@
     <Content Include="obj\Debug\school.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\school.dll" />
     <Content Include="obj\Debug\school.pdb" />
+    <Content Include="payrollsalaryassign.aspx" />
     <Content Include="payrolltemplate.aspx" />
     <Content Include="settingselectground.aspx" />
     <Content Include="studentidcardgenerator.aspx" />
@@ -337,6 +338,13 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="payrollsalaryassign.aspx.cs">
+      <DependentUpon>payrollsalaryassign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="payrollsalaryassign.aspx.designer.cs">
+      <DependentUpon>payrollsalaryassign.aspx</DependentUpon>
+    </Compile>
     <Compile Include="payrolltemplate.aspx.cs">
       <DependentUpon>payrolltemplate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

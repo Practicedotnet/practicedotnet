@@ -14,13 +14,13 @@
           width:auto;
           height:0px;
        }
-       h3{
+       /*h3{
           color:gold;
           font-size:25px;
        }
         school-icon-heading {
             font-size: 24px;
-        }
+        }*/
         </style>
     <main style="margin-top: 58px;">
   <div class="container pt-4"></div>
