@@ -11,7 +11,7 @@
             border-color: lightgrey;
             margin-left:40px;
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-          
+          font-size:10px;
         }
         .container1{
             width:300px;
@@ -21,19 +21,24 @@
             border-color: lightgrey;
             margin-left:300px;
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+            textbox
+        }
+        .textbox{
+           font-size:15px;
         }
         .main{
             background-color: aquamarine;
+            font-size:8px;
         }
     </style>
-    <main style="margin-top: 58px;">
+    <main style="margin-top:65px">
   <%--<div class="container pt-4"></div>--%>
         <div class="row">
             <div class="col-sm-1">    
  <div class="container">
         <div class="row">   
             <header>
-        <h5>Deactivate Reason</h5><hr />
+        <h5>Add Department</h5><hr />
             
                 </header>
             <div class="row">
@@ -55,7 +60,7 @@
           </div>
           <div class="row">
               <div class="col-md-10">
-              <asp:textbox id="txtdepartmentname" runat="server" CssClass="form-control"></asp:textbox>
+              <asp:textbox id="txtdepartmentname" runat="server" CssClass="form-control" Height="25px" Width="150px"></asp:textbox>
                </div>
               </div><hr />
          
@@ -73,7 +78,7 @@
                <asp:gridview runat="server"></asp:gridview>
            </div>
         </div>
-      </div>
+      </div>  
               </div>
         </main>
 

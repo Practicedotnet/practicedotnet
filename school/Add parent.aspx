@@ -12,6 +12,7 @@
             margin-left:20px;
             margin-right:20px;
              box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+             font-size:10px;
         }
     </style>
     <main style="margin-top: 58px;">
@@ -39,10 +40,10 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <asp:TextBox ID="txtname" runat="server" CssClass ="form-control"></asp:TextBox>
+                    <asp:TextBox ID="txtname" runat="server" CssClass ="form-control" Height="25px" Width="200px"></asp:TextBox>
                 </div>
                  <div class="col-md-6">
-                     <asp:TextBox ID="txtrelation" runat="server" CssClass ="form-control"></asp:TextBox>
+                     <asp:TextBox ID="txtrelation" runat="server" CssClass ="form-control" Height="25px" Width="200px"></asp:TextBox>
                 </div>
             </div>
             <div class="row">
@@ -55,10 +56,10 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <asp:TextBox ID="txtfathername" runat="server" CssClass ="form-control"></asp:TextBox>
+                    <asp:TextBox ID="txtfathername" runat="server" CssClass ="form-control" Height="25px" Width="200px"></asp:TextBox>
                 </div>
                  <div class="col-md-6">
-                     <asp:TextBox ID="txtmothername" runat="server" CssClass ="form-control"></asp:TextBox>
+                     <asp:TextBox ID="txtmothername" runat="server" CssClass ="form-control" Height="25px" Width="200px"></asp:TextBox>
                 </div>
             </div>
             <div class="row">
@@ -74,13 +75,13 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <asp:TextBox ID="txtoccupation" runat="server" CssClass ="form-control"></asp:TextBox>
+                    <asp:TextBox ID="txtoccupation" runat="server" CssClass ="form-control" Height="25px" Width="200px"></asp:TextBox>
                 </div>
                  <div class="col-md-4">
-                     <asp:TextBox ID="txtincome" runat="server" CssClass ="form-control"></asp:TextBox>
+                     <asp:TextBox ID="txtincome" runat="server" CssClass ="form-control" Height="25px" Width="200px"></asp:TextBox>
                 </div>
                 <div class="col-md-4">
-                     <asp:TextBox ID="txteducation" runat="server" CssClass ="form-control"></asp:TextBox>
+                     <asp:TextBox ID="txteducation" runat="server" CssClass ="form-control" Height="25px" Width="200px"></asp:TextBox>
                 </div>
             </div>
              <div class="row">
@@ -99,16 +100,16 @@
             </div>
             <div class="row">
                 <div class="col-md-3">
-                    <asp:TextBox ID="txtcity" runat="server" CssClass ="form-control"></asp:TextBox>
+                    <asp:TextBox ID="txtcity" runat="server" CssClass ="form-control" Height="25px" Width="150px"></asp:TextBox>
                 </div>
                  <div class="col-md-3">
-                     <asp:TextBox ID="txtstate" runat="server" CssClass ="form-control"></asp:TextBox>
+                     <asp:TextBox ID="txtstate" runat="server" CssClass ="form-control" Height="25px" Width="150px"></asp:TextBox>
                 </div>
                 <div class="col-md-3">
-                     <asp:TextBox ID="txtmobile" runat="server" CssClass ="form-control"></asp:TextBox>
+                     <asp:TextBox ID="txtmobile" runat="server" CssClass ="form-control" Height="25px" Width="150px"></asp:TextBox>
                 </div>
                 <div class="col-md-3">
-                     <asp:TextBox ID="txtemail" runat="server" CssClass ="form-control"></asp:TextBox>
+                     <asp:TextBox ID="txtemail" runat="server" CssClass ="form-control" Height="25px" Width="150px"></asp:TextBox>
                 </div>
             </div>
             <div class="row">
@@ -118,7 +119,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <asp:TextBox ID="txtaddress" runat="server" CssClass ="form-control"></asp:TextBox>
+                    <asp:TextBox ID="txtaddress" runat="server" CssClass ="form-control" Height="25px" Width="500px"></asp:TextBox>
                 </div>
                 <div class="col-md-10">
                     <asp:Label ID="lblprofile" runat="server" Text="Profile Picture"></asp:Label>
@@ -126,7 +127,7 @@
             </div>
             <div class="row">
                 <div class="col-md-10">
-                    <asp:FileUpload ID="FileUpload1" runat="server" CssClass ="form-control" Width="780px" Height="180px" placeholder="drag and drop your files here" />
+                    <asp:FileUpload ID="FileUpload1" runat="server" CssClass ="form-control" Font-Size="10px" Width="780px" Height="180px" placeholder="drag and drop your files here" />
                 </div>
             </div>
             <h6>Social Links</h6><hr />
@@ -143,20 +144,20 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <asp:TextBox ID="txtfacebook" runat="server" CssClass ="form-control"></asp:TextBox>
+                    <asp:TextBox ID="txtfacebook" runat="server" CssClass ="form-control" Height="25px" Width="200px"></asp:TextBox>
                 </div>
                  <div class="col-md-4">
-                     <asp:TextBox ID="txttwitter" runat="server" CssClass ="form-control"></asp:TextBox>
+                     <asp:TextBox ID="txttwitter" runat="server" CssClass ="form-control" Height="25px" Width="200px"></asp:TextBox>
                 </div>
                 <div class="col-md-4">
-                     <asp:TextBox ID="txtlinkedin" runat="server" CssClass ="form-control"></asp:TextBox>
+                     <asp:TextBox ID="txtlinkedin" runat="server" CssClass ="form-control" Height="25px" Width="200px"></asp:TextBox>
                 </div>
             </div>
             <br />
             <div class="row">
                 <div class="col-md-8"></div>
                 <div class="col-md-2">
-                    <asp:Button ID="btnsave" runat="server" Text="Save"  CssClass ="form-control"/>
+                    <asp:Button ID="btnsave" runat="server" Text="Save"  CssClass ="form-control" Height="25px" Width="80px" Font-Size="10px"/>
                 </div>
             </div>
       </div>

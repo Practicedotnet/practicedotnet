@@ -4,10 +4,10 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
-       a{
+       /*a{
           width:auto;
           height:0px;
-       }
+       }*/
        h3{
           color:gold;
           font-size:25px;
