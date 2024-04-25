@@ -19,10 +19,10 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <asp:Label ID="lblbranch" runat="server" Text="Branch"></asp:Label>
+                    <asp:Label ID="lblbranch" runat="server" Text="Branch:"></asp:Label>
                 </div>
                 <div class="col-md-4">
-                    <asp:Label ID="lblclass" runat="server" Text="Class"></asp:Label>
+                    <asp:Label ID="lblclass" runat="server" Text="Class:"></asp:Label>
                 </div>
                 <div class="col-md-4">
                     <asp:Label ID="lblsection" runat="server" Text="Section"></asp:Label>
