@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="payrollsalaryassign.aspx.cs" Inherits="school.payrollsalaryassign" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="WebForm9.aspx.cs" Inherits="school.WebForm9" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -38,46 +38,24 @@
             
                 </header>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <asp:label id="lblbranch" runat="server" text="Branch:"></asp:label>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6">
                   <asp:Label ID="lblclass" runat="server" Text="Class:"></asp:Label>
               </div>
-                <div class="col-md-3">
-                  <asp:Label ID="lbsection" runat="server" Text="Section:"></asp:Label>
-              </div>
-                <div class="col-md-3">
-                  <asp:Label ID="lbltemplate" runat="server" Text="Template:"></asp:Label>
-              </div>
+               
+
             </div>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-6">
                 <asp:dropdownlist runat="server" CssClass="form-control" height="25px" Font-Size="10px">
                     <asp:ListItem>select</asp:ListItem>
                     <asp:ListItem>Test</asp:ListItem>
                 </asp:dropdownlist>
                     </div>
-                 <div class="col-md-3">
-                <asp:dropdownlist runat="server" CssClass="form-control" height="25px" Font-Size="10px">
-                    <asp:ListItem>select</asp:ListItem>
-                    <asp:ListItem>nine</asp:ListItem>
-                     
-                </asp:dropdownlist>
-                    </div>
-                <div class="col-md-3">
-                <asp:dropdownlist runat="server" CssClass="form-control" height="25px" Font-Size="10px" >
-                    <asp:ListItem>select</asp:ListItem>
-                    <asp:ListItem>All Sections</asp:ListItem>
-                    <asp:ListItem>A Section</asp:ListItem>
-                </asp:dropdownlist>
-                    </div>
-                 <div class="col-md-3">
-                <asp:dropdownlist runat="server" CssClass="form-control" height="25px" Font-Size="10px">
-                    <asp:ListItem>select</asp:ListItem>
-                    <asp:ListItem>Template 1</asp:ListItem>
-                     
-                </asp:dropdownlist>
+                 <div class="col-md-6">
+                     <asp:TextBox ID="TextBox1" runat="server" TextMode="Date"  CssClass="form-control" height="25px"  Font-Size="10px"></asp:TextBox>
                     </div>
           <br /><br /><hr />
           <div class="row">
@@ -89,7 +67,7 @@
     </div>
       </div><br /><br /><br />
    <div class="container1">
-       <h6>Employee Salary Assign</h6><hr />
+       <h6>Advance Salary</h6><hr />
    </div>
      </main>
 </asp:Content>

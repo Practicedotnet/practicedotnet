@@ -10,7 +10,7 @@
 namespace school {
     
     
-    public partial class payrollsalaryassign {
+    public partial class WebForm9 {
         
         /// <summary>
         /// lblbranch control.
@@ -31,21 +31,12 @@ namespace school {
         protected global::System.Web.UI.WebControls.Label lblclass;
         
         /// <summary>
-        /// lbsection control.
+        /// TextBox1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbsection;
-        
-        /// <summary>
-        /// lbltemplate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbltemplate;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
     }
 }

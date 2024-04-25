@@ -213,6 +213,7 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="bin\school.dll" />
     <Content Include="bin\school.pdb" />
+    <Content Include="cirtificatetemplate.aspx" />
     <Content Include="Compose.aspx" />
     <Content Include="create employee.aspx" />
     <Content Include="createadmission.aspx" />
@@ -230,11 +231,12 @@
     <Content Include="payrolltemplate.aspx" />
     <Content Include="settingselectground.aspx" />
     <Content Include="studentidcardgenerator.aspx" />
+    <Content Include="studentidtemplate.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm2.aspx" />
     <Content Include="WebForm3.aspx" />
     <Content Include="WebForm4.aspx" />
-    <Content Include="WebForm5.aspx" />
+    <Content Include="WebForm9.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="add department.aspx.cs">
@@ -264,6 +266,13 @@
     </Compile>
     <Compile Include="admitcardtemplate.aspx.designer.cs">
       <DependentUpon>admitcardtemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cirtificatetemplate.aspx.cs">
+      <DependentUpon>cirtificatetemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cirtificatetemplate.aspx.designer.cs">
+      <DependentUpon>cirtificatetemplate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Compose.aspx.cs">
       <DependentUpon>Compose.aspx</DependentUpon>
@@ -388,6 +397,13 @@
     <Compile Include="studentidcardgenerator.aspx.designer.cs">
       <DependentUpon>studentidcardgenerator.aspx</DependentUpon>
     </Compile>
+    <Compile Include="studentidtemplate.aspx.cs">
+      <DependentUpon>studentidtemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="studentidtemplate.aspx.designer.cs">
+      <DependentUpon>studentidtemplate.aspx</DependentUpon>
+    </Compile>
     <Compile Include="test.Master.cs">
       <DependentUpon>test.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -416,12 +432,12 @@
     <Compile Include="WebForm4.aspx.designer.cs">
       <DependentUpon>WebForm4.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm5.aspx.cs">
-      <DependentUpon>WebForm5.aspx</DependentUpon>
+    <Compile Include="WebForm9.aspx.cs">
+      <DependentUpon>WebForm9.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm5.aspx.designer.cs">
-      <DependentUpon>WebForm5.aspx</DependentUpon>
+    <Compile Include="WebForm9.aspx.designer.cs">
+      <DependentUpon>WebForm9.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -1,9 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="admitcardtemplate.aspx.cs" Inherits="school.admitcardtemplate" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="cirtificatetemplate.aspx.cs" Inherits="school.WebForm8" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <style>
+   <style>
         .container {
             width: 750px;
             height: auto;
@@ -22,7 +21,7 @@
     </style>
     <main style="margin-top: 58px;">
         <div class="container">
-             <h6>Student Id Card Template</h6><hr />
+            <h6>Cirtificate Template</h6><hr />
             <div class="row">
                 <div class="col-md-3">
                     <asp:Label ID="lblbranch" runat="server" Text="Branch:" Font-Size="10px"></asp:Label>
@@ -37,36 +36,34 @@
             <br />
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lbladmitcardname" runat="server" Text="Admitcard Name:" Font-Size="10px"></asp:Label>
+                    <asp:Label ID="lbladmitcardname" runat="server" Text="Cirtificate Name:" Font-Size="10px"></asp:Label>
                 </div>
                 <div class="col-md-6">
-                    <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" Font-Size="10px" Height="28px"></asp:TextBox>
+                    <asp:TextBox ID="txtcirtificatename" runat="server" CssClass="form-control" Font-Size="10px" Height="28px"></asp:TextBox>
                 </div>
             </div>
             <br />
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lblpagelayout" runat="server" Text=" Page Layout:" Font-Size="10px"></asp:Label>
+                    <asp:Label ID="lblapplicableuser" runat="server" Text="applicable user:" Font-Size="10px"></asp:Label>
                 </div>
-                <div class="col-md-4">
-                    <asp:TextBox ID="txtwidth" runat="server" placeholder="width(in cm)" CssClass="form-control" Font-Size="10px" Height="28px"></asp:TextBox>
-                </div>
-                <div class="col-md-4">
-                    <asp:TextBox ID="txtheight" runat="server" placeholder="Height(in cm)" CssClass="form-control" Font-Size="10px" Height="28px"></asp:TextBox>
-                </div>
-            </div>
+                <div class="col-md-6">
+                    <asp:DropDownList ID="DropDownList3" runat="server" CssClass="form-control" Font-Size="10px" Height="28px">
+                        <asp:ListItem>select</asp:ListItem>
+                        <asp:ListItem>student</asp:ListItem>
+                        <asp:ListItem>Employee</asp:ListItem>
+                        </asp:DropDownList>
+            </div></div>
             <br />
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lblqrtext" runat="server" Text="QR Code Text:" Font-Size="10px"></asp:Label>
+                    <asp:Label ID="lblpagelayout" runat="server" Text="Page Layout:" Font-Size="10px"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:DropDownList ID="DropDownList2" runat="server" CssClass="form-control" Font-Size="10px" Height="28px">
                         <asp:ListItem>select</asp:ListItem>
-                        <asp:ListItem>Name</asp:ListItem>
-                        <asp:ListItem>Date Of Birth</asp:ListItem>
-                        <asp:ListItem>Registration No.</asp:ListItem>
-                        <asp:ListItem>Roll No.</asp:ListItem>
+                        <asp:ListItem>A4(potrait)</asp:ListItem>
+                        <asp:ListItem>A4(landScape)</asp:ListItem>
                     </asp:DropDownList>
                 </div>
             </div>
