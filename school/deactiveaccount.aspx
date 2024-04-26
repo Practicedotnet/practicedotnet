@@ -6,7 +6,7 @@
         .container{
             width:800px;
             height: 200px;
-            margin-top:auto;
+            margin-top:80px;
             border:solid;
             border-color: lightgrey;
             margin-left:10px;
@@ -19,29 +19,29 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <asp:Label ID="lblbranch" runat="server" Text="Branch:"></asp:Label>
+                    <asp:Label ID="lblbranch" runat="server" Text="Branch:" Font-Size ="10px"></asp:Label>
                 </div>
                 <div class="col-md-4">
-                    <asp:Label ID="lblclass" runat="server" Text="Class:"></asp:Label>
+                    <asp:Label ID="lblclass" runat="server" Text="Class:" Font-Size ="10px"></asp:Label>
                 </div>
                 <div class="col-md-4">
-                    <asp:Label ID="lblsection" runat="server" Text="Section"></asp:Label>
+                    <asp:Label ID="lblsection" runat="server" Text="Section" Font-Size ="10px"></asp:Label>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control">
+                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control" Font-Size ="10px">
                         <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Test</asp:ListItem>
                     </asp:DropDownList>
                 </div>
                 <div class="col-md-4">
-                    <asp:DropDownList ID="DropDownList2" runat="server" CssClass ="form-control">
+                    <asp:DropDownList ID="DropDownList2" runat="server" CssClass ="form-control" Font-Size ="10px">
                         <asp:ListItem>First select the class </asp:ListItem>
                     </asp:DropDownList>
                 </div>
                 <div class="col-md-4">
-                    <asp:DropDownList ID="DropDownList3" runat="server" CssClass ="form-control">
+                    <asp:DropDownList ID="DropDownList3" runat="server" CssClass ="form-control" Font-Size ="10px">
                         <asp:ListItem>First Select the Branch</asp:ListItem>
                     </asp:DropDownList>
                 </div>
@@ -49,7 +49,7 @@
             <div class="row">
                 <div class="col-md-10"></div>
                 <div class="col-md-2">
-                    <asp:Button ID="btnfilter" runat="server" Text="Filter" CssClass ="form-control" />
+                    <asp:Button ID="btnfilter" runat="server" Text="Filter" CssClass ="form-control" Font-Size ="10px" />
                 </div>
             </div>
         </div>

@@ -10,7 +10,7 @@
             border:solid;
             border-color: lightgrey;
             margin-left:40px;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
           font-size:10px;
         }
         .container1{
@@ -20,7 +20,7 @@
             border:solid;
             border-color: lightgrey;
             margin-left:300px;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
             textbox
         }
         .textbox{
