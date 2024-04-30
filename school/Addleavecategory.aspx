@@ -19,7 +19,7 @@
             width: 450px;
             height: 180px;
             margin-top: auto;
-            border: solid;
+            border: solid 1px;
             border-color: lightgrey;
             margin-left: 300px;
             box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
