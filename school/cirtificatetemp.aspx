@@ -7,7 +7,7 @@
             width: 750px;
             height: auto;
             margin-top: 80px;
-            border: solid;
+            border: solid 1px;
             border-color: lightgrey;
             margin-left: 10px;
             box-shadow: 0px 0px 1px 0px rgb(177, 172, 172);
