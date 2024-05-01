@@ -66,7 +66,7 @@
             </div>
         </div>
         <div class="container1">
-            <h6>Leave List </h6><hr />
+            <h6>Leave List: </h6><hr />
         </div>
     </main>
 
