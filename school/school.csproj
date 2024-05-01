@@ -217,6 +217,7 @@
     <Content Include="bin\school.pdb" />
     <Content Include="cirtificatetemplate.aspx" />
     <Content Include="Compose.aspx" />
+    <Content Include="controlclasses.aspx" />
     <Content Include="create employee.aspx" />
     <Content Include="createadmission.aspx" />
     <Content Include="deactivateaccount.aspx" />
@@ -298,6 +299,13 @@
     </Compile>
     <Compile Include="Compose.aspx.designer.cs">
       <DependentUpon>Compose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="controlclasses.aspx.cs">
+      <DependentUpon>controlclasses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controlclasses.aspx.designer.cs">
+      <DependentUpon>controlclasses.aspx</DependentUpon>
     </Compile>
     <Compile Include="create employee.aspx.cs">
       <DependentUpon>create employee.aspx</DependentUpon>
