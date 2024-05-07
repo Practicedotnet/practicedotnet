@@ -69,8 +69,10 @@
   <ItemGroup>
     <Content Include="add department.aspx" />
     <Content Include="Add parent.aspx" />
-    <Content Include="Add user.aspx" />
+    <Content Include="Addclassteacher.aspx" />
+    <Content Include="Adddesignation.aspx" />
     <Content Include="Addleavecategory.aspx" />
+    <Content Include="addliveclass.aspx" />
     <Content Include="admitcardtemplate.aspx" />
     <Content Include="assets\css\material-dashboard.css" />
     <Content Include="assets\css\material-dashboard.min.css" />
@@ -174,6 +176,7 @@
     <Content Include="assets\js\plugins\perfect-scrollbar.min.js" />
     <Content Include="assets\js\plugins\smooth-scrollbar.min.js" />
     <Content Include="assets\js\plugins\world.js" />
+    <Content Include="assignsubject.aspx" />
     <Content Include="Award.aspx" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
@@ -220,24 +223,31 @@
     <Content Include="controlclasses.aspx" />
     <Content Include="create employee.aspx" />
     <Content Include="createadmission.aspx" />
+    <Content Include="createhostel.aspx" />
+    <Content Include="createsubject.aspx" />
     <Content Include="deactivateaccount.aspx" />
     <Content Include="deactivatereason.aspx" />
     <Content Include="deactiveaccount.aspx" />
     <Content Include="docs\documentation.html" />
     <Content Include="employeeidcard.aspx" />
     <Content Include="empregistration.aspx" />
+    <Content Include="examsetup.aspx" />
+    <Content Include="idcardtemplatestd.aspx" />
     <Content Include="inventory add unit.aspx" />
     <Content Include="leavelist.aspx" />
     <Content Include="leaverequest.aspx" />
     <Content Include="obj\Debug\school.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\school.dll" />
     <Content Include="obj\Debug\school.pdb" />
+    <Content Include="onlineexam.aspx" />
     <Content Include="payrollsalaryassign.aspx" />
     <Content Include="payrolltemplate.aspx" />
     <Content Include="salaryadvance.aspx" />
     <Content Include="settingselectground.aspx" />
     <Content Include="studentidcardgenerator.aspx" />
     <Content Include="studentidtemplate.aspx" />
+    <Content Include="TEST1.aspx" />
+    <Content Include="uploadcontent.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm2.aspx" />
     <Content Include="WebForm3.aspx" />
@@ -258,12 +268,19 @@
     <Compile Include="Add parent.aspx.designer.cs">
       <DependentUpon>Add parent.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Add user.aspx.cs">
-      <DependentUpon>Add user.aspx</DependentUpon>
+    <Compile Include="Addclassteacher.aspx.cs">
+      <DependentUpon>Addclassteacher.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Add user.aspx.designer.cs">
-      <DependentUpon>Add user.aspx</DependentUpon>
+    <Compile Include="Addclassteacher.aspx.designer.cs">
+      <DependentUpon>Addclassteacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adddesignation.aspx.cs">
+      <DependentUpon>Adddesignation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adddesignation.aspx.designer.cs">
+      <DependentUpon>Adddesignation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Addleavecategory.aspx.cs">
       <DependentUpon>Addleavecategory.aspx</DependentUpon>
@@ -272,12 +289,26 @@
     <Compile Include="Addleavecategory.aspx.designer.cs">
       <DependentUpon>Addleavecategory.aspx</DependentUpon>
     </Compile>
+    <Compile Include="addliveclass.aspx.cs">
+      <DependentUpon>addliveclass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addliveclass.aspx.designer.cs">
+      <DependentUpon>addliveclass.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admitcardtemplate.aspx.cs">
       <DependentUpon>admitcardtemplate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admitcardtemplate.aspx.designer.cs">
       <DependentUpon>admitcardtemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="assignsubject.aspx.cs">
+      <DependentUpon>assignsubject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="assignsubject.aspx.designer.cs">
+      <DependentUpon>assignsubject.aspx</DependentUpon>
     </Compile>
     <Compile Include="Award.aspx.cs">
       <DependentUpon>Award.aspx</DependentUpon>
@@ -321,6 +352,20 @@
     <Compile Include="createadmission.aspx.designer.cs">
       <DependentUpon>createadmission.aspx</DependentUpon>
     </Compile>
+    <Compile Include="createhostel.aspx.cs">
+      <DependentUpon>createhostel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="createhostel.aspx.designer.cs">
+      <DependentUpon>createhostel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="createsubject.aspx.cs">
+      <DependentUpon>createsubject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="createsubject.aspx.designer.cs">
+      <DependentUpon>createsubject.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Creative_Tim.Master.cs">
       <DependentUpon>Creative_Tim.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -363,6 +408,20 @@
     <Compile Include="empregistration.aspx.designer.cs">
       <DependentUpon>empregistration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="examsetup.aspx.cs">
+      <DependentUpon>examsetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="examsetup.aspx.designer.cs">
+      <DependentUpon>examsetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="idcardtemplatestd.aspx.cs">
+      <DependentUpon>idcardtemplatestd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="idcardtemplatestd.aspx.designer.cs">
+      <DependentUpon>idcardtemplatestd.aspx</DependentUpon>
+    </Compile>
     <Compile Include="inventory add unit.aspx.cs">
       <DependentUpon>inventory add unit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -387,6 +446,13 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="onlineexam.aspx.cs">
+      <DependentUpon>onlineexam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="onlineexam.aspx.designer.cs">
+      <DependentUpon>onlineexam.aspx</DependentUpon>
+    </Compile>
     <Compile Include="payrollsalaryassign.aspx.cs">
       <DependentUpon>payrollsalaryassign.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -457,6 +523,20 @@
     </Compile>
     <Compile Include="test.Master.designer.cs">
       <DependentUpon>test.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TEST1.aspx.cs">
+      <DependentUpon>TEST1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TEST1.aspx.designer.cs">
+      <DependentUpon>TEST1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uploadcontent.aspx.cs">
+      <DependentUpon>uploadcontent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uploadcontent.aspx.designer.cs">
+      <DependentUpon>uploadcontent.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>

@@ -15,14 +15,18 @@
             padding: 10px;
         }
 
-        hr {
+        /*hr {
             color: orange;
             border: solid 1px;
+        }*/
+        h6 {
+            color: gold;
         }
     </style>
     <main style="margin-top: 58px;">
         <div class="container">
-             <h6>Student Id Card Template</h6><hr />
+            <h6>Student Id Card Template</h6>
+            <hr />
             <div class="row">
                 <div class="col-md-3">
                     <asp:Label ID="lblbranch" runat="server" Text="Branch:" Font-Size="10px"></asp:Label>
@@ -104,12 +108,12 @@
                 </div>
             </div>
             <br />
-           <div class="row">
+            <div class="row">
                 <div class="col-md-3">
                     <asp:Label ID="lblsignatureimage" runat="server" Text="Signature Image:" Font-Size="10px"></asp:Label>
                 </div>
                 <div class="col-md-6">
-                    <asp:FileUpload ID="FileUpload1" runat="server" Font-Size="10px" Height="28px" />
+                    <asp:FileUpload ID="FileUpload1" runat="server" Font-Size="10px" Height="28px" CssClass="form-control" />
                 </div>
             </div>
             <br />
@@ -118,7 +122,7 @@
                     <asp:Label ID="lbllogoimage" runat="server" Text="Logo Image:" Font-Size="10px"></asp:Label>
                 </div>
                 <div class="col-md-6">
-                    <asp:FileUpload ID="FileUpload2" runat="server" Font-Size="10px" Height="28px" />
+                    <asp:FileUpload ID="FileUpload2" runat="server" Font-Size="10px" Height="28px" CssClass="form-control" />
                 </div>
             </div>
             <br />
@@ -127,10 +131,16 @@
                     <asp:Label ID="lblbackgroundimage" runat="server" Text="Background Image:" Font-Size="10px"></asp:Label>
                 </div>
                 <div class="col-md-6">
-                    <asp:FileUpload ID="FileUpload3" runat="server" Font-Size="10px" Height="28px" />
+                    <asp:FileUpload ID="FileUpload3" runat="server" Font-Size="10px" Height="28px" CssClass="form-control" />
                 </div>
             </div>
-            <br />
+            <hr />
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-3">
+                    <asp:Button ID="btnsave" runat="server" Text="Save" CssClass="form-control" Height="28px" Font-Size="10px" Width="100px" />
+                </div>
+            </div>
         </div>
     </main>
 

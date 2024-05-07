@@ -10,25 +10,25 @@
 namespace school {
     
     
-    public partial class controlclasses {
+    public partial class examsetup {
         
         /// <summary>
-        /// btnclass control.
+        /// btnexamlist control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnclass;
+        protected global::System.Web.UI.WebControls.Button btnexamlist;
         
         /// <summary>
-        /// btnsection control.
+        /// btncreateexam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnsection;
+        protected global::System.Web.UI.WebControls.Button btncreateexam;
         
         /// <summary>
         /// lblbranch control.
@@ -40,6 +40,15 @@ namespace school {
         protected global::System.Web.UI.WebControls.Label lblbranch;
         
         /// <summary>
+        /// DropDownList1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        
+        /// <summary>
         /// lblname control.
         /// </summary>
         /// <remarks>
@@ -49,57 +58,84 @@ namespace school {
         protected global::System.Web.UI.WebControls.Label lblname;
         
         /// <summary>
-        /// txtleavecategory control.
+        /// txtname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtleavecategory;
+        protected global::System.Web.UI.WebControls.TextBox txtname;
         
         /// <summary>
-        /// lblclassnumeric control.
+        /// lblterm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblclassnumeric;
+        protected global::System.Web.UI.WebControls.Label lblterm;
         
         /// <summary>
-        /// txtclassnumeric control.
+        /// DropDownList3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtclassnumeric;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
         
         /// <summary>
-        /// lblsection control.
+        /// lblexamtype control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblsection;
+        protected global::System.Web.UI.WebControls.Label lblexamtype;
         
         /// <summary>
-        /// txtsection control.
+        /// DropDownList2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtsection;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
         
         /// <summary>
-        /// GridView1 control.
+        /// lblmarkdistribution control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.Label lblmarkdistribution;
+        
+        /// <summary>
+        /// txtmarksdistribution control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtmarksdistribution;
+        
+        /// <summary>
+        /// lblremarks control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblremarks;
+        
+        /// <summary>
+        /// btnsave control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnsave;
     }
 }

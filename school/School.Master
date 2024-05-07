@@ -34,9 +34,9 @@
             left: 0;
             padding: 40px 0 0; /* Height of navbar */
             box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-            width:180px;
+            width: 180px;
             z-index: 600;
-            font-size:10px;
+            font-size: 10px;
         }
 
         @media (max-width: 991.98px) {
@@ -72,31 +72,41 @@
                 <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
                     <div class="position-sticky">
                         <div class="list-group list-group-flush mx-3 mt-4">
-                            <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                       <%--     <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
                                 <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Main dashboard</span>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action py-2 ripple active">
                                 <i class="fas fa-chart-area fa-fw me-3"></i><span>All Branches</span>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fas fa-lock fa-fw me-3"></i><span>Test</span></a>
-                            <a href="empregistration.aspx" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fas fa-chart-line fa-fw me-3"></i><span>Inventory</span></a>
-                            <a href="#" class="list-group-item list-group-item-action py-2 ripple">
-                                <i class="fas fa-chart-pie fa-fw me-3"></i><span>Branch</span>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fas fa-chart-bar fa-fw me-3"></i><span>Frontend</span></a>
-                            <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fas fa-globe fa-fw me-3"></i><span>Reception</span></a>
+                            </a>--%>
+                            <a href="settingselectground.aspx" class="list-group-item list-group-item-action py-2 ripple"><i
+                                class="fas fa-lock fa-fw me-3"></i><span>setting</span></a>
                             <a href="createadmission.aspx" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fas fa-building fa-fw me-3"></i><span>Admission</span></a>
-                            <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fas fa-calendar fa-fw me-3"></i><span>Student Details</span></a>
-                            <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fas fa-users fa-fw me-3"></i><span>Create Parent</span></a>
+                                class="fas fa-chart-line fa-fw me-3"></i><span>Create Admission</span></a>
+                            <a href="Add parent.aspx" class="list-group-item list-group-item-action py-2 ripple">
+                                <i class="fas fa-chart-pie fa-fw me-3"></i><span>Add Parent</span>
+                            </a><%--<a href="WebForm6.aspx">WebForm6.aspx</a>--%>
                             <a href="empregistration.aspx" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fas fa-money-bill fa-fw me-3"></i><span>Create Employee</span></a>
+                                class="fas fa-chart-bar fa-fw me-3"></i><span>Add Employee</span></a>
+                            <a href="idcardtemplatestd.aspx" class="list-group-item list-group-item-action py-2 ripple"><i
+                                class="fas fa-globe fa-fw me-3"></i><span>Id Card Template</span></a>
+                            <a href="payrolltemplate.aspx" class="list-group-item list-group-item-action py-2 ripple"><i
+                                class="fas fa-building fa-fw me-3"></i><span>salary template</span></a>
+                            <a href="leaverequest.aspx" class="list-group-item list-group-item-action py-2 ripple"><i
+                                class="fas fa-calendar fa-fw me-3"></i><span>Leave Request</span></a>
+                            <a href="Award.aspx" class="list-group-item list-group-item-action py-2 ripple"><i
+                                class="fas fa-users fa-fw me-3"></i><span>Give Award</span></a>
+                            <a href="controlclasses.aspx" class="list-group-item list-group-item-action py-2 ripple"><i
+                                class="fas fa-money-bill fa-fw me-3"></i><span>Create Class</span></a>
+                            <a href="createsubject.aspx" class="list-group-item list-group-item-action py-2 ripple"><i
+                                class="fas fa-money-bill fa-fw me-3"></i><span>Create Subject</span></a>
+                            <a href="Addclassteacher.aspx" class="list-group-item list-group-item-action py-2 ripple"><i
+                                class="fas fa-money-bill fa-fw me-3"></i><span>Assign Class Teacher</span></a>
+                            <a href="addliveclass.aspx" class="list-group-item list-group-item-action py-2 ripple"><i
+                                class="fas fa-money-bill fa-fw me-3"></i><span>Live Class Rooms</span></a>
+                            <a href="examsetup.aspx" class="list-group-item list-group-item-action py-2 ripple"><i
+                                class="fas fa-money-bill fa-fw me-3"></i><span>Exam Setup</span></a>
+                            <a href="uploadcontent.aspx" class="list-group-item list-group-item-action py-2 ripple"><i
+                                class="fas fa-money-bill fa-fw me-3"></i><span>Upload Documents</span></a>
                         </div>
                     </div>
                 </nav>
@@ -203,7 +213,7 @@
         </li>--%>
 
                                     <!-- Avatar -->
-                                  <%--  <li class="nav-item dropdown">
+                                    <%--  <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle hidden-arrow d-flex align-items-center" href="#"
                                             id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
                                             <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp" class="rounded-circle"
@@ -233,7 +243,6 @@
 
             <!--Main layout-->
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-
             </asp:ContentPlaceHolder>
         </div>
     </form>

@@ -10,24 +10,33 @@
 namespace school {
     
     
-    public partial class Add_user {
+    public partial class Adddesignation {
         
         /// <summary>
-        /// Panel1 control.
+        /// lblbranch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.WebControls.Label lblbranch;
         
         /// <summary>
-        /// Label1 control.
+        /// lbldesignationname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lbldesignationname;
+        
+        /// <summary>
+        /// txtdesignationname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtdesignationname;
     }
 }

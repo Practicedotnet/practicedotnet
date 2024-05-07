@@ -10,7 +10,25 @@
 namespace school {
     
     
-    public partial class admitcardtemplate {
+    public partial class uploadcontent {
+        
+        /// <summary>
+        /// btnattachments control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnattachments;
+        
+        /// <summary>
+        /// btncreateattachments control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btncreateattachments;
         
         /// <summary>
         /// lblbranch control.
@@ -31,58 +49,58 @@ namespace school {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
         
         /// <summary>
-        /// lbladmitcardname control.
+        /// lbltitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbladmitcardname;
+        protected global::System.Web.UI.WebControls.Label lbltitle;
         
         /// <summary>
-        /// TextBox1 control.
+        /// txttitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txttitle;
         
         /// <summary>
-        /// lblpagelayout control.
+        /// lbltype control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblpagelayout;
+        protected global::System.Web.UI.WebControls.Label lbltype;
         
         /// <summary>
-        /// txtwidth control.
+        /// DropDownList3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtwidth;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
         
         /// <summary>
-        /// txtheight control.
+        /// cbforallclasses control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtheight;
+        protected global::System.Web.UI.WebControls.CheckBox cbforallclasses;
         
         /// <summary>
-        /// lblqrtext control.
+        /// lblclass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblqrtext;
+        protected global::System.Web.UI.WebControls.Label lblclass;
         
         /// <summary>
         /// DropDownList2 control.
@@ -94,85 +112,67 @@ namespace school {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
         
         /// <summary>
-        /// lbluserphotostyle control.
+        /// cbnotsubject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbluserphotostyle;
+        protected global::System.Web.UI.WebControls.CheckBox cbnotsubject;
         
         /// <summary>
-        /// txtsquare control.
+        /// lblsubject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtsquare;
+        protected global::System.Web.UI.WebControls.Label lblsubject;
         
         /// <summary>
-        /// txtphotosize control.
+        /// txtsubject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtphotosize;
+        protected global::System.Web.UI.WebControls.TextBox txtsubject;
         
         /// <summary>
-        /// lbllayoutspacing control.
+        /// lblpublishdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbllayoutspacing;
+        protected global::System.Web.UI.WebControls.Label lblpublishdate;
         
         /// <summary>
-        /// txttop control.
+        /// txtpubleshdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txttop;
+        protected global::System.Web.UI.WebControls.TextBox txtpubleshdate;
         
         /// <summary>
-        /// txtbottom control.
+        /// lblremarks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtbottom;
+        protected global::System.Web.UI.WebControls.Label lblremarks;
         
         /// <summary>
-        /// txtright control.
+        /// lblattachfile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtright;
-        
-        /// <summary>
-        /// txtleft control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtleft;
-        
-        /// <summary>
-        /// lblsignatureimage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblsignatureimage;
+        protected global::System.Web.UI.WebControls.Label lblattachfile;
         
         /// <summary>
         /// FileUpload1 control.
@@ -182,42 +182,6 @@ namespace school {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
-        
-        /// <summary>
-        /// lbllogoimage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbllogoimage;
-        
-        /// <summary>
-        /// FileUpload2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUpload2;
-        
-        /// <summary>
-        /// lblbackgroundimage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblbackgroundimage;
-        
-        /// <summary>
-        /// FileUpload3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUpload3;
         
         /// <summary>
         /// btnsave control.

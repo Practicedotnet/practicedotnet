@@ -10,25 +10,25 @@
 namespace school {
     
     
-    public partial class controlclasses {
+    public partial class createsubject {
         
         /// <summary>
-        /// btnclass control.
+        /// btnsubjectlist control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnclass;
+        protected global::System.Web.UI.WebControls.Button btnsubjectlist;
         
         /// <summary>
-        /// btnsection control.
+        /// btncreatesubject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnsection;
+        protected global::System.Web.UI.WebControls.Button btncreatesubject;
         
         /// <summary>
         /// lblbranch control.
@@ -40,66 +40,93 @@ namespace school {
         protected global::System.Web.UI.WebControls.Label lblbranch;
         
         /// <summary>
-        /// lblname control.
+        /// DropDownList1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblname;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
         
         /// <summary>
-        /// txtleavecategory control.
+        /// lblsubjectname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtleavecategory;
+        protected global::System.Web.UI.WebControls.Label lblsubjectname;
         
         /// <summary>
-        /// lblclassnumeric control.
+        /// txtsubjectname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblclassnumeric;
+        protected global::System.Web.UI.WebControls.TextBox txtsubjectname;
         
         /// <summary>
-        /// txtclassnumeric control.
+        /// lblsubjectcode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtclassnumeric;
+        protected global::System.Web.UI.WebControls.Label lblsubjectcode;
         
         /// <summary>
-        /// lblsection control.
+        /// txtsubjectcode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblsection;
+        protected global::System.Web.UI.WebControls.TextBox txtsubjectcode;
         
         /// <summary>
-        /// txtsection control.
+        /// lblsubjectauthor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtsection;
+        protected global::System.Web.UI.WebControls.Label lblsubjectauthor;
         
         /// <summary>
-        /// GridView1 control.
+        /// txtsubjectauthor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.TextBox txtsubjectauthor;
+        
+        /// <summary>
+        /// lblsubjecttype control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblsubjecttype;
+        
+        /// <summary>
+        /// DropDownList2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        
+        /// <summary>
+        /// btnsave control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnsave;
     }
 }

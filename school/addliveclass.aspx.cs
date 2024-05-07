@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace school
 {
-    public partial class Add_user : System.Web.UI.Page
+    public partial class addliveclass : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

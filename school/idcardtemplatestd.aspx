@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="cirtificatetemplate.aspx.cs" Inherits="school.WebForm8" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="idcardtemplatestd.aspx.cs" Inherits="school.idcardtemplatestd" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -22,7 +22,7 @@
     </style>
     <main style="margin-top: 58px;">
         <div class="container">
-            <h6>Cirtificate Template</h6>
+            <h6>Id Card  Template</h6>
             <hr />
             <div class="row">
                 <div class="col-md-3">
@@ -38,7 +38,7 @@
             <br />
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lbladmitcardname" runat="server" Text="Cirtificate Name:" Font-Size="10px"></asp:Label>
+                    <asp:Label ID="lblidcardname" runat="server" Text="id card Name:" Font-Size="10px"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:TextBox ID="txtcirtificatename" runat="server" CssClass="form-control" Font-Size="10px" Height="28px"></asp:TextBox>
