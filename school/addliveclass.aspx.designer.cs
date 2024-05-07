@@ -10,7 +10,25 @@
 namespace school {
     
     
-    public partial class admitcardtemplate {
+    public partial class addliveclass {
+        
+        /// <summary>
+        /// btnliveclasslist control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnliveclasslist;
+        
+        /// <summary>
+        /// btnaddliveclass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnaddliveclass;
         
         /// <summary>
         /// lblbranch control.
@@ -31,193 +49,166 @@ namespace school {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
         
         /// <summary>
-        /// lbladmitcardname control.
+        /// lbltitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbladmitcardname;
+        protected global::System.Web.UI.WebControls.Label lbltitle;
         
         /// <summary>
-        /// TextBox1 control.
+        /// txttitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txttitle;
         
         /// <summary>
-        /// lblpagelayout control.
+        /// lblclass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblpagelayout;
+        protected global::System.Web.UI.WebControls.Label lblclass;
         
         /// <summary>
-        /// txtwidth control.
+        /// DropDownList3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtwidth;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
         
         /// <summary>
-        /// txtheight control.
+        /// lblsection control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtheight;
+        protected global::System.Web.UI.WebControls.Label lblsection;
         
         /// <summary>
-        /// lblqrtext control.
+        /// txtsection control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblqrtext;
+        protected global::System.Web.UI.WebControls.TextBox txtsection;
         
         /// <summary>
-        /// DropDownList2 control.
+        /// cbselectall control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        protected global::System.Web.UI.WebControls.CheckBox cbselectall;
         
         /// <summary>
-        /// lbluserphotostyle control.
+        /// lblliveclassmethod control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbluserphotostyle;
+        protected global::System.Web.UI.WebControls.Label lblliveclassmethod;
         
         /// <summary>
-        /// txtsquare control.
+        /// txtliveclassmethod control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtsquare;
+        protected global::System.Web.UI.WebControls.TextBox txtliveclassmethod;
         
         /// <summary>
-        /// txtphotosize control.
+        /// lbldate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtphotosize;
+        protected global::System.Web.UI.WebControls.Label lbldate;
         
         /// <summary>
-        /// lbllayoutspacing control.
+        /// txtdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbllayoutspacing;
+        protected global::System.Web.UI.WebControls.TextBox txtdate;
         
         /// <summary>
-        /// txttop control.
+        /// lbltimeslot control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txttop;
+        protected global::System.Web.UI.WebControls.Label lbltimeslot;
         
         /// <summary>
-        /// txtbottom control.
+        /// txtfrom control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtbottom;
+        protected global::System.Web.UI.WebControls.TextBox txtfrom;
         
         /// <summary>
-        /// txtright control.
+        /// txtto control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtright;
+        protected global::System.Web.UI.WebControls.TextBox txtto;
         
         /// <summary>
-        /// txtleft control.
+        /// lblduration control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtleft;
+        protected global::System.Web.UI.WebControls.Label lblduration;
         
         /// <summary>
-        /// lblsignatureimage control.
+        /// txtduration control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblsignatureimage;
+        protected global::System.Web.UI.WebControls.TextBox txtduration;
         
         /// <summary>
-        /// FileUpload1 control.
+        /// lblremarks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
+        protected global::System.Web.UI.WebControls.Label lblremarks;
         
         /// <summary>
-        /// lbllogoimage control.
+        /// CheckBox1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbllogoimage;
-        
-        /// <summary>
-        /// FileUpload2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUpload2;
-        
-        /// <summary>
-        /// lblbackgroundimage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblbackgroundimage;
-        
-        /// <summary>
-        /// FileUpload3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUpload3;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
         
         /// <summary>
         /// btnsave control.

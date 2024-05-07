@@ -76,13 +76,13 @@ namespace school {
         protected global::System.Web.UI.WebControls.TextBox txturl;
         
         /// <summary>
-        /// Label1 control.
+        /// lblcmsfrontend control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblcmsfrontend;
         
         /// <summary>
         /// Radiobtnenable control.
@@ -103,13 +103,13 @@ namespace school {
         protected global::System.Web.UI.WebControls.RadioButton radiobtndisable;
         
         /// <summary>
-        /// Label2 control.
+        /// lblonlineadmission control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lblonlineadmission;
         
         /// <summary>
         /// radiobtnenabled control.

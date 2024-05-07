@@ -10,25 +10,7 @@
 namespace school {
     
     
-    public partial class controlclasses {
-        
-        /// <summary>
-        /// btnclass control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnclass;
-        
-        /// <summary>
-        /// btnsection control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnsection;
+    public partial class Addclassteacher {
         
         /// <summary>
         /// lblbranch control.
@@ -40,13 +22,13 @@ namespace school {
         protected global::System.Web.UI.WebControls.Label lblbranch;
         
         /// <summary>
-        /// lblname control.
+        /// lblclass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblname;
+        protected global::System.Web.UI.WebControls.Label lblclass;
         
         /// <summary>
         /// txtleavecategory control.
@@ -58,13 +40,13 @@ namespace school {
         protected global::System.Web.UI.WebControls.TextBox txtleavecategory;
         
         /// <summary>
-        /// lblclassnumeric control.
+        /// lblsection control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblclassnumeric;
+        protected global::System.Web.UI.WebControls.Label lblsection;
         
         /// <summary>
         /// txtclassnumeric control.
@@ -76,13 +58,13 @@ namespace school {
         protected global::System.Web.UI.WebControls.TextBox txtclassnumeric;
         
         /// <summary>
-        /// lblsection control.
+        /// lblclassteacher control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblsection;
+        protected global::System.Web.UI.WebControls.Label lblclassteacher;
         
         /// <summary>
         /// txtsection control.
@@ -92,14 +74,5 @@ namespace school {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtsection;
-        
-        /// <summary>
-        /// GridView1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }

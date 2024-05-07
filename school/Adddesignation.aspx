@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="add department.aspx.cs" Inherits="school.add_department" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="Adddesignation.aspx.cs" Inherits="school.Adddesignation" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -46,7 +46,7 @@
                 <div class="container">
                     <div class="row">
                         <header>
-                            <h5>Add Department</h5>
+                            <h5>Add Designation</h5>
                             <hr />
 
                         </header>
@@ -66,11 +66,11 @@
                     </div>
                     <br />
                     <div class="row">
-                        <asp:Label ID="lblunitname" runat="server" Text="Department Name"></asp:Label>
+                        <asp:Label ID="lbldesignationname" runat="server" Text="Designation Name"></asp:Label>
                     </div>
                     <div class="row">
                         <div class="col-md-10">
-                            <asp:TextBox ID="txtdepartmentname" runat="server" CssClass="form-control" Height="25px" Width="250px"></asp:TextBox>
+                            <asp:TextBox ID="txtdesignationname" runat="server" CssClass="form-control" Height="25px" Width="250px"></asp:TextBox>
                         </div>
                     </div>
                     <hr />
