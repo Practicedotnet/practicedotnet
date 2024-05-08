@@ -13,6 +13,15 @@ namespace school {
     public partial class Award {
         
         /// <summary>
+        /// awardlist control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl awardlist;
+        
+        /// <summary>
         /// btnawardlist control.
         /// </summary>
         /// <remarks>

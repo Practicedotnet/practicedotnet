@@ -224,6 +224,7 @@
     <Content Include="create employee.aspx" />
     <Content Include="createadmission.aspx" />
     <Content Include="createhostel.aspx" />
+    <Content Include="createroom.aspx" />
     <Content Include="createsubject.aspx" />
     <Content Include="deactivateaccount.aspx" />
     <Content Include="deactivatereason.aspx" />
@@ -244,6 +245,7 @@
     <Content Include="payrolltemplate.aspx" />
     <Content Include="salaryadvance.aspx" />
     <Content Include="settingselectground.aspx" />
+    <Content Include="site2masterpage.aspx" />
     <Content Include="studentidcardgenerator.aspx" />
     <Content Include="studentidtemplate.aspx" />
     <Content Include="TEST1.aspx" />
@@ -359,6 +361,13 @@
     <Compile Include="createhostel.aspx.designer.cs">
       <DependentUpon>createhostel.aspx</DependentUpon>
     </Compile>
+    <Compile Include="createroom.aspx.cs">
+      <DependentUpon>createroom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="createroom.aspx.designer.cs">
+      <DependentUpon>createroom.aspx</DependentUpon>
+    </Compile>
     <Compile Include="createsubject.aspx.cs">
       <DependentUpon>createsubject.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -446,6 +455,13 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="OLDMaster.Master.cs">
+      <DependentUpon>OLDMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OLDMaster.Master.designer.cs">
+      <DependentUpon>OLDMaster.Master</DependentUpon>
+    </Compile>
     <Compile Include="onlineexam.aspx.cs">
       <DependentUpon>onlineexam.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -489,6 +505,13 @@
     <Compile Include="settingselectground.aspx.designer.cs">
       <DependentUpon>settingselectground.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -502,6 +525,13 @@
     </Compile>
     <Compile Include="Site2.Master.designer.cs">
       <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="site2masterpage.aspx.cs">
+      <DependentUpon>site2masterpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site2masterpage.aspx.designer.cs">
+      <DependentUpon>site2masterpage.aspx</DependentUpon>
     </Compile>
     <Compile Include="studentidcardgenerator.aspx.cs">
       <DependentUpon>studentidcardgenerator.aspx</DependentUpon>
@@ -762,11 +792,13 @@
     <Content Include="obj\Debug\school.csproj.CopyComplete" />
     <Content Include="obj\Debug\school.csproj.CoreCompileInputs.cache" />
     <Content Include="obj\Debug\school.csprojAssemblyReference.cache" />
+    <Content Include="OLDMaster.Master" />
     <None Include="packages.config" />
     <Content Include="School.Master" />
     <Content Include="Site1.Master" />
     <Content Include="test.Master" />
     <Content Include="Site2.Master" />
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
