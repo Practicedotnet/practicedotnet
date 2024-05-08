@@ -10,7 +10,7 @@
 namespace school {
     
     
-    public partial class Site1 {
+    public partial class OLDMaster {
         
         /// <summary>
         /// head control.
@@ -29,15 +29,6 @@ namespace school {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
-        /// menu_master control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Menu menu_master;
         
         /// <summary>
         /// ContentPlaceHolder1 control.
