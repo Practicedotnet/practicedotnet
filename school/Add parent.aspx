@@ -6,7 +6,7 @@
     <style>
         .container {
             width: auto;
-            height: 690px; 
+            height: 800px; 
             margin-top: 70px;
             border: solid 0px;
             border-color: lightgrey;
@@ -163,10 +163,12 @@
                 </div>
             </div>
             <br />
+            <br />
+            <br />
             <div class="row">
                 <div class="col-md-8"></div>
                 <div class="col-md-2">
-                    <asp:Button ID="btnsave" runat="server" Text="Save" CssClass="form-control" Height="25px" Width="80px" Font-Size="10px" />
+                    <asp:Button ID="btnsave" runat="server" Text="Save" CssClass="form-control" Height="25px" Width="80px" Font-Size="10px" OnClick="btnsave_Click" />
                 </div>
             </div>
         </div>

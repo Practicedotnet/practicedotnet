@@ -16,7 +16,7 @@ namespace school
 
         protected void btngiveaward_Click(object sender, EventArgs e)
         {
-            awardlist.Visible ='true';
+            //awardlist.Visible ='true';
         }
     }
 }
