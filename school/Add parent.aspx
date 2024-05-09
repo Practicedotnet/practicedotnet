@@ -7,7 +7,7 @@
         .container {
             width: auto;
             height: 800px; 
-            margin-top: 70px;
+            margin-top: 0px;
             border: solid 0px;
             border-color: lightgrey;
             margin-left: 20px;
@@ -19,7 +19,7 @@
             color:gold;
         }
     </style>
-    <main style="margin-top: 58px;">
+    <main style="margin-top: auto 0px;">
         <div class="container">
             <div class="row">
                 <h6>Add Parent</h6>

@@ -30,7 +30,7 @@
                        color: gold;
                    }
                </style>
-    <main style="margin-top: 58px;">
+    <main <%--style="margin-top:0px"--%>>
         <div class="container">
             <h6>Select Ground</h6><hr />
             <div class="row">

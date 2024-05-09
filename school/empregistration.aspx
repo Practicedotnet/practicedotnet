@@ -21,7 +21,7 @@
         .container {
             width: auto;
             height: auto;
-            margin-top: 70px;
+            margin-top: 0px;
             border: solid 0px;
             border-color: lightgrey;
             margin-left: 20px;
@@ -37,7 +37,7 @@
     </div>
       </div>
      </nav>--%>
-    <main style="margin-top: 58px;">
+    <main style="margin-top: 0px;">
         <%--  <div class="container pt-4"></div>--%>
         <div class="container">
             <h6>Add Employee</h6><hr />
