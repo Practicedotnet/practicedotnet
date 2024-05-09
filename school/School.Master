@@ -12,17 +12,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-
+   
 </head>
 <body>
-    <style>
-        .col{
-            margin-top: auto;
-        } 
-    </style>
     <form id="form1" runat="server">
         <div class="row">
-
             <div class="col-md-2">
                 <asp:Menu ID="menu_master" StaticMenuStyle-CssClass="nav navbar-nav" DynamicMenuStyle-CssClass="dropdown-menu"
                     StaticMenuItemStyle-BackColor="white" Font-Size="Medium" Font-Names="Calibri" Font-Bold="true" runat="server"
@@ -47,11 +41,11 @@
                             <asp:MenuItem Text="Branches" Value="Branches" NavigateUrl="~/Branches.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="Locations" Value="Locations" NavigateUrl="~/Locations.aspx"></asp:MenuItem>--%>
                         </asp:MenuItem>
-                        <asp:MenuItem Text="Create Admission:" Value="Create Admission" ImageUrl="~/images/b25.png">
+                        <asp:MenuItem Text="Create Admission" Value="Create Admission" ImageUrl="~/images/b25.png">
                             <%--<asp:MenuItem Text="Company Approval" Value="CompanyApproval" NavigateUrl="~/Approval/CompaniesKyc_Approval.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="Customer Kyc Approval" Value="CustomerKycApproval" NavigateUrl="~/CustomerApproval.aspx"></asp:MenuItem>--%>
                         </asp:MenuItem>
-                        <asp:MenuItem Text="Create Employee:" Value="Create Employee" ImageUrl="~/images/tran.png">
+                        <asp:MenuItem Text="Create Employee" Value="Create Employee" ImageUrl="~/images/tran.png">
                            <%-- <asp:MenuItem Text="Loan Calculator" Value="LoanCalculator" NavigateUrl="~/LoanCalculator.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="Request For Loan" Value="RequestForLoan" NavigateUrl="~/Transactions/Loan_Application.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="Review" Value="Review" NavigateUrl="~/Transactions/LoanApplicationSummary.aspx"></asp:MenuItem>
@@ -64,11 +58,11 @@
                             <asp:MenuItem NavigateUrl="~/Transactions/journalBulk.aspx" Text="Journal Voucher Bulk Upload" Value="Journal Voucher Bulk Upload"></asp:MenuItem>
                             <asp:MenuItem NavigateUrl="~/Transactions/EmployerReceipts.aspx" Text="Employer Receipt Collection" Value="EmployeReceiptCollection"></asp:MenuItem>--%>
                         </asp:MenuItem>
-                        <asp:MenuItem Text="Create Parent:" Value="Create Parent" ImageUrl="~/images/f25.png">
+                        <asp:MenuItem Text="Create Parent" Value="Create Parent" ImageUrl="~/images/f25.png">
                            <%-- <asp:MenuItem Text="Chart Of Accounts" Value="ChartOfAccounts" NavigateUrl="~/Finance_and_Accounts/GeneralLedgerCreation.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="Ledger Mapping" Value="LedgerMapping" NavigateUrl="~/Finance_and_Accounts/Ledger_Transcation_Mapping.aspx"></asp:MenuItem>--%>
                         </asp:MenuItem>
-                        <asp:MenuItem Text="Leave Request:" Value="Leave Request" ImageUrl="~/images/rep2.png">
+                        <asp:MenuItem Text="Leave Request" Value="Leave Request" ImageUrl="~/images/rep2.png">
                            <%-- <asp:MenuItem Text="Finance " Value="Finance ">
                                 <asp:MenuItem NavigateUrl="~/Reports/TrailBalance.aspx" Text="Trial Balance" Value="Trial Balance"></asp:MenuItem>
                                 <asp:MenuItem NavigateUrl="~/Reports/BalanceSheet.aspx" Text="Balance Sheet" Value="Balance Sheet"></asp:MenuItem>
@@ -93,7 +87,7 @@
                             <asp:MenuItem NavigateUrl="~/Reports/LoanStatusReport.aspx" Text="Loan Status Report" Value="Loan Status Report"></asp:MenuItem>
                             <asp:MenuItem NavigateUrl="~/Reports/LargestLoanReport.aspx" Text="Largest Loan Report" Value="Largest Loan Report"></asp:MenuItem>
                         </asp:MenuItem>--%>
-                        <asp:MenuItem Text="Control Classes:" Value="Control Classes" ImageUrl="~/images/snn.png">
+                        <asp:MenuItem Text="Control Classes" Value="Control Classes" ImageUrl="~/images/snn.png">
                           <%--  <asp:MenuItem Text="Roles" Value="Roles" NavigateUrl="~/Securities/UserRoles.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="User Creation" Value="UserCreation" NavigateUrl="~/Securities/UserCreation.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="Form Access Rights" Value="FormAccessRights" NavigateUrl="~/Securities/AccessRights.aspx"></asp:MenuItem>--%>

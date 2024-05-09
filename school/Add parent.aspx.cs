@@ -42,14 +42,19 @@ namespace school
                 cmd.Parameters.AddWithValue("@Facebook", txtfacebook.Text);
                 cmd.Parameters.AddWithValue("@Twitter", txttwitter.Text);
                 cmd.Parameters.AddWithValue("@LinkedIn", txtlinkedin.Text);
-                //cmd.Parameters.AddWithValue("@ProfilePic", "image");
-                cmd.ExecuteNonQuery();
+            //cmd.Parameters.AddWithValue("@ProfilePic", "image");
+             cmd.ExecuteNonQuery(); 
 
-                Response.Write("Student registeration Successfully!!!thank you");
+                //Response.Write("Student registeration Successfully!!!thank you");
 
                 conn.Close();
-
             
         }
+
+        protected void btnRefresh_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Add parent.aspx");
+        }
+
     }
 }
