@@ -13,10 +13,12 @@
             margin-left: 10px;
             box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
             font-size: 10px;
+           background-color:white;
         }
 
-        h6 {
-            color: gold;
+        h5 {
+            color: white;
+            
         }
         .auto-style1 {
             display: block;
@@ -41,7 +43,9 @@
     <main style="margin-top: 65px">
         <div id="awardlist" runat="server">
         <div class="container">
-            <h6>Awards</h6><hr />
+             <div class="row" style="background-color: cornflowerblue">
+                <h5>Awards</h5>
+                </div>
             <br />
             <div class="row">
                 <div class="col-md-3">              

@@ -5,14 +5,16 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
         .container {
-            width: 750px;
-            height: auto;
-            margin-top: 80px;
-            border: solid;
+            width:750px;
+            height: auto; 
+            margin-top: 0px;
+            border: solid 0px;
             border-color: lightgrey;
-            margin-left: 10px;
-            box-shadow: 0px 0px 1px 0px rgb(177, 172, 172);
-            padding: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+            font-size: 10px;
+            background-color:white;
         }
 
         /*hr {
@@ -20,12 +22,15 @@
             border: solid 1px;
         }*/
         h6 {
-            color: gold;
+             font-size:large;
+                       color:white;
+                       padding-left:5px;
         }
     </style>
     <main style="margin-top: 58px;">
         <div class="container">
-            <h6>Student Id Card Template</h6>
+            <div class="row" style="background-color:cornflowerblue">
+            <h6>Student Id Card Template</h6></div>
             <hr />
             <div class="row">
                 <div class="col-md-3">

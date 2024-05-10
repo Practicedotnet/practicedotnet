@@ -251,6 +251,7 @@
     <Content Include="site2masterpage.aspx" />
     <Content Include="studentidcardgenerator.aspx" />
     <Content Include="studentidtemplate.aspx" />
+    <Content Include="test.aspx" />
     <Content Include="TEST1.aspx" />
     <Content Include="uploadcontent.aspx" />
     <Content Include="Web.config" />
@@ -549,6 +550,13 @@
     </Compile>
     <Compile Include="studentidtemplate.aspx.designer.cs">
       <DependentUpon>studentidtemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
     </Compile>
     <Compile Include="test.Master.cs">
       <DependentUpon>test.Master</DependentUpon>

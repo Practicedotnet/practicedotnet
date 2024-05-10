@@ -11,14 +11,15 @@
       </div>
      </nav>--%><style>
                    .container {
-                       width: auto;
+                       width: 800px;
                        height: auto;
-                       margin-top: 70px;
+                       margin-top: 10px;
                        border: solid 1px;
                        border-color: lightgrey;
-                       margin-left: 10px;
+                       margin-left: 40px;
                        box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
                        font-size: 10px;
+                       background-color:white;
                    }
 
                    .textbox {
@@ -26,13 +27,20 @@
                        width: 350px;
                    }
 
-                   h6 {
-                       color: gold;
+                   h5 {
+                       font-size:large;
+                       color:white;
+                       /*background-color:cornflowerblue;*/
+                       /*height:50px;*/
+
+
+
                    }
                </style>
     <main <%--style="margin-top:0px"--%>>
         <div class="container">
-            <h6>Select Ground</h6><hr />
+            <div class="row" style="background-color: cornflowerblue" >
+            <h5>Select Ground</h5></div><hr />
             <div class="row">
                 <div class="col-md-2">
                 </div>

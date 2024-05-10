@@ -31,7 +31,8 @@
     </style>
     <main style="margin-top: 65px">
         <div class="container">
-            <h5>Subject</h5><hr />
+            <div class="row" style="background-color:cornflowerblue">
+            <h5>Subject</h5></div><hr />
             <div class="row">
                 <div class="col-md-2">
                     <asp:Button ID="btnsubjectlist" runat="server" Text="Subject list" CssClass="form-control" Height="25px" Width="80px" Font-Size="10px" />

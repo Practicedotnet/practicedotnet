@@ -3,13 +3,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <nav class="navbar navbar-default">
+    <%--<nav class="navbar navbar-default">
         <div class="container">
 
             <a href="#">Create Admission </a>
 
         </div>
-    </nav>
+    </nav>--%>
     <style>
         .container {
             width: auto;
@@ -20,14 +20,20 @@
             margin-left: 1px;
             box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
             font-size: 10px;
+            background-color:white;
         }
         /*a{
           width:auto;
           height:0px;
        }*/
-        h6 {
-            color: gold;
-            /*/*font-size: 15px;*/ */
+        h4{
+            font-size:large;
+                       color:white;
+                       /*background-color:cornflowerblue;*/
+        }
+        h5{
+            color:gold;
+            font-size:18px;
         }
 
         /*school-icon-heading {0..
@@ -50,10 +56,11 @@
             font-size: 10px;
         }*/
     </style>
-    <main style="margin-top: 58px;">
+    <main style="margin-top: 10px;">
 
         <div class="container">
-                <h6>academic details</h6>
+            <div class="row" style="background-color: cornflowerblue" >
+                <h4>academic details</h4></div>
             <hr />
             <div class="row">      
                 <div class="col-md-2">
@@ -139,7 +146,7 @@
             </div>
             <br />
             <br />
-            <h6>student details</h6>
+            <h5>student details</h5>
             <hr />
             <div class="row">
                 <div class="col-md-3">
@@ -285,7 +292,7 @@
             </div>
             <br />
             <br />
-            <h6>Login Details</h6>
+            <h5>Login Details</h5>
             <div class="row">
                 <div class="col-md-5">
                     <asp:Label ID="lblusername" runat="server" Text="User Name"></asp:Label>
@@ -310,7 +317,7 @@
             </div>
             <br />
             <br />
-            <h6>Gaurdian Details</h6>
+            <h5>Gaurdian Details</h5>
             <hr />
             <div class="row">
                 <div class="col-md-1">
@@ -428,7 +435,7 @@
                 </div>
             </div>
             <br />
-            <h6>Transportation Details</h6>
+            <h5>Transportation Details</h5>
             <hr />
             <div class="row">
                 <div class="col-md-5">
@@ -446,7 +453,7 @@
                     <asp:TextBox ID="txtvehicleno" runat="server" CssClass="form-control" Height="25px" Width="200px"></asp:TextBox>
                 </div>
             </div>
-            <h6>Hostel Details</h6>
+            <h5>Hostel Details</h5>
             <hr />
             <div class="row">
                 <div class="col-md-5">
@@ -464,7 +471,7 @@
                     <asp:TextBox ID="txtroomname" runat="server" CssClass="form-control" Height="25px" Width="200px"></asp:TextBox>
                 </div>
             </div>
-            <h6>Previous School Details</h6>
+            <h5>Previous School Details</h5>
             <hr />
             <div class="row">
                 <div class="col-md-5">

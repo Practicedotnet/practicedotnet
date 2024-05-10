@@ -11,9 +11,14 @@
        }*/
         h6 {
             color: gold;
+            font-size:18px;
             /*font-size: 15px;*/
         }
+        h5{
+             font-size:large;
+                       color:white; 
 
+        }
         school-icon-heading {
             font-size: 24px;
         }
@@ -28,6 +33,7 @@
             margin-right: 20px;
             box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
             font-size: 10px;
+            background-color:white;
         }
     </style>
     <%-- <nav class="navbar navbar-default">
@@ -40,7 +46,8 @@
     <main style="margin-top: 0px;">
         <%--  <div class="container pt-4"></div>--%>
         <div class="container">
-            <h6>Add Employee</h6><hr />
+             <div class="row" style="background-color: cornflowerblue" >
+            <h5>Add Employee</h5></div>
             <h6 >Acadamic Details
             </h6>
             <br />

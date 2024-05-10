@@ -6,22 +6,26 @@
     <style>
         .container {
             width: 700px;
-            height: 410px;
+            height: auto;
             margin-top: 70px;
             border: solid 1px;
             border-color: lightgrey;
             margin-left: 10px;
             box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
             font-size: 10px;
+            background-color:white;
         }
 
         h6 {
-            color: gold;
+             font-size:large;
+                       color:white;
+                       padding-left:5px;
         }
     </style>
     <main style="margin-top: 65px">
         <div class="container">
-            <h6>Leaves</h6><hr />
+            <div class="row" style="background-color:cornflowerblue">
+            <h6>Leaves</h6></div>
             <div class="row">
                 <br />
                 <div class="col-md-3"> <h6>Leave Request</h6>
@@ -92,6 +96,7 @@
                     <asp:Button ID="btnsave" runat="server" Text="Save" CssClass="form-control" Height="30px" Width="100px" Font-Size="10px" />
                 </div>
                 <br />
+            </div>
             </div>
     </main>
 </asp:Content>

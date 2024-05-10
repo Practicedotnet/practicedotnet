@@ -16,6 +16,7 @@
             margin-right: 20px;
             box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
             font-size: 10px;
+            background-color:white;
         }
         h4{
             color:white;
@@ -30,7 +31,7 @@
     </style>
     <main style="margin-top: 0px;">
         <div class="container">
-            <div class="row" style="background-color:blue">
+            <div class="row" style="background-color:cornflowerblue">
                 <h4>Add Parent</h4>
                 </div>
             <%--<hr />--%>
