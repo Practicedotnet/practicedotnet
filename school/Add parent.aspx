@@ -8,7 +8,7 @@
     <style>
         .container {
             width: auto;
-            height: 915px; 
+            height: 940px; 
             margin-top: 0px;
             border: solid 0px;
             border-color: lightgrey;
@@ -61,9 +61,11 @@
             <div class="row">
                 <div class="col-md-6">
                     <asp:TextBox ID="txtname" runat="server" CssClass="form-control" Height="30px" Width="200px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtname" ErrorMessage="Please Enter Name" ForeColor="#FF3300"></asp:RequiredFieldValidator>
                 </div>
                 <div class="col-md-6">
                     <asp:TextBox ID="txtrelation" runat="server" CssClass="form-control" Height="30px" Width="200px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtrelation" ErrorMessage="Enter Relation" ForeColor="#FF0066"></asp:RequiredFieldValidator>
                 </div>
             </div>
             <br />
@@ -78,9 +80,11 @@
             <div class="row">
                 <div class="col-md-6">
                     <asp:TextBox ID="txtfathername" runat="server" CssClass="form-control" Height="30px" Width="200px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtfathername" ErrorMessage="Enter Father Name" ForeColor="#FF5050"></asp:RequiredFieldValidator>
                 </div>
                 <div class="col-md-6">
                     <asp:TextBox ID="txtmothername" runat="server" CssClass="form-control" Height="30px" Width="200px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtmothername" ErrorMessage="Enter Mother Name" ForeColor="#FF5050"></asp:RequiredFieldValidator>
                 </div>
             </div>
             <br />
@@ -98,12 +102,15 @@
             <div class="row">
                 <div class="col-md-4">
                     <asp:TextBox ID="txtoccupation" runat="server" CssClass="form-control" Height="30px" Width="200px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtoccupation" ErrorMessage="Enter Occupation" ForeColor="#FF5050"></asp:RequiredFieldValidator>
                 </div>
                 <div class="col-md-4">
                     <asp:TextBox ID="txtincome" runat="server" CssClass="form-control" Height="30px" Width="200px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtincome" ErrorMessage="Enter Income" ForeColor="#FF5050"></asp:RequiredFieldValidator>
                 </div>
                 <div class="col-md-4">
-                    <asp:TextBox ID="txteducation" runat="server" CssClass="form-control" Height="30px" Width="200px"></asp:TextBox>
+                    <asp:TextBox ID="txteducation" runat="server" CssClass="form-control" Height="30px" Width="200px" ></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txteducation" ErrorMessage="Enter Education" ForeColor="#FF5050"></asp:RequiredFieldValidator>
                 </div>
             </div>
             <br />
@@ -124,15 +131,20 @@
             <div class="row">
                 <div class="col-md-3">
                     <asp:TextBox ID="txtcity" runat="server" CssClass="form-control" Height="30px" Width="150px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtcity" ErrorMessage="Enter City" ForeColor="#FF5050"></asp:RequiredFieldValidator>
                 </div>
                 <div class="col-md-3">
-                    <asp:TextBox ID="txtstate" runat="server" CssClass="form-control" Height="30px" Width="150px"></asp:TextBox>
+                    <asp:TextBox ID="txtstate" runat="server" CssClass="form-control" Height="30px" Width="150px" ></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="Enter State" ControlToValidate="txtstate" ForeColor="#FF5050"></asp:RequiredFieldValidator>
                 </div>
                 <div class="col-md-3">
+                    
                     <asp:TextBox ID="txtmobile" runat="server" CssClass="form-control" Height="30px" Width="150px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="txtmobile" ErrorMessage="Enter Mobile" ForeColor="#FF5050"></asp:RequiredFieldValidator>
                 </div>
                 <div class="col-md-3">
                     <asp:TextBox ID="txtemail" runat="server" CssClass="form-control" Height="30px" Width="150px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="txtemail" ErrorMessage="Enter Email" ForeColor="#FF5050"></asp:RequiredFieldValidator>
                 </div>
             </div>
             <br />
