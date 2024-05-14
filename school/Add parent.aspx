@@ -198,9 +198,9 @@
             <div class="row">
                 <div class="col-md-8"></div>
                 <div class="col-md-2">
-                    <asp:Button ID="btnsave" runat="server" Text="Save" CssClass="btn btn-success" Height="28px" Width="80px" Font-Size="15px"/>
+                    <asp:Button ID="btnsave" runat="server" Text="Save" CssClass="btn btn-success" Height="28px" Width="80px" Font-Size="15px" OnClick="btnsave_Click"/>
                 </div> 
-                <asp:Button ID="btnRefresh" runat="server" Text="Refresh" CssClass="btn btn-success" Height="28px" Width="80px" Font-Size="15px" />
+                <asp:Button ID="btnRefresh" runat="server" Text="Refresh" CssClass="btn btn-success" Height="28px" Width="80px" Font-Size="15px" OnClick="btnRefresh_Click" />
             </div>
              <div class="modal" id="myModal" runat="server">
         <div class="modal-dialog">
