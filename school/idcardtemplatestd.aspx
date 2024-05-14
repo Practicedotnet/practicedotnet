@@ -5,25 +5,35 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
         .container {
-            width: 750px;
-            height: auto;
-            margin-top: 80px;
-            border: solid;
+            width:750px;
+            height: auto; 
+            margin-top: 0px;
+            border: solid 0px;
             border-color: lightgrey;
-            margin-left: 10px;
-            box-shadow: 0px 0px 1px 0px rgb(177, 172, 172);
-            padding: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+            font-size: 10px;
+            background-color:white;
         }
-
+        h5{
+            font-size:large;
+                       color:white;
+                       padding-left:5px;
+                       /*background-color:cornflowerblue;*/
+        }
 
         h6 {
             color: gold;
         }
     </style>
-    <main style="margin-top: 58px;">
+    <main style="margin-top: 10px;">
         <div class="container">
-            <h6>Id Card  Template</h6>
-            <hr />
+           <div class="row" style="background-color:cornflowerblue">
+                <h5>Id Card Template</h5>
+               </div>
+            <%--<hr />--%>
+            <br />
             <div class="row">
                 <div class="col-md-3">
                     <asp:Label ID="lblbranch" runat="server" Text="Branch:" Font-Size="10px"></asp:Label>

@@ -11,9 +11,14 @@
        }*/
         h6 {
             color: gold;
+            font-size:18px;
             /*font-size: 15px;*/
         }
+        h5{
+             font-size:large;
+                       color:white; 
 
+        }
         school-icon-heading {
             font-size: 24px;
         }
@@ -28,6 +33,7 @@
             margin-right: 20px;
             box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
             font-size: 10px;
+            background-color:white;
         }
     </style>
     <%-- <nav class="navbar navbar-default">
@@ -40,7 +46,8 @@
     <main style="margin-top: 0px;">
         <%--  <div class="container pt-4"></div>--%>
         <div class="container">
-            <h6>Add Employee</h6><hr />
+             <div class="row" style="background-color: cornflowerblue" >
+            <h5>Add Employee</h5></div>
             <h6 >Acadamic Details
             </h6>
             <br />
@@ -124,10 +131,10 @@
             </div>
             <br />
             <h6>
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+<%--                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>--%>
                     Employee Details 
-                </div>
+               
             </h6>
             <hr />
             <br />
@@ -235,7 +242,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-cloud-upload"></i></span>
+                    <%--<span class="input-group-addon"><i class="glyphicon glyphicon-cloud-upload"></i></span>--%>
                     <asp:FileUpload ID="FileUploadprofile" runat="server" CssClass="form-control" Height="100px" Width="600px" align="center" />
                 </div>
             </div>
@@ -243,33 +250,33 @@
             <h6>Login Details</h6>
             <hr />
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <asp:Label ID="lblusername" runat="server" Text="User Name"></asp:Label>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <asp:Label ID="lblpassword" runat="server" Text="Password"></asp:Label>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <asp:Label ID="lblretypepwd" runat="server" Text="Re-Type Password"></asp:Label>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <asp:TextBox ID="txtusername" runat="server" CssClass="form-control" Height="28px" Width="250px" Font-Size="10px"></asp:TextBox>
+                       <%-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>--%>
+                        <asp:TextBox ID="txtusername" runat="server" CssClass="form-control" Height="28px" Width="200px" Font-Size="10px"></asp:TextBox>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="input-group">
+                        <%--<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>--%>
+                        <asp:TextBox ID="txtpassword" runat="server" CssClass="form-control" Height="28px" Width="200px" Font-Size="10px"></asp:TextBox>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                        <asp:TextBox ID="txtpassword" runat="server" CssClass="form-control" Height="28px" Width="250px" Font-Size="10px"></asp:TextBox>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                        <asp:TextBox ID="txtretypepwd" runat="server" CssClass="form-control" Height="28px" Width="250px" Font-Size="10px"></asp:TextBox>
+                        <asp:TextBox ID="txtretypepwd" runat="server" CssClass="form-control" Height="28px" Width="200px" Font-Size="10px"></asp:TextBox>
                     </div>
                 </div>
             </div>
@@ -291,14 +298,14 @@
                 <div class="col-md-3">
                     <div class="input-group">
                         <i class="fa fa-facebook-official"></i>
-                        <asp:TextBox ID="txtfacebook" runat="server" CssClass="form-control" Height="28px" Width="250px" Font-Size="10px"></asp:TextBox>
+                        <asp:TextBox ID="txtfacebook" runat="server" CssClass="form-control" Height="28px" Width="200px" Font-Size="10px"></asp:TextBox>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <asp:TextBox ID="txttwitter" runat="server" CssClass="form-control" Height="28px" Width="250px" Font-Size="10px"></asp:TextBox>
+                    <asp:TextBox ID="txttwitter" runat="server" CssClass="form-control" Height="28px" Width="200px" Font-Size="10px"></asp:TextBox>
                 </div>
                 <div class="col-md-3">
-                    <asp:TextBox ID="txtlinkedin" runat="server" CssClass="form-control" Height="28px" Width="250px" Font-Size="10px"></asp:TextBox>
+                    <asp:TextBox ID="txtlinkedin" runat="server" CssClass="form-control" Height="28px" Width="200px" Font-Size="10px"></asp:TextBox>
                 </div>
             </div>
             <h6>Bank Details</h6>
@@ -322,13 +329,13 @@
             </div>
             <div class="row">
                 <div class="col-md-3">
-                    <asp:TextBox ID="txtbankname" runat="server" CssClass="form-control" Height="28px" Width="250px" Font-Size="10px"></asp:TextBox>
+                    <asp:TextBox ID="txtbankname" runat="server" CssClass="form-control" Height="28px" Width="200px" Font-Size="10px"></asp:TextBox>
                 </div>
                 <div class="col-md-3">
-                    <asp:TextBox ID="txtholdername" runat="server" CssClass="form-control" Height="28px" Width="250px" Font-Size="10px"></asp:TextBox>
+                    <asp:TextBox ID="txtholdername" runat="server" CssClass="form-control" Height="28px" Width="200px" Font-Size="10px"></asp:TextBox>
                 </div>
                 <div class="col-md-3">
-                    <asp:TextBox ID="txtbankbranch" runat="server" CssClass="form-control" Height="28px" Width="250px" Font-Size="10px"></asp:TextBox>
+                    <asp:TextBox ID="txtbankbranch" runat="server" CssClass="form-control" Height="28px" Width="200px" Font-Size="10px"></asp:TextBox>
                 </div>
             </div>
             <br />
@@ -348,13 +355,13 @@
             </div>
             <div class="row">
                 <div class="col-md-3">
-                    <asp:TextBox ID="txtbankaddress" runat="server" CssClass="form-control " Height="28px" Width="250px" Font-Size="10px"></asp:TextBox>
+                    <asp:TextBox ID="txtbankaddress" runat="server" CssClass="form-control " Height="28px" Width="200px" Font-Size="10px"></asp:TextBox>
                 </div>
                 <div class="col-md-3">
-                    <asp:TextBox ID="txtifsccode" runat="server" CssClass="form-control " Height="28px" Width="250px" Font-Size="10px"></asp:TextBox>
+                    <asp:TextBox ID="txtifsccode" runat="server" CssClass="form-control " Height="28px" Width="200px" Font-Size="10px"></asp:TextBox>
                 </div>
                 <div class="col-md-3">
-                    <asp:TextBox ID="txtaccountno" runat="server" CssClass="form-control " Height="28px" Width="250px" Font-Size="10px"></asp:TextBox>
+                    <asp:TextBox ID="txtaccountno" runat="server" CssClass="form-control " Height="28px" Width="200px" Font-Size="10px"></asp:TextBox>
                 </div>
             </div>
             <br />

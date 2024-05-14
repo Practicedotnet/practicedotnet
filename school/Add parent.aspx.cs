@@ -45,7 +45,7 @@ namespace school
             //cmd.Parameters.AddWithValue("@ProfilePic", "image");
              cmd.ExecuteNonQuery(); 
 
-               Response.Write("Student registeration Successfully!!!thank you");
+                Response.Write("Student registeration Successfully!!!thank you");
 
                 conn.Close();
             
@@ -56,6 +56,5 @@ namespace school
             Response.Redirect("~/Add parent.aspx");
         }
 
-        
     }
 }

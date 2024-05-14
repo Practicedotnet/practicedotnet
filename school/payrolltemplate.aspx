@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+  <%--  <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>--%>
     <style>
         .container {
             width: 750px;
@@ -14,6 +14,7 @@
             margin-left: 40px;
             box-shadow: 0px 0px 5px 0px rgba(252, 250, 250, 0.23);
             font-size: 12px;
+            background-color:white;
         }
 
         .container1 {
@@ -51,11 +52,18 @@
 
         h6 {
             color: gold;
+            font-size:18px;
+        }
+        h5{
+             font-size:large;
+                       color:white;
+                       padding-left:5px;
         }
     </style>
     <main style="margin-top: 58px;">
         <div class="container">
-            <h6>Payroll</h6>
+            <div class="row" style="background-color:cornflowerblue">
+            <h5>Payroll</h5></div>
             <div class="row">
                 <div class="col-md-2">
                     <asp:Label ID="lbltemplatelist" runat="server" Text="Template List"></asp:Label>

@@ -229,6 +229,7 @@
     <Content Include="createhostel.aspx" />
     <Content Include="createroom.aspx" />
     <Content Include="createsubject.aspx" />
+    <Content Include="Dashboard.aspx" />
     <Content Include="deactivateaccount.aspx" />
     <Content Include="deactivatereason.aspx" />
     <Content Include="deactiveaccount.aspx" />
@@ -253,6 +254,7 @@
     <Content Include="site2masterpage.aspx" />
     <Content Include="studentidcardgenerator.aspx" />
     <Content Include="studentidtemplate.aspx" />
+    <Content Include="test.aspx" />
     <Content Include="TEST1.aspx" />
     <Content Include="uploadcontent.aspx" />
     <Content Include="Web.config" />
@@ -386,6 +388,13 @@
     </Compile>
     <Compile Include="Creative_Tim.Master.designer.cs">
       <DependentUpon>Creative_Tim.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="deactivateaccount.aspx.cs">
       <DependentUpon>deactivateaccount.aspx</DependentUpon>
@@ -558,6 +567,13 @@
     </Compile>
     <Compile Include="studentidtemplate.aspx.designer.cs">
       <DependentUpon>studentidtemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
     </Compile>
     <Compile Include="test.Master.cs">
       <DependentUpon>test.Master</DependentUpon>

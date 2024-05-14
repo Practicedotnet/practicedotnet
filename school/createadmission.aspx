@@ -3,52 +3,39 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <%-- <nav class="navbar navbar-default">
+    <%--<nav class="navbar navbar-default">
         <div class="container">
 
             <a href="#">Create Admission </a>
 
-        </div>--%>
-   <%-- </nav>--%>
+        </div>
+    </nav>--%>
     <style>
         .container {
             width: auto;
             height: auto;
-            margin-top: 0px;
+            margin-top: 10px;
             border: solid 0px;
             border-color: lightgrey;
-             margin-left: 20px;
-            margin-right: 20px;
+            margin-left: 1px;
             box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
             font-size: 10px;
-        }
-          .container1 {
-            width: auto;
-            height: 100px;
-            margin-top: 0px;
-            border: solid 0px;
-            border-color: lightgrey;
-             margin-left: 20px;
-            margin-right: 20px;
-            box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
-            font-size: 15px;
+            background-color:white;
         }
         /*a{
           width:auto;
           height:0px;
        }*/
-        h6 {
-            color: gold;
-            /*/*font-size: 15px;*/ */
-        }
-        h5
-        {
+        h5{
             font-size:large;
-            color:white;
-            background-color:cornflowerblue;
-            height:50px;
-           
+                       color:white;
+                       /*background-color:cornflowerblue;*/
         }
+        h6{
+            color:gold;
+            font-size:18px;
+        }
+
         /*school-icon-heading {0..
             font-size: 24px;
         }*/
@@ -69,11 +56,13 @@
             font-size: 10px;
         }*/
     </style>
-    <main style="margin-top: 0px;">
+    <main style="margin-top: 10px;">
 
-        <div class="container1">
-                <h5>Select Ground</h5>
-                       <div class="row">      
+        <div class="container">
+            <div class="row" style="background-color: cornflowerblue; height:40px; padding:10px" >
+                <h5>Create Admission</h5></div>
+            <hr />
+            <div class="row">      
                 <div class="col-md-2">
                     <asp:Label ID="lblbranch" runat="server" Text="Branch"></asp:Label>
                 </div>
@@ -83,16 +72,9 @@
                         <asp:ListItem>test</asp:ListItem>
                     </asp:DropDownList>
                 </div>
-                 <div class="col-md-4">
-                     <asp:Button ID="bsearch" runat="server" CssClass="btn btn-success" Text="filter"/>
-                     </div>
-            </div>
             </div>
             <br />
-         <div class="container">
-             <div class="row">
-             <h5>Student Admission</h5>
-                              </div>
+        
             <div class="row">
                 <div class="col-md-3">
                     <asp:Label ID="lblacademicyear" runat="server" Text="Academic Year"></asp:Label>
