@@ -31,6 +31,15 @@ namespace school {
         protected global::System.Web.UI.WebControls.Button btncreatesubject;
         
         /// <summary>
+        /// divcreate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divcreate;
+        
+        /// <summary>
         /// lblbranch control.
         /// </summary>
         /// <remarks>
@@ -128,5 +137,14 @@ namespace school {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnsave;
+        
+        /// <summary>
+        /// divlist control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divlist;
     }
 }

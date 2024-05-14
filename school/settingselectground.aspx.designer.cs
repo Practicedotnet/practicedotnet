@@ -40,6 +40,15 @@ namespace school {
         protected global::System.Web.UI.WebControls.Button btnfilter;
         
         /// <summary>
+        /// divfilter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divfilter;
+        
+        /// <summary>
         /// lbltitle control.
         /// </summary>
         /// <remarks>
@@ -463,12 +472,12 @@ namespace school {
         protected global::System.Web.UI.WebControls.TextBox txtinstagram;
         
         /// <summary>
-        /// Button1 control.
+        /// btnsave control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnsave;
     }
 }

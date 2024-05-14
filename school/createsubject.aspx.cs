@@ -13,5 +13,20 @@ namespace school
         {
 
         }
+
+        protected void btnsubjectlist_Click(object sender, EventArgs e)
+        {
+
+            divlist.Visible = true;
+            divcreate.Visible = false;
+
+        }
+
+        protected void btncreatesubject_Click(object sender, EventArgs e)
+        {
+            divlist.Visible = false;
+            divcreate.Visible = true;
+
+        }
     }
 }

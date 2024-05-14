@@ -13,5 +13,10 @@ namespace school
         {
 
         }
+
+        protected void btnfilter_Click(object sender, EventArgs e)
+        {
+            divfilter.Visible = true;
+        }
     }
 }

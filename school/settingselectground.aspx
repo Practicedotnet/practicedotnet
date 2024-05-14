@@ -66,12 +66,13 @@
                 </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Button ID="btnfilter" runat="server" Text="filter" CssClass="form-control" Height="28px" Width="80px" Font-Size="10px" />
+                    <asp:Button ID="btnfilter" runat="server" Text="filter" CssClass="form-control" Height="28px" Width="80px" Font-Size="10px" OnClick="btnfilter_Click" />
                 </div>
             </div>
             <br />
             <br />
             <br />
+            <div id="divfilter" runat="server" visible="false">
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
@@ -361,11 +362,11 @@
             <div class="row">
                 <div class="col-md-6"></div>
                 <div class="col-md-2">
-                    <asp:Button ID="Button1" runat="server" Text="Save" CssClass="form-control" Height="28px" Width="80px" Font-Size="10px" />
+                    <asp:Button ID="btnsave" runat="server" Text="Save" CssClass="form-control" Height="28px" Width="80px" Font-Size="10px" />
                 </div>
             </div>
             <br />
-            <br />
+            <br /></div>
         </div>
     </main>
 </asp:Content>
