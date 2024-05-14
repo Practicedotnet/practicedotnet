@@ -148,12 +148,12 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <%--<div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>--%>
                         <asp:TextBox ID="txtname" runat="server" CssClass="form-control" Height="28px" Width="250px" Font-Size="10px"></asp:TextBox>
                     </div>
-                </div>
-                <br />
+               <%-- </div>--%>
+              <%--  <br />--%>
                 <div class="col-md-4">
                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control" Height="28px" Width="250px" Font-Size="10px">
                         <asp:ListItem>select</asp:ListItem>
