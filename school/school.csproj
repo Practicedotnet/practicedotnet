@@ -229,6 +229,7 @@
     <Content Include="createhostel.aspx" />
     <Content Include="createroom.aspx" />
     <Content Include="createsubject.aspx" />
+    <Content Include="Dashboard.aspx" />
     <Content Include="deactivateaccount.aspx" />
     <Content Include="deactivatereason.aspx" />
     <Content Include="deactiveaccount.aspx" />
@@ -385,6 +386,13 @@
     </Compile>
     <Compile Include="Creative_Tim.Master.designer.cs">
       <DependentUpon>Creative_Tim.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="deactivateaccount.aspx.cs">
       <DependentUpon>deactivateaccount.aspx</DependentUpon>

@@ -26,12 +26,12 @@
           width:auto;
           height:0px;
        }*/
-        h4{
+        h5{
             font-size:large;
                        color:white;
                        /*background-color:cornflowerblue;*/
         }
-        h5{
+        h6{
             color:gold;
             font-size:18px;
         }
@@ -59,8 +59,8 @@
     <main style="margin-top: 10px;">
 
         <div class="container">
-            <div class="row" style="background-color: cornflowerblue" >
-                <h4>academic details</h4></div>
+            <div class="row" style="background-color: cornflowerblue; height:40px; padding:10px" >
+                <h5>Create Admission</h5></div>
             <hr />
             <div class="row">      
                 <div class="col-md-2">
@@ -146,7 +146,7 @@
             </div>
             <br />
             <br />
-            <h5>student details</h5>
+            <h6>student details</h6>
             <hr />
             <div class="row">
                 <div class="col-md-3">
@@ -292,7 +292,7 @@
             </div>
             <br />
             <br />
-            <h5>Login Details</h5>
+            <h6>Login Details</h6>
             <div class="row">
                 <div class="col-md-5">
                     <asp:Label ID="lblusername" runat="server" Text="User Name"></asp:Label>
@@ -317,7 +317,7 @@
             </div>
             <br />
             <br />
-            <h5>Gaurdian Details</h5>
+            <h6>Gaurdian Details</h6>
             <hr />
             <div class="row">
                 <div class="col-md-1">
@@ -435,7 +435,7 @@
                 </div>
             </div>
             <br />
-            <h5>Transportation Details</h5>
+            <h6>Transportation Details</h6>
             <hr />
             <div class="row">
                 <div class="col-md-5">
@@ -453,7 +453,7 @@
                     <asp:TextBox ID="txtvehicleno" runat="server" CssClass="form-control" Height="25px" Width="200px"></asp:TextBox>
                 </div>
             </div>
-            <h5>Hostel Details</h5>
+            <h6>Hostel Details</h6>
             <hr />
             <div class="row">
                 <div class="col-md-5">
@@ -471,7 +471,7 @@
                     <asp:TextBox ID="txtroomname" runat="server" CssClass="form-control" Height="25px" Width="200px"></asp:TextBox>
                 </div>
             </div>
-            <h5>Previous School Details</h5>
+            <h6>Previous School Details</h6>
             <hr />
             <div class="row">
                 <div class="col-md-5">

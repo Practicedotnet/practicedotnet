@@ -44,7 +44,9 @@
         }
 
         h6 {
-            color: gold;
+            font-size:large;
+            margin-left:10px;
+            color: white;
         }
     </style>
     <main style="margin-top: 10px">

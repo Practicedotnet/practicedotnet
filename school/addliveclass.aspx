@@ -6,7 +6,7 @@
     <style>
         .container {
             width: 700px;
-            height: 660px;
+            height: 750px;
             margin-top: 70px;
             border: solid 1px;
             border-color: lightgrey;
@@ -17,7 +17,9 @@
         }
 
         h5 {
-            color: gold;
+           font-size:large;
+                       color:white;
+                       padding-left:5px;
         }
     </style>
     <main style="margin-top: 65px">

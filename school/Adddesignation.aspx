@@ -5,25 +5,26 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
         .container {
-            width: 300px;
-            height: 230px;
+            width: 340px;
+            height: 270px;
             margin-top: auto;
-            border: solid;
+            border: solid 0px;
             border-color: lightgrey;
             margin-left: 40px;
             box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
             font-size: 10px;
+            background-color: white;
         }
 
         .container1 {
-            width: 300px;
-            height: 230px;
+            width: 340px;
+            height: 270px;
             margin-top: auto;
-            border: solid;
+            border: solid 0px;
             border-color: lightgrey;
-            margin-left: 300px;
+            margin-left: 370px;
             box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
-            textbox
+            background-color: white;
         }
 
         .textbox {
@@ -36,7 +37,9 @@
         }
 
         h5 {
-            color: gold;
+            font-size: large;
+            color: white;
+            padding-left: 5px;
         }
     </style>
     <main style="margin-top: 65px">
@@ -44,14 +47,13 @@
         <div class="row">
             <div class="col-sm-1">
                 <div class="container">
+                    <div class="row" style="background-color: cornflowerblue">
+                        <h5>Add Designation</h5>
+                    </div><br />
                     <div class="row">
-                        <header>
-                            <h5>Add Designation</h5>
-                            <hr />
 
-                        </header>
                         <div class="row">
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <asp:Label ID="lblbranch" runat="server" Text="Branch:"></asp:Label>
                             </div>
                         </div>
@@ -66,7 +68,9 @@
                     </div>
                     <br />
                     <div class="row">
-                        <asp:Label ID="lbldesignationname" runat="server" Text="Designation Name"></asp:Label>
+                        <div class="col-md-3">
+                            <asp:Label ID="lbldesignationname" runat="server" Text="Designation Name"></asp:Label>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-10">
@@ -85,6 +89,9 @@
             </div>
             <div class="col-sm-1">
                 <div class="container1">
+                    <div class="row" style="background-color: cornflowerblue; margin-left: 0px; margin-right">
+                        <h5>Designation List</h5>
+                    </div>
                     <div class="row">
                         <asp:GridView runat="server"></asp:GridView>
                     </div>

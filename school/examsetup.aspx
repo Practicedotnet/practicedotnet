@@ -13,17 +13,21 @@
             margin-left: 10px;
             box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
             font-size: 10px;
+            background-color:white;
         }
 
         h5 {
-            color: gold;
+            font-size:large;
+                       color:white;
+                       padding-left:5px;
         }
     </style>
     <main style="margin-top: 65px">
         <div class="container">
-            <br />
+            <div class="row" style="background-color: cornflowerblue; margin-top:auto" >
+            <h5>Exam Setup</h5></div><br />
             <div class="row">
-                <h5>Exam Setup</h5>
+               
                 <div class="col-md-8"></div>
                 <div class="col-md-2">
                     <asp:Button ID="btnexamlist" runat="server" Text="Exam list" Height="28px" Font-Size="10px" CssClass="form-control" />

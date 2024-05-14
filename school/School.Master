@@ -31,67 +31,61 @@
                     <DynamicMenuStyle VerticalPadding="2px" BackColor="White" CssClass="dropdown-menu"></DynamicMenuStyle>
                     <DynamicSelectedStyle BackColor="white" ForeColor="Black" BorderStyle="none" />
                     <Items>
-                        <asp:MenuItem Text="Dashboard" Value="Dashboard" NavigateUrl="~/Default2.aspx" ImageUrl="~/images/Status.png"></asp:MenuItem>
-                        <asp:MenuItem Text="Setting" Value="Setting" ImageUrl="~/images/mas1.png">
-                            <%--<asp:MenuItem Text="Customer Kyc" Value="CustomerKyc" NavigateUrl="~/CustomerKyc.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Companies" Value="CompaniesKyc" NavigateUrl="~/CompaniesKyc.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Departments" Value="Departments" NavigateUrl="~/Department.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Positions" Value="Positions" NavigateUrl="~/Positions.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Loan Products" Value="LoanProducts" NavigateUrl="~/Loanproduct1.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Branches" Value="Branches" NavigateUrl="~/Branches.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Locations" Value="Locations" NavigateUrl="~/Locations.aspx"></asp:MenuItem>--%>
+
+                        <asp:MenuItem Text="Dashboard" Value="Dashboard" NavigateUrl="~/Dashboard.aspx" ImageUrl="~/images/Status.png"></asp:MenuItem>
+                        <asp:MenuItem Text="Setting" Value="Setting" NavigateUrl="~/settingselectground.aspx" ImageUrl="~/images/mas1.png">
                         </asp:MenuItem>
-                        <asp:MenuItem Text="Create Admission" Value="Create Admission" ImageUrl="~/images/b25.png">
-                            <%--<asp:MenuItem Text="Company Approval" Value="CompanyApproval" NavigateUrl="~/Approval/CompaniesKyc_Approval.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Customer Kyc Approval" Value="CustomerKycApproval" NavigateUrl="~/CustomerApproval.aspx"></asp:MenuItem>--%>
+
+                        <asp:MenuItem Text="Create Admission" Value="Create Admission" NavigateUrl="~/createadmission.aspx" ImageUrl="~/images/b25.png">
                         </asp:MenuItem>
-                        <asp:MenuItem Text="Create Employee" Value="Create Employee" ImageUrl="~/images/tran.png">
-                           <%-- <asp:MenuItem Text="Loan Calculator" Value="LoanCalculator" NavigateUrl="~/LoanCalculator.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Request For Loan" Value="RequestForLoan" NavigateUrl="~/Transactions/Loan_Application.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Review" Value="Review" NavigateUrl="~/Transactions/LoanApplicationSummary.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Approve Or Sanction" Value="ApproveSanction" NavigateUrl="~/Transactions/LoanApprove.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Disburse" Value="Disburse" NavigateUrl="~/Transactions/LoanDisbursement.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Repayment" Value="Repayment" NavigateUrl="~/Transactions/Loan_Repayment.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Repayment Bulk Upload" Value="Repayment" NavigateUrl="BulkReceipts.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Receipt" Value="Receipt" NavigateUrl="~/Transactions/ReceiptIndividual.aspx"></asp:MenuItem>
-                            <asp:MenuItem NavigateUrl="~/Transactions/TransJournalGrid.aspx" Text="Journal Voucher" Value="Journal Voucher"></asp:MenuItem>
-                            <asp:MenuItem NavigateUrl="~/Transactions/journalBulk.aspx" Text="Journal Voucher Bulk Upload" Value="Journal Voucher Bulk Upload"></asp:MenuItem>
-                            <asp:MenuItem NavigateUrl="~/Transactions/EmployerReceipts.aspx" Text="Employer Receipt Collection" Value="EmployeReceiptCollection"></asp:MenuItem>--%>
+
+                        <asp:MenuItem Text="Create Employee" Value="Create Employee" NavigateUrl="~/empregistration.aspx" ImageUrl="~/images/tran.png">
                         </asp:MenuItem>
-                        <asp:MenuItem Text="Create Parent" Value="Create Parent" ImageUrl="~/images/f25.png">
-                           <%-- <asp:MenuItem Text="Chart Of Accounts" Value="ChartOfAccounts" NavigateUrl="~/Finance_and_Accounts/GeneralLedgerCreation.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Ledger Mapping" Value="LedgerMapping" NavigateUrl="~/Finance_and_Accounts/Ledger_Transcation_Mapping.aspx"></asp:MenuItem>--%>
+
+                        <asp:MenuItem Text="Create Parent" Value="Create Parent" NavigateUrl="~/Add parent.aspx" ImageUrl="~/images/f25.png">
                         </asp:MenuItem>
-                        <asp:MenuItem Text="Leave Request" Value="Leave Request" ImageUrl="~/images/rep2.png">
-                           <%-- <asp:MenuItem Text="Finance " Value="Finance ">
-                                <asp:MenuItem NavigateUrl="~/Reports/TrailBalance.aspx" Text="Trial Balance" Value="Trial Balance"></asp:MenuItem>
-                                <asp:MenuItem NavigateUrl="~/Reports/BalanceSheet.aspx" Text="Balance Sheet" Value="Balance Sheet"></asp:MenuItem>
-                                <asp:MenuItem NavigateUrl="~/Reports/PandLSheet.aspx" Text="Profit &amp; Loss Account" Value="Profit &amp; Loss Account"></asp:MenuItem>
-                                <asp:MenuItem NavigateUrl="~/Reports/LedgerReport.aspx" Text="Ledger Report" Value="Ledger Report"></asp:MenuItem>--%>
+
+                        <asp:MenuItem Text="Create Id Card" Value="createidcard" NavigateUrl="~/idcardtemplatestd.aspx" ImageUrl="~/images/rep2.png">
                             </asp:MenuItem>
-                           <%-- <asp:MenuItem Text="KFS" Value="KFS" NavigateUrl="~/Reports/KFS_Report.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Contract" Value="Contract" NavigateUrl="~/Reports/ContractSign_Report.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Repayment Report" Value="RepaymentReport" NavigateUrl="~/Reports/Repay_Report.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Ledger Report" Value="LedgerReport" NavigateUrl="~/Reports/Transcations_Report.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Deduction Schedule" Value="DeductionSchedule" NavigateUrl="~/Reports/Deduction_Schedule.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Loans Paid Out Report" Value="LoanPaidOutReport" NavigateUrl="~/Reports/Loans_paid_out_report.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Early Repayment Schedule" Value="LoanPaidOutReport" NavigateUrl="~/Reports/Loan_repayment_schedule.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Loans Over Due Report" Value="LoansOverDue" NavigateUrl="~/Reports/Overdue_Report.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Loans Age Analysis And Provisioning" Value="LoansAgeAnalysisAndProvisioning" NavigateUrl="~/Reports/Overdue_Analysis_Report.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Deferred Interest on Loans" Value="DeferredInterestonLoan" NavigateUrl="Reports/DeferredInterestonloans.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Interest Rate Opportionment Report" Value="InterestRateOpportionmentReport" NavigateUrl="Reports/InterestRate.aspx"></asp:MenuItem>
-                            <asp:MenuItem NavigateUrl="~/Reports/LoanBook.aspx" Text="Loan Book Report" Value="Loan Book Report"></asp:MenuItem>
-                            <asp:MenuItem NavigateUrl="~/Reports/ClientStatement.aspx" Text="Client Statement Report" Value="ClientStatementReport"></asp:MenuItem>
-                            <asp:MenuItem NavigateUrl="~/Reports/CompanyStatement.aspx" Text="Company Statement" Value="CompanyStatement"></asp:MenuItem>
-                            <asp:MenuItem NavigateUrl="~/Reports/CalculatedTransactionReport.aspx" Text="Calculated Transaction Report" Value="Calculated Transaction Report"></asp:MenuItem>
-                            <asp:MenuItem NavigateUrl="~/Reports/LoanStatusReport.aspx" Text="Loan Status Report" Value="Loan Status Report"></asp:MenuItem>
-                            <asp:MenuItem NavigateUrl="~/Reports/LargestLoanReport.aspx" Text="Largest Loan Report" Value="Largest Loan Report"></asp:MenuItem>
-                        </asp:MenuItem>--%>
-                        <asp:MenuItem Text="Control Classes" Value="Control Classes" ImageUrl="~/images/snn.png">
-                          <%--  <asp:MenuItem Text="Roles" Value="Roles" NavigateUrl="~/Securities/UserRoles.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="User Creation" Value="UserCreation" NavigateUrl="~/Securities/UserCreation.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Form Access Rights" Value="FormAccessRights" NavigateUrl="~/Securities/AccessRights.aspx"></asp:MenuItem>--%>
+
+                        <asp:MenuItem Text="Add Department" Value="Adddepartment" NavigateUrl="~/add department.aspx" ImageUrl="~/images/snn.png">
                         </asp:MenuItem>
+
+                         <asp:MenuItem Text="Add Designation" Value="Adddesignation" NavigateUrl="~/Adddesignation.aspx" ImageUrl="~/images/f25.png">
+                            </asp:MenuItem>
+
+                         <asp:MenuItem Text="Payroll" Value="payroll" NavigateUrl="~/payrolltemplate.aspx" ImageUrl="~/images/f25.png">
+                            </asp:MenuItem>
+
+                         <asp:MenuItem Text="Leave Requests" Value="leaverequest" NavigateUrl="~/leaverequest.aspx" ImageUrl="~/images/f25.png">
+                            </asp:MenuItem>
+
+                         <asp:MenuItem Text="Create Class" Value="Create class" NavigateUrl="~/controlclasses.aspx" ImageUrl="~/images/f25.png">
+                            </asp:MenuItem>
+
+                         <asp:MenuItem Text="Create Subject" Value="Create subject" NavigateUrl="~/createsubject.aspx" ImageUrl="~/images/f25.png">
+                            </asp:MenuItem>
+
+                         <asp:MenuItem Text="Assign Subject" Value="Create subject" NavigateUrl="~/assignsubject.aspx" ImageUrl="~/images/f25.png">
+                            </asp:MenuItem>
+
+                         <asp:MenuItem Text="Add Live Class" Value="addliveclass" NavigateUrl="~/addliveclass.aspx" ImageUrl="~/images/f25.png">
+                            </asp:MenuItem>
+                        <asp:MenuItem Text="Online Exam" Value="onlineexam" NavigateUrl="~/onlineexam.aspx" ImageUrl="~/images/f25.png">
+                            </asp:MenuItem>
+                        <asp:MenuItem Text="Exam Setup" Value="examsetup" NavigateUrl="~/examsetup.aspx" ImageUrl="~/images/f25.png">
+                            </asp:MenuItem>
+                        <asp:MenuItem Text="Issue Admit Card" Value="admitcard" NavigateUrl="~/admitcardtemplate.aspx" ImageUrl="~/images/f25.png">
+                            </asp:MenuItem>
+                        <asp:MenuItem Text="Awards" Value="Awards" NavigateUrl="~/Award.aspx" ImageUrl="~/images/f25.png">
+                            </asp:MenuItem>
+                        <asp:MenuItem Text="Create Hostel" Value="createhostel" NavigateUrl="~/createhostel.aspx" ImageUrl="~/images/f25.png">
+                            </asp:MenuItem>
+                      <%--  <asp:MenuItem Text="Create Room" Value="createroom" NavigateUrl="~/createhostel.aspx" ImageUrl="~/images/f25.png">
+                            </asp:MenuItem>
+                   --%>
+
+  
                     </Items>
                     <StaticHoverStyle BackColor="LightGray" BorderColor="white" />
                     <StaticMenuItemStyle BackColor="white" Width="180px" Font-Size="Medium" />

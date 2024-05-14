@@ -6,13 +6,14 @@
     <style>
         .container {
             width: 700px;
-            height: 370px;
+            height: 400px;
             margin-top: 70px;
             border: solid 1px;
             border-color: lightgrey;
             margin-left: 10px;
             box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
             font-size: 10px;
+            background-color:white;
         }
 
         .container1 {
@@ -24,9 +25,12 @@
             margin-left: 10px;
             box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
             font-size: 10px;
+            background-color:white;
         }
         h5{
-            color:gold;
+            color:white;
+            font-size:large;
+            margin-left:10px;
         }
     </style>
     <main style="margin-top: 65px">
