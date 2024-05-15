@@ -43,11 +43,10 @@ namespace school
                 cmd.Parameters.AddWithValue("@Twitter", txttwitter.Text);
                 cmd.Parameters.AddWithValue("@LinkedIn", txtlinkedin.Text);
             //cmd.Parameters.AddWithValue("@ProfilePic", "image");
-             cmd.ExecuteNonQuery(); 
+             cmd.ExecuteNonQuery();
 
-                Response.Write("Student registeration Successfully!!!thank you");
-
-                conn.Close();
+            ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "myalert", "alert('saved successfully');", true);
+            conn.Close();
             
         }
 
