@@ -221,6 +221,7 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="bin\school.dll" />
     <Content Include="bin\school.pdb" />
+    <Content Include="branch.aspx" />
     <Content Include="cirtificatetemplate.aspx" />
     <Content Include="Compose.aspx" />
     <Content Include="controlclasses.aspx" />
@@ -325,6 +326,13 @@
     </Compile>
     <Compile Include="Award.aspx.designer.cs">
       <DependentUpon>Award.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="branch.aspx.cs">
+      <DependentUpon>branch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="branch.aspx.designer.cs">
+      <DependentUpon>branch.aspx</DependentUpon>
     </Compile>
     <Compile Include="cirtificatetemplate.aspx.cs">
       <DependentUpon>cirtificatetemplate.aspx</DependentUpon>
