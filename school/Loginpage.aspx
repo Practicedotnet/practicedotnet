@@ -25,7 +25,7 @@
         }
 
                 body {
-                    background-color:cornflowerblue;
+                    background-image: url(images\pexels-tima-miroshnichenko-5428267.jpg);
                     background-size: cover;
                     background-position: center;
                     height: 100vh;
@@ -54,8 +54,7 @@
             <br />
             <div class="text-center mt-3">
                 <a href="forgotpassword.aspx">Forgot Password?</a> | <a href="register.aspx">Register</a>
-                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-            </div>
+              </div>
         
     </div>
    

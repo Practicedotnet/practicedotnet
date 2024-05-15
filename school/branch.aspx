@@ -39,7 +39,7 @@
 
         <div class="container">
             <div class="row" style="background-color: cornflowerblue">
-                <h5>Subject</h5>
+                <h5>Branch</h5>
             </div>
             <br />
             <br />
@@ -138,7 +138,7 @@
             <div class="row">
                 <div class="col-md-6"></div>
                 <div class="col-md-3">
-                    <asp:Button ID="btnsave" runat="server" Text="Save" CssClass="form-control" Height="25px" Width="100px" Font-Size="10px" />
+                    <asp:Button ID="btnsave" runat="server" Text="Save" CssClass="form-control" Height="25px" Width="100px" Font-Size="10px" OnClick="btnsave_Click" />
                 </div>
             </div>
 

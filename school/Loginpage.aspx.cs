@@ -33,7 +33,7 @@ namespace school
             conn.Close();
             if (dt.Rows.Count > 0)
             {
-                Response.Redirect("Add parent.aspx");
+                Response.Redirect("Dashboard.aspx");
             }
             Label1.Text = "Your username and word is incorrect";
                 Label1.ForeColor = System.Drawing.Color.Red;
