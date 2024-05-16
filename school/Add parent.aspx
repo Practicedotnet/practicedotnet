@@ -2,13 +2,41 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
+     <script type="text/javascript">
+       function validateNumbersOnly(e) {
+           var unicode = e.charCode ? e.charCode : e.keyCode;
+           var parts = e.srcElement.value.split('.');
+           if (parts.length > 1 && unicode == 46)
+               return false;
+           if ((unicode == 8) || (unicode == 9) || (unicode == 45) || (unicode == 46) || (unicode > 47 && unicode < 58)) {
+               return true;
+
+           }
+           else {
+               window.alert("This field accepts only Numbers ");
+               return false;
+           }
+          }
+           function ValidateAlpha(evt) {
+         var charCode = (evt.which) ? evt.which : evt.keyCode;
+         if ((charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 123) && charCode != 32) {
+            
+               window.alert("This field accepts only Alphabets");
+             return false;
+           
+         }
+          else {
+            return true;
+           }
+     }
+    </script>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
         .container {
             width: auto;
-            height: 940px; 
+            height: 960px; 
             margin-top: 0px;
             border: solid 0px;
             border-color: lightgrey;
@@ -30,6 +58,8 @@
         }
     </style>
     <main style="margin-top: 0px;">
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
         <div class="container">
             <div class="row" style="background-color:cornflowerblue">
                 <h4>Add Parent</h4>
@@ -203,37 +233,7 @@
                 </div> 
                 <asp:Button ID="btnRefresh" runat="server" Text="Refresh" CssClass="btn btn-success" Height="28px" Width="80px" Font-Size="15px" OnClick="btnRefresh_Click" />
             </div>
-             <div class="modal" id="myModal" runat="server">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Success</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-
-                <!-- Modal body -->
-                <div class="modal-body">
-                    Your data is successfully saved.
-                </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-                 </div>
-            </div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-           <script>
-        function btnsave_Click() {
-           
-            $('#myModal').modal('show');
-        }
-    </script>
+           </div>
         
     </main>
 </asp:Content>

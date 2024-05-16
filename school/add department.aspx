@@ -92,9 +92,29 @@
             <div class="col-sm-2">
                 <div class="container1">
                       <div class="row" style="background-color: cornflowerblue; margin-right:0px; margin-left:0px">
-                     <h5>Department List</h5></div>
+                     <h5>Department List  </h5></div>
+                    <div>
+                         <asp:GridView runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal" Height="34px" Width="319px">
+                            <Columns>
+                                <asp:BoundField DataField="Did" HeaderText="Did" InsertVisible="False" ReadOnly="True" SortExpression="Did" Visible="false"/>
+                                <asp:BoundField DataField="Branch" HeaderText="Branch" SortExpression="Branch" />
+                                <asp:BoundField DataField="DepartmentName" HeaderText="DepartmentName" SortExpression="DepartmentName" />
+                                <asp:CommandField ShowEditButton="true" />  
+                                <asp:CommandField ShowDeleteButton="true" /> 
+                                </Columns>  
+                            <FooterStyle BackColor="White" ForeColor="#333333" />
+                            <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
+                            <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />
+                             <RowStyle BackColor="White" ForeColor="#333333" />
+                            <SelectedRowStyle BackColor="#339966" Font-Bold="True" ForeColor="White" />
+                            <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                            <SortedAscendingHeaderStyle BackColor="#487575" />
+                            <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                            <SortedDescendingHeaderStyle BackColor="#275353" />
+                        </asp:GridView>
+                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SchoolConnectionString %>" SelectCommand="SELECT * FROM [Designation]"></asp:SqlDataSource>
+                      </div>   
                     <div class="row">
-                        <asp:GridView runat="server"></asp:GridView>
                     </div>
                 </div>
             </div>
