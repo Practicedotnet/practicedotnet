@@ -505,7 +505,7 @@
                 <div class="col-md-4"></div>
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Button ID="btnsave" runat="server" Text="Save" CssClass="form-control" Font-Size="10px" />
+                    <asp:Button ID="btnsave" runat="server" Text="Save" CssClass="btn btn-success" Font-Size="10px" />
                 </div>
             </div>
         </div>

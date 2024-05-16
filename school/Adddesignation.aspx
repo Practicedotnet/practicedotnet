@@ -82,7 +82,7 @@
                     <div class="row">
                         <div class="col-md-8"></div>
                         <div class="col-md-4">
-                            <asp:Button runat="server" Text="Save" CssClass="form-control" Font-Size="10px" />
+                            <asp:Button runat="server" Text="Save" CssClass="btn btn-success" Font-Size="10px" />
                         </div>
                     </div>
                 </div>

@@ -179,7 +179,6 @@
     <Content Include="assets\js\plugins\perfect-scrollbar.min.js" />
     <Content Include="assets\js\plugins\smooth-scrollbar.min.js" />
     <Content Include="assets\js\plugins\world.js" />
-    <Content Include="assignsubject.aspx" />
     <Content Include="Award.aspx" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
@@ -312,13 +311,6 @@
     </Compile>
     <Compile Include="admitcardtemplate.aspx.designer.cs">
       <DependentUpon>admitcardtemplate.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="assignsubject.aspx.cs">
-      <DependentUpon>assignsubject.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="assignsubject.aspx.designer.cs">
-      <DependentUpon>assignsubject.aspx</DependentUpon>
     </Compile>
     <Compile Include="Award.aspx.cs">
       <DependentUpon>Award.aspx</DependentUpon>
