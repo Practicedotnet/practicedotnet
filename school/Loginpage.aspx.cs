@@ -35,8 +35,7 @@ namespace school
             {
                 Response.Redirect("Dashboard.aspx");
             }
-            Label1.Text = "Your username and word is incorrect";
-                Label1.ForeColor = System.Drawing.Color.Red;
+            
 
             }
 
