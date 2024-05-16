@@ -66,7 +66,7 @@
                          <asp:MenuItem Text="Create Subject" Value="Create subject" NavigateUrl="~/createsubject.aspx" ImageUrl="~/images/f25.png">
                             </asp:MenuItem>
 
-                         <asp:MenuItem Text="Assign Subject" Value="Create subject" NavigateUrl="~/assignsubject.aspx" ImageUrl="~/images/f25.png">
+                         <asp:MenuItem Text="Assign Subject" Value="Create subject" NavigateUrl="~/Assign_subject.aspx" ImageUrl="~/images/f25.png">
                             </asp:MenuItem>
 
                          <asp:MenuItem Text="Add Live Class" Value="addliveclass" NavigateUrl="~/addliveclass.aspx" ImageUrl="~/images/f25.png">
