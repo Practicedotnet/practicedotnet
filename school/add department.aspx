@@ -93,7 +93,7 @@
                 <div class="container1">
                       <div class="row" style="background-color: cornflowerblue; margin-right:0px; margin-left:0px">
                      <h5>Department List  </h5></div>
-                    <div>
+                  <%--  <div>
                          <asp:GridView runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal" Height="34px" Width="319px">
                             <Columns>
                                 <asp:BoundField DataField="Did" HeaderText="Did" InsertVisible="False" ReadOnly="True" SortExpression="Did" Visible="false"/>
@@ -113,7 +113,7 @@
                             <SortedDescendingHeaderStyle BackColor="#275353" />
                         </asp:GridView>
                          <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SchoolConnectionString %>" SelectCommand="SELECT * FROM [Designation]"></asp:SqlDataSource>
-                      </div>   
+                      </div>   --%>
                     <div class="row">
                     </div>
                 </div>
