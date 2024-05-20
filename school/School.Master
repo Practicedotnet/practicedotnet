@@ -12,10 +12,43 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-   
+   <style>
+       b{
+           color:blue;
+           font-size:34px;
+       }
+       /*.navbar {
+           background-image: url(F:\haritha\sclm\school\images\welcome.jpg );
+       }*/
+   </style>
 </head>
 <body>
     <form id="form1" runat="server">
+         <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header"> <img src="images/rislogo%20wthoutbg.png" width="170px" height="49px"  margin-top="10px"/>
+      <a class="navbar-brand" 
+          <img src="images/welcome.jpg" /> </a>
+    </div>
+    <ul class="nav navbar-nav">
+     <li><a href="#"></a></li>
+      <li><a href="#"><b>School Management System</b></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>                  
+        <li><a href="#"></a></li>
+      <li><a href="#">
+          <asp:Button ID="btnlogout" runat="server" Text="Log Out" CssClass="btn btn-danger" /></a></li>
+    </ul>
+   </div>
+   </nav>
+
         <div class="row">
             <div class="col-md-2">
                 <asp:Menu ID="menu_master" StaticMenuStyle-CssClass="nav navbar-nav" DynamicMenuStyle-CssClass="dropdown-menu"
@@ -32,32 +65,33 @@
                     <DynamicSelectedStyle BackColor="white" ForeColor="Black" BorderStyle="none" />
                     <Items>
 
+                      <%--  <asp:MenuItem Text="Create Room" Value="createroom" NavigateUrl="~/createhostel.aspx" ImageUrl="~/images/f25.png">
+                            </asp:MenuItem>
+                   --%>
+
+  
                         <asp:MenuItem Text="Dashboard" Value="Dashboard" NavigateUrl="~/Dashboard.aspx" ImageUrl="~/images/Status.png"></asp:MenuItem>
                         <asp:MenuItem Text="Setting" Value="Setting" NavigateUrl="~/settingselectground.aspx" ImageUrl="~/images/mas1.png">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Create Branch" Value="Create branch" NavigateUrl="~/branch.aspx" ImageUrl="~/images/f25.png">
                         </asp:MenuItem>
 
                         <asp:MenuItem Text="Create Admission" Value="Create Admission" NavigateUrl="~/createadmission.aspx" ImageUrl="~/images/b25.png">
                         </asp:MenuItem>
 
-                        <asp:MenuItem Text="Create Employee" Value="Create Employee" NavigateUrl="~/empregistration.aspx" ImageUrl="~/images/tran.png">
+                        <asp:MenuItem Text="Employee" Value="Employee"  ImageUrl="~/images/tran.png">
+                            <asp:MenuItem Text="Add Employee" Value="Add Employee" NavigateUrl="~/empregistration.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Add Designation" Value="Add Designation" NavigateUrl="~/Adddesignation.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Add Department" Value="Add Department" NavigateUrl="~/add department.aspx"></asp:MenuItem>
                         </asp:MenuItem>
 
                         <asp:MenuItem Text="Create Parent" Value="Create Parent" NavigateUrl="~/Add parent.aspx" ImageUrl="~/images/f25.png">
                         </asp:MenuItem>
 
-                        <asp:MenuItem Text="Create Id Card" Value="createidcard" NavigateUrl="~/idcardtemplatestd.aspx" ImageUrl="~/images/rep2.png">
-                            </asp:MenuItem>
-
-                        <asp:MenuItem Text="Add Department" Value="Adddepartment" NavigateUrl="~/add department.aspx" ImageUrl="~/images/snn.png">
-                        </asp:MenuItem>
-
-                         <asp:MenuItem Text="Add Designation" Value="Adddesignation" NavigateUrl="~/Adddesignation.aspx" ImageUrl="~/images/f25.png">
-                            </asp:MenuItem>
-
-                         <asp:MenuItem Text="Payroll" Value="payroll" NavigateUrl="~/payrolltemplate.aspx" ImageUrl="~/images/f25.png">
-                            </asp:MenuItem>
-
-                         <asp:MenuItem Text="Leave Requests" Value="leaverequest" NavigateUrl="~/leaverequest.aspx" ImageUrl="~/images/f25.png">
+                        <asp:MenuItem Text="Human Resource" Value="humaresource"  ImageUrl="~/images/f25.png">
+                            <asp:MenuItem Text="Payroll" Value="Payroll" NavigateUrl="~/payrolltemplate.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Leave Requests" Value="Leave Requests" NavigateUrl="~/leaverequest.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Awards" Value="Awards" NavigateUrl="~/Award.aspx"></asp:MenuItem>
                             </asp:MenuItem>
 
                          <asp:MenuItem Text="Create Class" Value="Create class" NavigateUrl="~/controlclasses.aspx" ImageUrl="~/images/f25.png">
@@ -75,15 +109,12 @@
                             </asp:MenuItem>
                         <asp:MenuItem Text="Exam Setup" Value="examsetup" NavigateUrl="~/examsetup.aspx" ImageUrl="~/images/f25.png">
                             </asp:MenuItem>
-                        <asp:MenuItem Text="Issue Admit Card" Value="admitcard" NavigateUrl="~/admitcardtemplate.aspx" ImageUrl="~/images/f25.png">
-                            </asp:MenuItem>
-                        <asp:MenuItem Text="Awards" Value="Awards" NavigateUrl="~/Award.aspx" ImageUrl="~/images/f25.png">
+                        <asp:MenuItem Text="Card Management" Value="Card Management"  ImageUrl="~/images/f25.png">
+                            <asp:MenuItem Text="ID Card Generator" Value="ID Card Generator" NavigateUrl="~/idcardtemplatestd.aspx" ></asp:MenuItem>
+                            <asp:MenuItem Text="Admmit Card" Value="Admmit Card" NavigateUrl="~/admitcardtemplate.aspx"></asp:MenuItem>
                             </asp:MenuItem>
                         <asp:MenuItem Text="Create Hostel" Value="createhostel" NavigateUrl="~/createhostel.aspx" ImageUrl="~/images/f25.png">
                             </asp:MenuItem>
-                      <%--  <asp:MenuItem Text="Create Room" Value="createroom" NavigateUrl="~/createhostel.aspx" ImageUrl="~/images/f25.png">
-                            </asp:MenuItem>
-                   --%>
 
   
                     </Items>

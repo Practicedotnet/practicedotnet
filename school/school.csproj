@@ -243,6 +243,8 @@
     <Content Include="examsetup.aspx" />
     <Content Include="idcardtemplatestd.aspx" />
     <Content Include="images\pexels-tima-miroshnichenko-5428267.jpg" />
+    <Content Include="images\rislogo wthoutbg.png" />
+    <Content Include="images\welcome.jpg" />
     <Content Include="inventory add unit.aspx" />
     <Content Include="leavelist.aspx" />
     <Content Include="leaverequest.aspx" />

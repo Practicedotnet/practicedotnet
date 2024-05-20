@@ -33,6 +33,9 @@
                     justify-content: center;
                     align-items: center;
                 }
+                form {
+                    background-image: url(F:\haritha\sclm\school\images\welcome.jpg)
+                }
     </style>
     </head>
     <body>

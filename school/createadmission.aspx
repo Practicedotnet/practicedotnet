@@ -29,7 +29,9 @@
         h5{
             font-size:large;
                        color:white;
-                       /*background-color:cornflowerblue;*/
+                       padding-left:5px;
+                       padding-bottom:4px;
+                       margin-bottom:2px;
         }
         h6{
             color:gold;
@@ -60,7 +62,7 @@
 
         <div class="container">
             <div class="row" style="background-color: cornflowerblue; height:40px; padding:10px" >
-                <h5>Create Admission</h5></div>
+                <h5>Create Admission</h5><br /></div>
             <hr />
             <div class="row">      
                 <div class="col-md-2">
