@@ -196,7 +196,7 @@
             </div>
             <div class="row">
                 <div class="col-md-10">
-                    <asp:FileUpload ID="FileUpload1" runat="server" CssClass="form-control" Font-Size="10px" Width="780px" Height="180px" placeholder="drag and drop your files here" />
+                    <asp:FileUpload ID="Fuimage" runat="server" CssClass="form-control" Font-Size="10px" Width="780px" Height="180px" placeholder="drag and drop your files here" />
                 </div>
             </div>
             <h5>Social Links</h5>
