@@ -25,7 +25,7 @@
         }
 
                 body {
-                    background-image: url(images\pexels-tima-miroshnichenko-5428267.jpg);
+                    /*background-image: url(images\pexels-tima-miroshnichenko-5428267.jpg);*/
                     background-size: cover;
                     background-position: center;
                     height: 100vh;
@@ -38,7 +38,8 @@
     <body>
     
     <form id="form1" runat="server">
-    <div class="login-container">
+        <div style="background-image:url(images/pexels-tima-miroshnichenko-5428267.jpg)">
+       <div class="login-container">
         <h2 class="text-center mb-4">Login</h2>
               <div class="form-group">
                   <asp:Label ID="LblUsername" runat="server" Text="UserName"></asp:Label>
@@ -48,7 +49,7 @@
               </div>
             <div class="form-group">
                 <asp:Label ID="Lblpassword" runat="server" Text="Password"></asp:Label> 
-                <asp:TextBox ID="Txtpassword" runat="server" CssClass="form-control" placeholder="Enter Password"></asp:TextBox>
+                <asp:TextBox ID="Txtpassword" runat="server" CssClass="form-control" placeholder="Enter Password" TextMode="Password"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please Enter Password " ControlToValidate="Txtpassword" ForeColor="#FF5050"></asp:RequiredFieldValidator></div>
         <asp:Button ID="Submit" runat="server" Text="Login" class="btn btn-primary btn-block" OnClick="Submit_Click"/>
             <br />
@@ -58,7 +59,7 @@
         
     </div>
    
-    
+    </div>
        
     </form>
 </body>

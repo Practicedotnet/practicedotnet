@@ -21,11 +21,13 @@ namespace school
 
         protected void btnsave_Click(object sender, EventArgs e)
         {
-            
-                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-I4MN1CM;Initial Catalog=School;Integrated Security=True");
+            string ImageName = Path.GetFileName(Fuimage.FileName);
+            // Line added
+            Fuimage.SaveAs(Server.MapPath("images/" + Fuimage.FileName));
+               SqlConnection conn = new SqlConnection("SchoolConnectionString");
                 conn.Open();
-                string insertQuery = "insert into Parent_T(Name,Relation,FatherName ,Mother ,Occupation ,Income ,Education ,City ,State ,Mobile ,Email ,Address ,Facebook,Twitter,LinkedIn)" +
-                                                  "values (@Name,@Relation,@FatherName,@Mother,@Occupation,@Income,@Education,@City,@State,@Mobile,@Email,@Address,@Facebook,@Twitter,@LinkedIn)";
+                string insertQuery = "insert into Parent_T(Name,Relation,FatherName ,Mother ,Occupation ,Income ,Education ,City ,State ,Mobile ,Email ,Address ,ProfilePic,Facebook,Twitter,LinkedIn)" +
+                                                  "values (@Name,@Relation,@FatherName,@Mother,@Occupation,@Income,@Education,@City,@State,@Mobile,@Email,@Address,@ProfilePic,@Facebook,@Twitter,@LinkedIn)";
                 SqlCommand cmd = new SqlCommand(insertQuery, conn);
                 cmd.Parameters.AddWithValue("@Name", txtname.Text);
                 cmd.Parameters.AddWithValue("@Relation", txtrelation.Text);
@@ -39,11 +41,11 @@ namespace school
                 cmd.Parameters.AddWithValue("@Mobile", txtmobile.Text);
                 cmd.Parameters.AddWithValue("@Email", txtemail.Text);
                 cmd.Parameters.AddWithValue("@Address", txtaddress.Text);
+                cmd.Parameters.AddWithValue("@ProfilePic", ImageName);
                 cmd.Parameters.AddWithValue("@Facebook", txtfacebook.Text);
                 cmd.Parameters.AddWithValue("@Twitter", txttwitter.Text);
                 cmd.Parameters.AddWithValue("@LinkedIn", txtlinkedin.Text);
-            //cmd.Parameters.AddWithValue("@ProfilePic", "image");
-             cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
 
             ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "myalert", "alert('saved successfully');", true);
             conn.Close();
