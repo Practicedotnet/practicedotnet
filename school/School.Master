@@ -43,6 +43,9 @@
         <li><a href="#"></a></li>
         <li><a href="#"></a></li>                  
         <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        
+        <li><a href="#"></a></li>
       <li><a href="#">
           <asp:Button ID="btnlogout" runat="server" Text="Log Out" CssClass="btn btn-danger" /></a></li>
     </ul>

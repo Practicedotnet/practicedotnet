@@ -5,15 +5,16 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
         .container {
-            width: 700px;
-            height: auto;
-            margin-top: 70px;
+            width: 1000px;
+            height:500px ;
+            margin-top: 10px;
             border: solid 1px;
             border-color: lightgrey;
             margin-left: 10px;
             box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
-            font-size: 10px;
+            font-size: 13px;
             background-color:white;
+            font-family: Helvetica ;
         }
 
         h6 {
@@ -22,7 +23,7 @@
                        padding-left:5px;
         }
     </style>
-    <main style="margin-top: 65px">
+    <main style="margin-top: 5px">
         <div class="container">
             <div class="row" style="background-color:cornflowerblue">
             <h6>Leaves</h6></div>
@@ -74,7 +75,7 @@
                 <div class="col-md-2">
                     <asp:Label ID="lblreason" runat="server" Text="Reason:"></asp:Label>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-5">
                     <textarea id="TextAreareason" cols="25" rows="2" class="form-control" font-size="10px"></textarea>
                 </div>
             </div>

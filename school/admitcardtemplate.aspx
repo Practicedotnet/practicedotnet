@@ -5,16 +5,16 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
         .container {
-            width:750px;
-            height: auto; 
-            margin-top: 0px;
-            border: solid 0px;
+            width: 1000px;
+            height:650px ;
+            margin-top: 10px;
+            border: solid 1px;
             border-color: lightgrey;
-            margin-left: 20px;
-            margin-right: 20px;
-            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-            font-size: 10px;
+            margin-left: 10px;
+            box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+            font-size: 13px;
             background-color:white;
+            font-family: Helvetica ;
         }
 
         /*hr {

@@ -51,7 +51,7 @@
         }
         hr
         {
-            color:gold;
+            color:black;
         }
         h5{
             color:gold;

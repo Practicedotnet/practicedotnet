@@ -15,7 +15,6 @@
             font-size: 10px;
             background-color: white;
         }
-
         .container1 {
             width: 340px;
             height: 270px;

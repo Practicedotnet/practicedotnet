@@ -3,16 +3,17 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
-        .container {
-            width: 700px;
-            height: 400px;
-            margin-top: 5px;
+       .container {
+            width: 1000px;
+            height:auto ;
+            margin-top: 10px;
             border: solid 1px;
             border-color: lightgrey;
             margin-left: 10px;
             box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
-            font-size: 10px;
+            font-size: 13px;
             background-color:white;
+            font-family: Helvetica ;
         }
 
         .container1 {
