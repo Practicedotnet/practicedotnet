@@ -6,7 +6,7 @@
         .container {
             width: 700px;
             height: 400px;
-            margin-top: 70px;
+            margin-top: 5px;
             border: solid 1px;
             border-color: lightgrey;
             margin-left: 10px;
@@ -34,7 +34,7 @@
 
         }
     </style>
-    <main style="margin-top: 65px">
+    <main style="margin-top: 5px">
         <div class="container">
               <div class="row" style="background-color: cornflowerblue " >
             <h5> Assign Subject</h5></div><br />
