@@ -28,18 +28,20 @@
 
         <div class="row">
             <div class="col-md-2">
-                <asp:Button ID="btnbranchlist" runat="server" Text="Subject list" CssClass="form-control" Height="25px" Width="80px" Font-Size="10px"  />
+                <asp:Button ID="btnbranchlist" runat="server" Text="Branch List"  Height="25px" Width="80px" Font-Size="10px" OnClick="btnbranchlist_Click" Font-Bold="true"  class="btn btn-primary"/>
             </div>
             <div class="col-md-2">
-                <asp:Button ID="btncreatebranch" runat="server" Text="Create Subject" CssClass="form-control" Height="25px" Width="80px" Font-Size="10px"  />
+                <asp:Button ID="btncreatebranch" runat="server" Text="Create Branch" class="btn btn-primary" Height="25px" Width="100px" Font-Size="10px" OnClick="btncreatebranch_Click"  Font-Bold="true"  />
             </div>
         </div>
-
-
-
-        <div class="container">
-            <div class="row" style="background-color: cornflowerblue">
-                <h5>Subject</h5>
+         <div class="container" id ="divlist" runat="server" visible="true">
+            <h6>Branch List</h6>
+        </div>
+        <br />
+        <br />
+        <div class="container1" runat="server" id="divcreate" visible="false">
+         <div class="row" style="background-color: cornflowerblue">
+                <h5>Create Branch</h5>
             </div>
             <br />
             <br />
@@ -130,7 +132,7 @@
                     <asp:Label ID="lbladdress" runat="server" Text="Address:"></asp:Label>
                 </div>
                 <div class="col-md-6">
-                    <textarea id="TextAreaaddress" cols="59" rows="3" Class="form-control"></textarea>
+                    <asp:TextBox ID="txtaddress" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px" TextMode="MultiLine"></asp:TextBox>   
                 </div>
             </div>
             <br />
@@ -138,7 +140,7 @@
             <div class="row">
                 <div class="col-md-6"></div>
                 <div class="col-md-3">
-                    <asp:Button ID="btnsave" runat="server" Text="Save" CssClass="btn btn-success" Height="25px" Width="100px" Font-Size="10px" />
+                    <asp:Button ID="btnsave" runat="server" Text="Save" CssClass="btn btn-success" Height="25px" Width="100px" Font-Size="10px" OnClick="btnsave_Click1" />
                 </div>
             </div>
 

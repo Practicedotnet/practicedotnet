@@ -54,7 +54,7 @@
         <asp:Button ID="Submit" runat="server" Text="Login" class="btn btn-primary btn-block" OnClick="Submit_Click"/>
             <br />
             <div class="text-center mt-3">
-                <a href="forgotpassword.aspx">Forgot Password?</a> | <a href="register.aspx">Register</a>
+                <a href="forgotpassword.aspx">Forgot Password?</a> | <a href="empregistration.aspx">Register</a>
               </div>
         
     </div>
