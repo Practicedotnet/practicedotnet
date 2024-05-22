@@ -54,5 +54,7 @@ namespace school
             divlist.Visible = true;
             divcreate.Visible = false;
         }
+
+        
     }
     }

@@ -35,8 +35,44 @@
             </div>
         </div>
          <div class="container" id ="divlist" runat="server" visible="true">
-            <h6>Branch List</h6>
+             <div class="row" style="background-color: cornflowerblue">
+            <h5>Branch List</h5>
         </div>
+             <br />
+             <br />
+             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="10" DataKeyNames="Branchid" DataSourceID="SqlDataSource1" Height="153px" Width="700px" ForeColor="#333333" GridLines="None" RowHeaderColumn="Address">
+                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                 <Columns>
+                     <asp:BoundField DataField="Branchid" HeaderText="Branchid" InsertVisible="False" ReadOnly="True" SortExpression="Branchid" />
+                     <asp:BoundField DataField="BranchName" HeaderText="BranchName" SortExpression="BranchName" />
+                     <asp:BoundField DataField="SchoolName" HeaderText="SchoolName" SortExpression="SchoolName" />
+                     <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+                     <asp:BoundField DataField="MobileNumber" HeaderText="MobileNumber" SortExpression="MobileNumber" />
+                     <asp:BoundField DataField="Currency" HeaderText="Currency" SortExpression="Currency" />
+                     <asp:BoundField DataField="CurrencySymbol" HeaderText="CurrencySymbol" SortExpression="CurrencySymbol" />
+                     <asp:BoundField DataField="City" HeaderText="City" SortExpression="City" />
+                     <asp:BoundField DataField="State" HeaderText="State" SortExpression="State" />
+                     <asp:BoundField DataField="Address" HeaderText="Address" SortExpression="Address" />
+                 <asp:CommandField ButtonType="Link" ShowEditButton="true" ShowDeleteButton ="true"
+            ItemStyle-Width="150" DeleteImageUrl="~/images/Delete.png" HeaderText="Action" >
+                     
+<ItemStyle Width="150px"></ItemStyle>
+                     </asp:CommandField>
+                     
+                 </Columns>
+                 <EditRowStyle BackColor="#999999" />
+                 <FooterStyle BackColor="#5D7B9D" ForeColor="White" Font-Bold="True" />
+                 <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" BorderColor="#CCCCFF" BorderStyle="Solid" Font-Size="X-Small" HorizontalAlign="Center" VerticalAlign="Bottom" />
+                 <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                 <RowStyle ForeColor="#333333" BackColor="#F7F6F3" HorizontalAlign="Center" VerticalAlign="Middle" />
+                 <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                 <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                 <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                 <SortedDescendingCellStyle BackColor="#FFFDF8" HorizontalAlign="Center" VerticalAlign="Middle" />
+                 <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+             </asp:GridView>
+             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SchoolConnectionString %>" SelectCommand="SELECT * FROM [Branch]"></asp:SqlDataSource>
+             </div>
         <br />
         <br />
         <div class="container1" runat="server" id="divcreate" visible="false">

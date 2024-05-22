@@ -18,31 +18,31 @@ namespace school
         Dal dal = new Dal();
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (!IsPostBack)
-            //{
-            //    BindBranch();
-            //}
+            if (!IsPostBack)
+            {
+                BindBranch();
+            }
         }
-        //////private void BindBranch()
-        //////{
-        //////    string strcon = ConfigurationManager.ConnectionStrings["SchoolConnectionString"].ConnectionString;
-        //////    SqlConnection conn = new SqlConnection(strcon);
-        //////    conn.Open();
+        private void BindBranch()
+        {
+            string strcon = ConfigurationManager.ConnectionStrings["SchoolConnectionString"].ConnectionString;
+            SqlConnection conn = new SqlConnection(strcon);
+            conn.Open();
 
-        //////    SqlCommand cmd = new SqlCommand("SELECT Branchid, BranchName FROM Branch", conn);
-        //////    string SelectQuery=
-        //////    SqlDataReader reader = cmd.ExecuteReader();
-        //////    DropDownListbranch.DataSource = reader;
-        //////    DropDownListbranch.DataValueField = "Branchid";
-        //////    DropDownListbranch.DataTextField = "BranchName";
-        //////    DropDownListbranch.DataBind();
-        //////    conn.Close();
-        //////}
+            SqlCommand cmd = new SqlCommand("SELECT Branchid, BranchName FROM Branch", conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            DropDownListbranch.DataSource = ds;
+            DropDownListbranch.DataTextField = "BranchName";
+            DropDownListbranch.DataValueField = "Branchid";
+            DropDownListbranch.DataBind();
+            DropDownListbranch.Items.Insert(0, new ListItem("--Select--", "0"));
+            conn.Close();
+            
+        }
 
-        ////DropDownListbranch.Items.Insert(0, new ListItem("--Select Branch--", "0"));
-       
-
-            protected void btnsave_Click(object sender, EventArgs e)
+             protected void btnsave_Click(object sender, EventArgs e)
 
         {
             string ImageName = Path.GetFileName(Fuimage.FileName);

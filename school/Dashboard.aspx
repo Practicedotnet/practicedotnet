@@ -15,5 +15,6 @@
                         font-style:oblique;
         }
     </style>
-    <h1> welcome to the school!!!</h1>
-</asp:Content>
+    <div class="container">
+        <h1> welcome to the school!!!</h1></div>
+    </asp:Content>

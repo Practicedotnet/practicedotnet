@@ -13,5 +13,10 @@ namespace school
         {
 
         }
+
+        protected void ImgbtnLogout_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Loginpage.aspx");
+        }
     }
 }

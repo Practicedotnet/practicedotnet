@@ -31,13 +31,13 @@ namespace school {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// btnlogout control.
+        /// ImgbtnLogout control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnlogout;
+        protected global::System.Web.UI.WebControls.ImageButton ImgbtnLogout;
         
         /// <summary>
         /// menu_master control.

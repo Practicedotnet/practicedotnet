@@ -244,6 +244,8 @@
     <Content Include="empregistration.aspx" />
     <Content Include="examsetup.aspx" />
     <Content Include="idcardtemplatestd.aspx" />
+    <Content Include="images\Delete.png" />
+    <Content Include="images\logout.png" />
     <Content Include="images\pexels-tima-miroshnichenko-5428267.jpg" />
     <Content Include="images\rislogo wthoutbg.png" />
     <Content Include="images\welcome.jpg" />
