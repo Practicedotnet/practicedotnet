@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="Assign_subject.aspx.cs" Inherits="school.Assign_subject" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="styles/styles.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
@@ -53,7 +54,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lblbranch" runat="server" Text="Branch"></asp:Label>
+                    <asp:Label ID="lblbranch" runat="server" Text="Branch"  CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px">
@@ -66,7 +67,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lblclass" runat="server" Text="Class:"></asp:Label>
+                    <asp:Label ID="lblclass" runat="server" Text="Class:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:DropDownList ID="DropDownList4" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px">
@@ -78,7 +79,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lblsection" runat="server" Text="Section:"></asp:Label>
+                    <asp:Label ID="lblsection" runat="server" Text="Section:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:DropDownList ID="DropDownList2" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px">
@@ -90,7 +91,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lblsubject" runat="server" Text="Subject:"></asp:Label>
+                    <asp:Label ID="lblsubject" runat="server" Text="Subject:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:DropDownList ID="DropDownList3" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px">

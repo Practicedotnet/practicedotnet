@@ -62,26 +62,26 @@
                         </div>
                         <div class="row">
                             <div class="col-md-3">
-                                <asp:DropDownList runat="server" CssClass="form-control" Height="28px" Width="150px" Font-Size="10px">
+                                <asp:DropDownList runat="server" CssClass="form-control" Height="28px" Width="150px" CssClass="Label">
                                     <asp:ListItem>select</asp:ListItem>
                                     <asp:ListItem>Test</asp:ListItem>
                                 </asp:DropDownList>
                             </div>
                             <div class="col-md-3">
-                                <asp:DropDownList runat="server" CssClass="form-control" Height="28px" Width="150px" Font-Size="10px">
+                                <asp:DropDownList runat="server" CssClass="form-control" Height="28px" Width="150px" CssClass="Label">
                                     <asp:ListItem>select</asp:ListItem>
                                     <asp:ListItem>Nine</asp:ListItem>
                                 </asp:DropDownList>
                             </div>
                             <div class="col-md-3">
-                                <asp:DropDownList runat="server" CssClass="form-control" Height="28px" Width="150px" Font-Size="10px">
+                                <asp:DropDownList runat="server" CssClass="form-control" Height="28px" Width="150px" CssClass="Label">
                                     <asp:ListItem>select</asp:ListItem>
                                     <asp:ListItem>All Sections</asp:ListItem>
                                     <asp:ListItem>A Section</asp:ListItem>
                                 </asp:DropDownList>
                             </div>
                             <div class="col-md-3">
-                                <asp:DropDownList runat="server" CssClass="form-control" Height="28px" Width="150px" Font-Size="10px">
+                                <asp:DropDownList runat="server" CssClass="form-control" Height="28px" Width="150px" CssClass="Label">
                                     <asp:ListItem>select</asp:ListItem>
                                     <asp:ListItem>TEmplate 1</asp:ListItem>
                                 </asp:DropDownList>
@@ -93,7 +93,7 @@
                             <div class="row">
                                 <div class="col-md-10"></div>
                                 <div class="col-md-2">
-                                    <asp:Button runat="server" Text="Filter" CssClass="form-control" Height="28px" Width="80px" Font-Size="10px" />
+                                    <asp:Button runat="server" Text="Filter" CssClass="form-control" Height="28px" Width="80px" CssClass="Label" />
                                 </div>
                             </div>
                         </div>
@@ -115,10 +115,10 @@
                     </div>
                     <div class="row">
                         <div class="col-md-3">
-                            <asp:TextBox ID="txtprintdate" runat="server" TextMode="Date" CssClass="form-control" Height="28px" Width="150px" Font-Size="10px"></asp:TextBox>
+                            <asp:TextBox ID="txtprintdate" runat="server" TextMode="Date" CssClass="form-control" Height="28px" Width="150px" CssClass="Label"></asp:TextBox>
                         </div>
                         <div class="col-md-3">
-                            <asp:TextBox ID="txtexpirydate" runat="server" TextMode="Date" CssClass="form-control" Height="28px" Width="150px" Font-Size="10px"></asp:TextBox>
+                            <asp:TextBox ID="txtexpirydate" runat="server" TextMode="Date" CssClass="form-control" Height="28px" Width="150px" CssClass="Label"></asp:TextBox>
                         </div>
                     </div>
                 </div>

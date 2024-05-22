@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="idcardtemplatestd.aspx.cs" Inherits="school.idcardtemplatestd" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="styles/styles.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
@@ -36,7 +37,7 @@
             <br />
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lblbranch" runat="server" Text="Branch:" Font-Size="10px"></asp:Label>
+                    <asp:Label ID="lblbranch" runat="server" Text="Branch:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control" Font-Size="10px" Height="28px">
@@ -48,7 +49,7 @@
             <br />
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lblidcardname" runat="server" Text="id card Name:" Font-Size="10px"></asp:Label>
+                    <asp:Label ID="lblidcardname" runat="server" Text="id card Name:"  CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:TextBox ID="txtcirtificatename" runat="server" CssClass="form-control" Font-Size="10px" Height="28px"></asp:TextBox>
@@ -57,7 +58,7 @@
             <br />
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lblapplicableuser" runat="server" Text="applicable user:" Font-Size="10px"></asp:Label>
+                    <asp:Label ID="lblapplicableuser" runat="server" Text="applicable user:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:DropDownList ID="DropDownList3" runat="server" CssClass="form-control" Font-Size="10px" Height="28px">
@@ -70,7 +71,7 @@
             <br />
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lblpagelayout" runat="server" Text="Page Layout:" Font-Size="10px"></asp:Label>
+                    <asp:Label ID="lblpagelayout" runat="server" Text="Page Layout:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:DropDownList ID="DropDownList2" runat="server" CssClass="form-control" Font-Size="10px" Height="28px">
@@ -83,7 +84,7 @@
             <br />
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lbluserphotostyle" runat="server" Text="User Photo Style" Font-Size="10px"></asp:Label>
+                    <asp:Label ID="lbluserphotostyle" runat="server" Text="User Photo Style"  CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-4">
                     <asp:TextBox ID="txtsquare" runat="server" placeholder="Square(round)" CssClass="form-control" Font-Size="10px" Height="28px"></asp:TextBox>
@@ -95,7 +96,7 @@
             <br />
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lbllayoutspacing" runat="server" Text="Layout Spacing:" Font-Size="10px"></asp:Label>
+                    <asp:Label ID="lbllayoutspacing" runat="server" Text="Layout Spacing:"  CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-4">
                     <asp:TextBox ID="txttop" runat="server" placeholder="Top Space(in px)" CssClass="form-control" Font-Size="10px" Height="28px"></asp:TextBox>
@@ -116,7 +117,7 @@
             <br />
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lblsignatureimage" runat="server" Text="Signature Image:" Font-Size="10px"></asp:Label>
+                    <asp:Label ID="lblsignatureimage" runat="server" Text="Signature Image:"  CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:FileUpload ID="FileUpload1" runat="server" Font-Size="10px" Height="28px" />
@@ -125,7 +126,7 @@
             <br />
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lbllogoimage" runat="server" Text="Logo Image:" Font-Size="10px"></asp:Label>
+                    <asp:Label ID="lbllogoimage" runat="server" Text="Logo Image:"  CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:FileUpload ID="FileUpload2" runat="server" Font-Size="10px" Height="28px" />
@@ -134,7 +135,7 @@
             <br />
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lblbackgroundimage" runat="server" Text="Background Image:" Font-Size="10px"></asp:Label>
+                    <asp:Label ID="lblbackgroundimage" runat="server" Text="Background Image:"  CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:FileUpload ID="FileUpload3" runat="server" Font-Size="10px" Height="28px" />

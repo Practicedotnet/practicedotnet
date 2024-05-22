@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="createadmission.aspx.cs" Inherits="school.createadmission" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="styles/styles.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <%--<nav class="navbar navbar-default">
@@ -67,7 +68,7 @@
             <hr />
             <div class="row">      
                 <div class="col-md-2">
-                    <asp:Label ID="lblbranch" runat="server" Text="Branch"></asp:Label>
+                    <asp:Label ID="lblbranch" runat="server" Text="Branch" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-4">
                     <asp:DropDownList ID="DropDownListbranch" runat="server" CssClass="form-control" Font-Size="10px">
@@ -80,16 +81,16 @@
         
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lblacademicyear" runat="server" Text="Academic Year"></asp:Label>
+                    <asp:Label ID="lblacademicyear" runat="server" Text="Academic Year" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lblregdno" runat="server" Text="Registration No."></asp:Label>
+                    <asp:Label ID="lblregdno" runat="server" Text="Registration No." CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lblroll" runat="server" Text="Roll No."></asp:Label>
+                    <asp:Label ID="lblroll" runat="server" Text="Roll No." CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lbladmndate" runat="server" Text="Admission Date"></asp:Label>
+                    <asp:Label ID="lbladmndate" runat="server" Text="Admission Date" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -117,13 +118,13 @@
             <br />
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lblclass" runat="server" Text="Class"></asp:Label>
+                    <asp:Label ID="lblclass" runat="server" Text="Class" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lblsection" runat="server" Text="section"></asp:Label>
+                    <asp:Label ID="lblsection" runat="server" Text="section" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lblcategory" runat="server" Text="category"></asp:Label>
+                    <asp:Label ID="lblcategory" runat="server" Text="category" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -153,13 +154,13 @@
             <hr />
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lblfname" runat="server" Text="First Name"></asp:Label>
+                    <asp:Label ID="lblfname" runat="server" Text="First Name" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lbllname" runat="server" Text="Last Name"></asp:Label>
+                    <asp:Label ID="lbllname" runat="server" Text="Last Name" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lblgender" runat="server" Text="Gender"></asp:Label>
+                    <asp:Label ID="lblgender" runat="server" Text="Gender" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -181,10 +182,10 @@
             <br />
             <div class="row">
                 <div class="col-md-5">
-                    <asp:Label ID="lblbloodgroup" runat="server" Text="Blood Group"></asp:Label>
+                    <asp:Label ID="lblbloodgroup" runat="server" Text="Blood Group" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-5">
-                    <asp:Label ID="lbldob" runat="server" Text="Date Of Birth"></asp:Label>
+                    <asp:Label ID="lbldob" runat="server" Text="Date Of Birth" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -206,13 +207,13 @@
             </div>
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lblmothertongue" runat="server" Text="Mother Tongue"></asp:Label>
+                    <asp:Label ID="lblmothertongue" runat="server" Text="Mother Tongue" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lblreligion" runat="server" Text="Religion"></asp:Label>
+                    <asp:Label ID="lblreligion" runat="server" Text="Religion" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lblcaste" runat="server" Text="Caste"></asp:Label>
+                    <asp:Label ID="lblcaste" runat="server" Text="Caste" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -228,16 +229,16 @@
             </div>
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lblmobile" runat="server" Text="mobile"></asp:Label>
+                    <asp:Label ID="lblmobile" runat="server" Text="mobile" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lblemail" runat="server" Text="E-Mail"></asp:Label>
+                    <asp:Label ID="lblemail" runat="server" Text="E-Mail" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lblcity" runat="server" Text="City"></asp:Label>
+                    <asp:Label ID="lblcity" runat="server" Text="City" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lblstate" runat="server" Text="State"></asp:Label>
+                    <asp:Label ID="lblstate" runat="server" Text="State" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -256,10 +257,10 @@
             </div>
             <div class="row">
                 <div class="col-md-5">
-                    <asp:Label ID="lblpresentaddress" runat="server" Text="Present Address"></asp:Label>
+                    <asp:Label ID="lblpresentaddress" runat="server" Text="Present Address" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-5">
-                    <asp:Label ID="lblpermanentaddress" runat="server" Text="Permanent Address"></asp:Label>
+                    <asp:Label ID="lblpermanentaddress" runat="server" Text="Permanent Address" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -272,7 +273,7 @@
             </div>
             <div class="row">
                 <div class="col-md-2">
-                    <asp:Label ID="lbltest" runat="server" Text="Test"></asp:Label>
+                    <asp:Label ID="lbltest" runat="server" Text="Test" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -285,7 +286,7 @@
             <br />
             <div class="row">
                 <div class="col-md-2">
-                    <asp:Label ID="lblprofilepicture" runat="server" Text="Profile Picture"></asp:Label>
+                    <asp:Label ID="lblprofilepicture" runat="server" Text="Profile Picture" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -298,13 +299,13 @@
             <h6>Login Details</h6>
             <div class="row">
                 <div class="col-md-5">
-                    <asp:Label ID="lblusername" runat="server" Text="User Name"></asp:Label>
+                    <asp:Label ID="lblusername" runat="server" Text="User Name" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lblpassword" runat="server" Text="Password"></asp:Label>
+                    <asp:Label ID="lblpassword" runat="server" Text="Password" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lblretypepassword" runat="server" Text="Re-Type password"></asp:Label>
+                    <asp:Label ID="lblretypepassword" runat="server" Text="Re-Type password" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -327,15 +328,15 @@
                     <asp:CheckBox ID="CheckBoxgaurdian" runat="server" />
                 </div>
                 <div class="col-md-4">
-                    <asp:Label ID="lblgaurdian" runat="server" Text="Gaurdian Already Exists"></asp:Label>
+                    <asp:Label ID="lblgaurdian" runat="server" Text="Gaurdian Already Exists" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-5">
-                    <asp:Label ID="lblname" runat="server" Text="Name"></asp:Label>
+                    <asp:Label ID="lblname" runat="server" Text="Name" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-5">
-                    <asp:Label ID="lblrelation" runat="server" Text="Relation"></asp:Label>
+                    <asp:Label ID="lblrelation" runat="server" Text="Relation" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -350,10 +351,10 @@
             <br />
             <div class="row">
                 <div class="col-md-5">
-                    <asp:Label ID="lblfathername" runat="server" Text="Father Name"></asp:Label>
+                    <asp:Label ID="lblfathername" runat="server" Text="Father Name" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-5">
-                    <asp:Label ID="lblmothername" runat="server" Text="Mother Name"></asp:Label>
+                    <asp:Label ID="lblmothername" runat="server" Text="Mother Name" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -368,13 +369,13 @@
             <br />
             <div class="row">
                 <div class="col-md-4">
-                    <asp:Label ID="lbloccupation" runat="server" Text="Occupation"></asp:Label>
+                    <asp:Label ID="lbloccupation" runat="server" Text="Occupation" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-4">
-                    <asp:Label ID="lblincome" runat="server" Text="Income"></asp:Label>
+                    <asp:Label ID="lblincome" runat="server" Text="Income" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-4">
-                    <asp:Label ID="lbleducation" runat="server" Text=" Education"></asp:Label>
+                    <asp:Label ID="lbleducation" runat="server" Text=" Education" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -392,16 +393,16 @@
             <br />
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lblgcity" runat="server" Text="City"></asp:Label>
+                    <asp:Label ID="lblgcity" runat="server" Text="City" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lblgstate" runat="server" Text="State"></asp:Label>
+                    <asp:Label ID="lblgstate" runat="server" Text="State" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lblmobileno" runat="server" Text=" Mobile No."></asp:Label>
+                    <asp:Label ID="lblmobileno" runat="server" Text=" Mobile No." CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lblgemail" runat="server" Text=" Email"></asp:Label>
+                    <asp:Label ID="lblgemail" runat="server" Text=" Email" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -420,7 +421,7 @@
             </div>
             <br />
             <div class="row">
-                <asp:Label ID="lblgaddress" runat="server" Text="Address"></asp:Label>
+                <asp:Label ID="lblgaddress" runat="server" Text="Address" CssClass="Label"></asp:Label>
             </div>
             <br />
             <div class="row">
@@ -430,7 +431,7 @@
             </div>
             <br />
             <div class="row">
-                <asp:Label ID="lblgphoto" runat="server" Text="Gaurdian Photograph"></asp:Label>
+                <asp:Label ID="lblgphoto" runat="server" Text="Gaurdian Photograph" CssClass="Label"></asp:Label>
             </div>
             <div class="row">
                 <div class="col-md-6">
@@ -442,10 +443,10 @@
             <hr />
             <div class="row">
                 <div class="col-md-5">
-                    <asp:Label ID="lbltransportroute" runat="server" Text="Transport Route"></asp:Label>
+                    <asp:Label ID="lbltransportroute" runat="server" Text="Transport Route" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-5">
-                    <asp:Label ID="lblvehicleno" runat="server" Text="Vehicle No."></asp:Label>
+                    <asp:Label ID="lblvehicleno" runat="server" Text="Vehicle No." CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -460,10 +461,10 @@
             <hr />
             <div class="row">
                 <div class="col-md-5">
-                    <asp:Label ID="lblhostelname" runat="server" Text="Hostel Name"></asp:Label>
+                    <asp:Label ID="lblhostelname" runat="server" Text="Hostel Name" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-5">
-                    <asp:Label ID="lblroomname" runat="server" Text="Room Name"></asp:Label>
+                    <asp:Label ID="lblroomname" runat="server" Text="Room Name" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -478,10 +479,10 @@
             <hr />
             <div class="row">
                 <div class="col-md-5">
-                    <asp:Label ID="lblschoolname" runat="server" Text="School Name"></asp:Label>
+                    <asp:Label ID="lblschoolname" runat="server" Text="School Name" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-5">
-                    <asp:Label ID="lblqualification" runat="server" Text="Qualification"></asp:Label>
+                    <asp:Label ID="lblqualification" runat="server" Text="Qualification" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -495,10 +496,10 @@
             <br />
             <div class="row">
                 <div class="col-md-2">
-                    <asp:Label ID="lblremarks" runat="server" Text="Remarks"></asp:Label>
+                    <asp:Label ID="lblremarks" runat="server" Text="Remarks" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-10">
-                    <textarea id="TextArea1" cols="50" rows="2" class="form-control"></textarea>
+                    <textarea id="TextArea1" cols="50" rows="2" class="form-control" ></textarea>
                 </div>
             </div>
             <br />

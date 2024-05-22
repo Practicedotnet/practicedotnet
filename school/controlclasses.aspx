@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="controlclasses.aspx.cs" Inherits="school.controlclasses" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="styles/styles.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
@@ -68,7 +69,7 @@
                         <hr />
                         <div class="row">
                             <div class="col-md-2">
-                                <asp:Label ID="lblbranch" runat="server" Text="Branch:"></asp:Label>
+                                <asp:Label ID="lblbranch" runat="server" Text="Branch:" CssClass="Label"></asp:Label>
                             </div>
                         </div>
                         <div class="row">
@@ -81,7 +82,7 @@
                         </div>
                         <br />
                         <div class="row">
-                            <asp:Label ID="lblname" runat="server" Text="Name"></asp:Label>
+                            <asp:Label ID="lblname" runat="server" Text="Name" CssClass="Label"></asp:Label>
                         </div>
                         <div class="row">
                             <div class="col-md-10">
@@ -91,7 +92,7 @@
                         <br />
                         <div class="row">
                             <div class="col-md-2">
-                                <asp:Label ID="lblclassnumeric" runat="server" Text="Class Numeric:"></asp:Label>
+                                <asp:Label ID="lblclassnumeric" runat="server" Text="Class Numeric:" CssClass="Label"></asp:Label>
                             </div>
                         </div>
                         <div class="row">
@@ -101,7 +102,7 @@
                         </div>
                         <br />
                         <div class="row">
-                            <asp:Label ID="lblsection" runat="server" Text="Section"></asp:Label>
+                            <asp:Label ID="lblsection" runat="server" Text="Section" CssClass="Label"></asp:Label>
                         </div>
                         <div class="row">
                             <div class="col-md-10">

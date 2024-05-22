@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="leaverequest.aspx.cs" Inherits="school.leaverequest" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="styles/styles.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
@@ -45,7 +46,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lblleavetype" runat="server" Text="Leave Type:"></asp:Label>
+                    <asp:Label ID="lblleavetype" runat="server" Text="Leave Type:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px">
@@ -63,7 +64,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lbldate" runat="server" Text="Date:"></asp:Label>
+                    <asp:Label ID="lbldate" runat="server" Text="Date:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:TextBox ID="txtdate" runat="server" TextMode="Date" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px"></asp:TextBox>
@@ -73,7 +74,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lblreason" runat="server" Text="Reason:"></asp:Label>
+                    <asp:Label ID="lblreason" runat="server" Text="Reason:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-5">
                     <textarea id="TextAreareason" cols="25" rows="2" class="form-control" font-size="10px"></textarea>
@@ -83,7 +84,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lblattachment" runat="server" Text="Attachment:"></asp:Label>
+                    <asp:Label ID="lblattachment" runat="server" Text="Attachment:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-7">
                     <asp:FileUpload ID="FileUpload1" placeholder="drag&drop files here" runat="server" CssClass="form-control" Height="45px" Width="350px" Font-Size="10px" />

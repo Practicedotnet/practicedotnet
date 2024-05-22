@@ -260,6 +260,7 @@
     <Content Include="site2masterpage.aspx" />
     <Content Include="studentidcardgenerator.aspx" />
     <Content Include="studentidtemplate.aspx" />
+    <Content Include="styles\styles.css" />
     <Content Include="test.aspx" />
     <Content Include="TEST1.aspx" />
     <Content Include="uploadcontent.aspx" />
