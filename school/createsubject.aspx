@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="createsubject.aspx.cs" Inherits="school.createsubject" %>
+﻿  <%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="createsubject.aspx.cs" Inherits="school.createsubject" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="styles/styles.css" rel="stylesheet" />
@@ -6,7 +6,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
         .container {
-            width: 700px;
+            width: 1000px;
             height: 400px;
             margin-top: 70px;
             border: solid 1px;
@@ -18,7 +18,7 @@
         }
 
         .container1 {
-            width: 700px;
+            width: 1000px;
             height: 370px;
             margin-top: 70px;
             border: solid 1px;
