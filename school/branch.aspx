@@ -5,9 +5,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
         .container {
-            width: 750px;
+            width: 1000px;
             height: 750px;
-            margin-top: 70px;
+            margin-top: 60px;
             border: solid 1px;
             border-color: lightgrey;
             margin-left: 10px;
@@ -22,13 +22,26 @@
             margin-left:10px;
         }
     </style>
-
+  <%--  Printcode----%>
+    <script type="text/javascript">
+        function PrintGridData() {
+            var prtGrid = document.getElementById('<%=GridView1.ClientID %>');
+            var prtwin = window.open('', 'PrintGridView',
+'left=100,top=100,width=400,height=400,tollbar=0,scrollbars=1,status=0,resizable=1');
+            prtwin.document.write(prtGrid.outerHTML);
+            prtwin.document.close();
+            prtwin.focus();
+            prtwin.print();
+            prtwin.close();
+       }
+   </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <main style="margin-top: 15px">
 
         <div class="row">
             <div class="col-md-2">
-                <asp:Button ID="btnbranchlist" runat="server" Text="Branch List"  Height="25px" Width="80px" Font-Size="10px" OnClick="btnbranchlist_Click" Font-Bold="true"  class="btn btn-primary"/>
+                <asp:Button ID="btnbranchlist" CausesValidation="false" runat="server" Text="Branch List"  Height="25px" Width="80px" Font-Size="10px" OnClick="btnbranchlist_Click" Font-Bold="true"  class="btn btn-primary"/>
             </div>
             <div class="col-md-2">
                 <asp:Button ID="btncreatebranch" runat="server" Text="Create Branch" class="btn btn-primary" Height="25px" Width="100px" Font-Size="10px" OnClick="btncreatebranch_Click"  Font-Bold="true"  />
@@ -39,8 +52,17 @@
             <h5>Branch List</h5>
         </div>
              <br />
+               <div class="row"><div class="col-md-5"> <asp:ImageButton ID="ImgBExcel" runat="server" ImageUrl="images/Excel.jpg" />
+                 <asp:ImageButton ID="ImgBpdf" runat="server" ImageUrl="images/Pdf.png" />
+                 <asp:ImageButton ID="ImgBPrint" runat="server" ImageUrl="images/Print.png" /></div>
+                 <div class="glyphicon">
+	              <i class="glyphicon glyphicon-search form-control-feedback"></i>
+	              <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control glyphicon glyphicon-search"  Height="25px" ></asp:TextBox>
+                  </div>                                                     
+             </div>
              <br />
-             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="10" DataKeyNames="Branchid" DataSourceID="SqlDataSource1" Height="153px" Width="700px" ForeColor="#333333" GridLines="None" RowHeaderColumn="Address">
+              <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-hover "  AutoGenerateColumns="False"  DataKeyNames="Branchid" DataSourceID="SqlDataSource1" Height="35px" Width="100
+                 px" ForeColor="#333333" GridLines="None" RowHeaderColumn="Address">
                  <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                  <Columns>
                      <asp:BoundField DataField="Branchid" HeaderText="Branchid" InsertVisible="False" ReadOnly="True" SortExpression="Branchid" />
@@ -64,7 +86,7 @@
                  <FooterStyle BackColor="#5D7B9D" ForeColor="White" Font-Bold="True" />
                  <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" BorderColor="#CCCCFF" BorderStyle="Solid" Font-Size="X-Small" HorizontalAlign="Center" VerticalAlign="Bottom" />
                  <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
-                 <RowStyle ForeColor="#333333" BackColor="#F7F6F3" HorizontalAlign="Center" VerticalAlign="Middle" />
+                 <RowStyle ForeColor="#333333" BackColor="#F7F6F3" HorizontalAlign="Center" />
                  <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
                  <SortedAscendingCellStyle BackColor="#E9E7E2" />
                  <SortedAscendingHeaderStyle BackColor="#506C8C" />
@@ -87,18 +109,20 @@
                     <asp:Label ID="lblbranchname" runat="server" Text="Branch Name"></asp:Label>
                 </div>
                 <div class="col-md-6">
-                    <asp:TextBox ID="txtbranchname" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px"></asp:TextBox>
+                    <asp:TextBox ID="txtbranchname" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px" placeholder="Enter BranchName" ></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RFVBranchName" runat="server" ErrorMessage="Enter BranchName" ControlToValidate="txtbranchname" ForeColor="#FF5050"></asp:RequiredFieldValidator>
                 </div>
             </div>
             <br />
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lblschoolname" runat="server" Text="School Name:"></asp:Label>
+                    <asp:Label ID="lblschoolname" runat="server" Text="School Name:" ></asp:Label>
                 </div>
                 <div class="col-md-6">
-                    <asp:TextBox ID="txtschoolname" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px"></asp:TextBox>
-                </div>
+                    <asp:TextBox ID="txtschoolname" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px" placeholder="Enter SchoolName" ></asp:TextBox>
+               <asp:RequiredFieldValidator ID="RFVSchoolName" runat="server" ControlToValidate="txtschoolname" ErrorMessage="Enter School Name" ForeColor="#FF5050"></asp:RequiredFieldValidator>
+                    </div>
             </div>
             <br />
             <div class="row">
@@ -107,7 +131,7 @@
                     <asp:Label ID="lblemail" runat="server" Text="E-mail:"></asp:Label>
                 </div>
                 <div class="col-md-6">
-                    <asp:TextBox ID="txtemain" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px"></asp:TextBox>
+                    <asp:TextBox ID="txtemail" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px" placeholder="Enter Email Address"></asp:TextBox>
                 </div>
             </div>
             <br />
@@ -117,7 +141,7 @@
                     <asp:Label ID="lblmobileno" runat="server" Text="Mobile Number:"></asp:Label>
                 </div>
                 <div class="col-md-6">
-                    <asp:TextBox ID="txtmobileno" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px"></asp:TextBox>
+                    <asp:TextBox ID="txtmobileno" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px" placeholder="Enter Mobile Number"></asp:TextBox>
                 </div>
             </div>
             <br />
@@ -127,7 +151,7 @@
                     <asp:Label ID="lblcurrency" runat="server" Text="Currency:"></asp:Label>
                 </div>
                 <div class="col-md-6">
-                    <asp:TextBox ID="txtcurrency" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px"></asp:TextBox>
+                    <asp:TextBox ID="txtcurrency" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px" placeholder="Enter Currency"></asp:TextBox>
                 </div>
             </div>
             <br />
@@ -138,7 +162,7 @@
                     <asp:Label ID="lblcurrencysymbol" runat="server" Text="Currency Symbol:"></asp:Label>
                 </div>
                 <div class="col-md-6">
-                    <asp:TextBox ID="txtcurrencysymbol" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px"></asp:TextBox>
+                    <asp:TextBox ID="txtcurrencysymbol" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px" placeholder="Enter Currency Symbol"></asp:TextBox>
                 </div>
             </div>
             <br />
@@ -148,7 +172,7 @@
                     <asp:Label ID="lblcity" runat="server" Text="City:"></asp:Label>
                 </div>
                 <div class="col-md-6">
-                    <asp:TextBox ID="txtcity" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px"></asp:TextBox>
+                    <asp:TextBox ID="txtcity" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px" placeholder="Enter City"></asp:TextBox>
                 </div>
             </div>
             <br />
@@ -158,17 +182,20 @@
                     <asp:Label ID="lblstate" runat="server" Text="State:"></asp:Label>
                 </div>
                 <div class="col-md-6">
-                    <asp:TextBox ID="txtstate" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px"></asp:TextBox>
+                    <asp:TextBox ID="txtstate" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px" placeholder="Enter State"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtstate" ErrorMessage="Please Enter State " ForeColor="#FF5050"></asp:RequiredFieldValidator>
+
                 </div>
             </div>
             <br />
+            
                         <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
                     <asp:Label ID="lbladdress" runat="server" Text="Address:"></asp:Label>
                 </div>
                 <div class="col-md-6">
-                    <asp:TextBox ID="txtaddress" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px" TextMode="MultiLine"></asp:TextBox>   
+                    <asp:TextBox ID="txtaddress" runat="server" CssClass="form-control" Height="30px" Width="350px" Font-Size="10px" TextMode="MultiLine" placeholder="Enter Address" ></asp:TextBox>   
                 </div>
             </div>
             <br />

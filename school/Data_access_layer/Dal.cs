@@ -21,7 +21,7 @@ namespace school.Data_access_layer
         }
         public void Addparent( string Name,string Relation,string Fathername,string Mother,string Occupation,string Income,string Education,string City,string State,string Mobile,string Email,string Address,string ProfilePic,string Facebook,string Twitter,string LinkedIn)
         {
-      
+
             ////string strcon = ConfigurationManager.ConnectionStrings["SchoolConnectionString"].ConnectionString;
             SqlConnection conn = new SqlConnection(strcon);
             conn.Open();

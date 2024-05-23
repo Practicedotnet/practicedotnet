@@ -29,7 +29,7 @@ namespace school
             SqlCommand cmd = new SqlCommand(insertQuery, conn);
             cmd.Parameters.AddWithValue("@BranchName",txtbranchname.Text);
             cmd.Parameters.AddWithValue("@SchoolName", txtschoolname.Text);
-            cmd.Parameters.AddWithValue("@Email", txtemain.Text);
+            cmd.Parameters.AddWithValue("@Email", txtemail.Text);
             cmd.Parameters.AddWithValue("@MobileNumber", txtmobileno.Text);
             cmd.Parameters.AddWithValue("@Currency", txtcurrency.Text);
             cmd.Parameters.AddWithValue("@CurrencySymbol", txtcurrencysymbol.Text);
@@ -41,6 +41,8 @@ namespace school
                         ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "myalert", "alert('saved successfully');", true);
             conn.Close();
 
+            clear();
+            
         }
 
         protected void btncreatebranch_Click(object sender, EventArgs e)
@@ -55,6 +57,21 @@ namespace school
             divcreate.Visible = false;
         }
 
+
+        public void clear()
+        {
+            txtbranchname.Text = "";
+            txtschoolname.Text = "";
+            txtemail.Text = "";
+            txtmobileno.Text = "";
+            txtcurrency.Text = "";
+            txtcurrencysymbol.Text = "";
+            txtcity.Text = "";
+            txtstate.Text = "";
+            txtaddress.Text = "";
+
+
+        }
         
     }
     }

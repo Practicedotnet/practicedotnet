@@ -40,6 +40,42 @@ namespace school {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divlist;
         
         /// <summary>
+        /// ImgBExcel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton ImgBExcel;
+        
+        /// <summary>
+        /// ImgBpdf control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton ImgBpdf;
+        
+        /// <summary>
+        /// ImgBPrint control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton ImgBPrint;
+        
+        /// <summary>
+        /// txtSearch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSearch;
+        
+        /// <summary>
         /// GridView1 control.
         /// </summary>
         /// <remarks>
@@ -85,6 +121,15 @@ namespace school {
         protected global::System.Web.UI.WebControls.TextBox txtbranchname;
         
         /// <summary>
+        /// RFVBranchName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVBranchName;
+        
+        /// <summary>
         /// lblschoolname control.
         /// </summary>
         /// <remarks>
@@ -103,6 +148,15 @@ namespace school {
         protected global::System.Web.UI.WebControls.TextBox txtschoolname;
         
         /// <summary>
+        /// RFVSchoolName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVSchoolName;
+        
+        /// <summary>
         /// lblemail control.
         /// </summary>
         /// <remarks>
@@ -112,13 +166,13 @@ namespace school {
         protected global::System.Web.UI.WebControls.Label lblemail;
         
         /// <summary>
-        /// txtemain control.
+        /// txtemail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtemain;
+        protected global::System.Web.UI.WebControls.TextBox txtemail;
         
         /// <summary>
         /// lblmobileno control.
@@ -209,6 +263,15 @@ namespace school {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtstate;
+        
+        /// <summary>
+        /// RequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
         /// lbladdress control.

@@ -31,7 +31,7 @@
                 
                 <div class="col-md-8"></div>
                 <div class="col-md-2">
-                    <asp:Button ID="btnliveclasslist" runat="server" Text="Liveclass list" Height="28px" Font-Size="10px" CssClass="form-control" />
+                    <asp:Button ID="btnliveclasslist" CausesValidation="false" runat="server" Text="Liveclass list" Height="28px" Font-Size="10px" CssClass="form-control" />
                 </div>
                 <div class="col-md-2">
                     <asp:Button ID="btnaddliveclass" runat="server" Text="Add live class" CssClass="form-control" Height="28px" Font-Size="10px" />
