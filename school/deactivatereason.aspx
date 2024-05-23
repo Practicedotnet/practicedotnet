@@ -48,7 +48,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <asp:DropDownList runat="server" CssClass="form-control" Font-Size="10px" Height="25px" Width="250px">
+                                <asp:DropDownList runat="server" CssClass="form-control" CssClass="Label" Height="25px" Width="250px">
                                     <asp:ListItem>select</asp:ListItem>
                                     <asp:ListItem>Test</asp:ListItem>
                                 </asp:DropDownList>
@@ -61,7 +61,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-10">
-                            <asp:TextBox ID="txtunitname" runat="server" CssClass="form-control" Font-Size="10px" Height="25px" Width="250px"></asp:TextBox>
+                            <asp:TextBox ID="txtunitname" runat="server" CssClass="form-control" CssClass="Label" Height="25px" Width="250px"></asp:TextBox>
                         </div>
                     </div>
                     <br />
@@ -71,7 +71,7 @@
                     <div class="row">
                         <div class="col-md-8"></div>
                         <div class="col-md-4">
-                            <asp:Button runat="server" Text="Save" CssClass="form-control" Font-Size="10px" Height="25px" Width="80px" />
+                            <asp:Button runat="server" Text="Save" CssClass="form-control" CssClass="Label" Height="25px" Width="80px" />
                         </div>
                     </div>
                 </div>

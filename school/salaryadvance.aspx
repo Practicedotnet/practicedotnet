@@ -53,13 +53,13 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <asp:DropDownList runat="server" CssClass="form-control" Height="25px" Font-Size="10px">
+                                <asp:DropDownList runat="server" CssClass="form-control" Height="25px" CssClass="Label">
                                     <asp:ListItem>select</asp:ListItem>
                                     <asp:ListItem>Test</asp:ListItem>
                                 </asp:DropDownList>
                             </div>
                             <div class="col-md-6">
-                                <asp:TextBox ID="TextBox1" runat="server" TextMode="Date" CssClass="form-control" Height="25px" Font-Size="10px"></asp:TextBox>
+                                <asp:TextBox ID="TextBox1" runat="server" TextMode="Date" CssClass="form-control" Height="25px" CssClass="Label"></asp:TextBox>
                             </div>
                             <br />
                             <br />
@@ -67,7 +67,7 @@
                             <div class="row">
                                 <div class="col-md-10"></div>
                                 <div class="col-md-2">
-                                    <asp:Button runat="server" Text="Filter" CssClass="form-control" Height="25px" Font-Size="10px" />
+                                    <asp:Button runat="server" Text="Filter" CssClass="form-control" Height="25px" CssClass="Label" />
                                 </div>
                             </div>
                         </div>

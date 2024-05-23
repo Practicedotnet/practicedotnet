@@ -214,25 +214,25 @@
     
                         
                         <div class="col-md-3" style="margin-top:5px;margin-right:4px">
-                           <div> <asp:Label ID="labelrole" runat="server" Font-Size="Small" Text="Login:" Font-Names="Calibri"></asp:Label>
-                            <asp:Label ID="labela" runat="server"  Font-Bold="true" Font-Size="Small" Font-Names="Calibri"></asp:Label>
+                           <div> <asp:Label ID="labelrole" runat="server" CssClass="Label" Text="Login:" Font-Names="Calibri"></asp:Label>
+                            <asp:Label ID="labela" runat="server"  Font-Bold="true" CssClass="Label" Font-Names="Calibri"></asp:Label>
 
-                            <asp:Label ID="label3" runat="server" Font-Size="Small" Text=",Name:" Font-Names="Calibri"></asp:Label>
-                            <asp:Label ID="LblName" runat="server"  Font-Bold="true" Font-Size="Small" Font-Names="Calibri"></asp:Label>
+                            <asp:Label ID="label3" runat="server" CssClass="Label" Text=",Name:" Font-Names="Calibri"></asp:Label>
+                            <asp:Label ID="LblName" runat="server"  Font-Bold="true" CssClass="Label" Font-Names="Calibri"></asp:Label>
 
                            </div>
                             <div>
-                                <asp:Label ID="label1" runat="server" Font-Size="Small" Text="Date:" Font-Names="Calibri"></asp:Label>
-                            <asp:Label ID="labeldat" runat="server"  Font-Bold="true" Font-Size="Small" Font-Names="Calibri"></asp:Label>
+                                <asp:Label ID="label1" runat="server" CssClass="Label" Text="Date:" Font-Names="Calibri"></asp:Label>
+                            <asp:Label ID="labeldat" runat="server"  Font-Bold="true" CssClass="Label" Font-Names="Calibri"></asp:Label>
                             </div>
                             <div>
-                                 <asp:Label ID="labelloc" runat="server" Text="Location:" Font-Size="Small" Font-Names="Calibri"></asp:Label>
-                            <asp:Label ID="lc" runat="server" Text="Zambia" Font-Bold="true" Font-Size="Small" Font-Names="Calibri"></asp:Label>
+                                 <asp:Label ID="labelloc" runat="server" Text="Location:" CssClass="Label" Font-Names="Calibri"></asp:Label>
+                            <asp:Label ID="lc" runat="server" Text="Zambia" Font-Bold="true" CssClass="Label" Font-Names="Calibri"></asp:Label>
                                 <%--</div>
                             <div>
                            --%>
-                                        <asp:Label ID="label2" runat="server" Text="Branch:" Font-Size="Small" Font-Names="Calibri"></asp:Label>
-                            <asp:Label ID="lblbranch" runat="server" Text="Zambia" Font-Bold="true" Font-Size="Small" Font-Names="Calibri"></asp:Label>
+                                        <asp:Label ID="label2" runat="server" Text="Branch:" CssClass="Label" Font-Names="Calibri"></asp:Label>
+                            <asp:Label ID="lblbranch" runat="server" Text="Zambia" Font-Bold="true" CssClass="Label" Font-Names="Calibri"></asp:Label>
                             </div>
 
                             

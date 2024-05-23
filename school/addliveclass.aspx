@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="addliveclass.aspx.cs" Inherits="school.addliveclass" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="styles/styles.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
@@ -44,7 +45,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lblbranch" runat="server" Text="Branch:"></asp:Label>
+                    <asp:Label ID="lblbranch" runat="server" Text="Branch:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px">
@@ -57,7 +58,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lbltitle" runat="server" Text="Title:"></asp:Label>
+                    <asp:Label ID="lbltitle" runat="server" Text="Title:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:TextBox ID="txttitle" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px"></asp:TextBox>
@@ -67,7 +68,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lblclass" runat="server" Text="Class:"></asp:Label>
+                    <asp:Label ID="lblclass" runat="server" Text="Class:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:DropDownList ID="DropDownList3" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px">
@@ -81,7 +82,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lblsection" runat="server" Text="Section:"></asp:Label>
+                    <asp:Label ID="lblsection" runat="server" Text="Section:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:TextBox ID="txtsection" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px"></asp:TextBox>
@@ -98,7 +99,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lblliveclassmethod" runat="server" Text="Live Class Method:"></asp:Label>
+                    <asp:Label ID="lblliveclassmethod" runat="server" Text="Live Class Method:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:TextBox ID="txtliveclassmethod" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px"></asp:TextBox>
@@ -108,7 +109,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lbldate" runat="server" Text="Date:"></asp:Label>
+                    <asp:Label ID="lbldate" runat="server" Text="Date:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:TextBox ID="txtdate" runat="server" TextMode="Date" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px"></asp:TextBox>
@@ -118,7 +119,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lbltimeslot" runat="server" Text="Time Slot:"></asp:Label>
+                    <asp:Label ID="lbltimeslot" runat="server" Text="Time Slot:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
                     <asp:TextBox ID="txtfrom" runat="server" TextMode="Time" CssClass="form-control" Height="25px" Width="170px" Font-Size="10px"></asp:TextBox>
@@ -131,7 +132,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lblduration" runat="server" Text="Duration"></asp:Label>
+                    <asp:Label ID="lblduration" runat="server" Text="Duration" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:TextBox ID="txtduration" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px"></asp:TextBox>
@@ -141,7 +142,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lblremarks" runat="server" Text="Remarks:"></asp:Label>
+                    <asp:Label ID="lblremarks" runat="server" Text="Remarks:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <textarea id="TextArearemarks" cols="40" rows="2" class="form-control" height="25px" width="350px" font-size="10px"></textarea>

@@ -57,7 +57,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <asp:DropDownList runat="server" CssClass="form-control" Height="25px" Width="250px" Font-Size="10px">
+                                <asp:DropDownList runat="server" CssClass="form-control" Height="25px" Width="250px" CssClass="Label">
                                     <asp:ListItem>select</asp:ListItem>
                                     <asp:ListItem>Test</asp:ListItem>
                                 </asp:DropDownList>
@@ -70,7 +70,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-10">
-                            <asp:TextBox ID="txtleavecategory" runat="server" CssClass="form-control" Height="25px" Width="250px" Font-Size="10px"></asp:TextBox>
+                            <asp:TextBox ID="txtleavecategory" runat="server" CssClass="form-control" Height="25px" Width="250px" CssClass="Label"></asp:TextBox>
                         </div>
                     </div>
                     <br />
@@ -81,7 +81,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <asp:DropDownList runat="server" CssClass="form-control" Height="25px" Width="250px" Font-Size="10px">
+                            <asp:DropDownList runat="server" CssClass="form-control" Height="25px" Width="250px" CssClass="Label">
                                 <asp:ListItem>select</asp:ListItem>
                                 <asp:ListItem>Admin</asp:ListItem>
                                 <asp:ListItem>Teacher</asp:ListItem>
@@ -97,7 +97,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-10">
-                            <asp:TextBox ID="txtdays" runat="server" CssClass="form-control" Height="25px" Width="250px" Font-Size="10px"></asp:TextBox>
+                            <asp:TextBox ID="txtdays" runat="server" CssClass="form-control" Height="25px" Width="250px" CssClass="Label"></asp:TextBox>
                         </div>
                     </div>
                     <br />
@@ -105,7 +105,7 @@
                     <div class="row">
                         <div class="col-md-4"></div>
                         <div class="col-md-4">
-                            <asp:Button runat="server" Text="Save" CssClass="btn btn-success" Height="25px" Width="100px" Font-Size="10px" />
+                            <asp:Button runat="server" Text="Save" CssClass="btn btn-success" Height="25px" Width="100px" CssClass="Label" />
                         </div>
                     </div>
                 </div>

@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="Add parent.aspx.cs" Inherits="school.Add_parent" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
-     <script type="text/javascript">
+    <link href="styles/styles.css" rel="stylesheet" />
+     <%--<script type="text/javascript">
        function validateNumbersOnly(e) {
            var unicode = e.charCode ? e.charCode : e.keyCode;
            var parts = e.srcElement.value.split('.');
@@ -29,7 +29,7 @@
             return true;
            }
      }
-    </script>
+    </script>--%>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -51,7 +51,7 @@
         }
         hr
         {
-            color:gold;
+            color:black;
         }
         h5{
             color:gold;
@@ -69,7 +69,7 @@
            
             <div class="row">
                 <div class="col-md-2">
-                <asp:Label ID="lblbranch" runat="server" Text="Branch" Font-Size="Small"></asp:Label>
+                <asp:Label ID="lblbranch" runat="server" Text="Branch" CssClass="Label"></asp:Label>
                 </div>
                 
                 <div class="col-md-6">
@@ -82,10 +82,10 @@
             <hr />
             <div class="row">
                 <div class="col-md-6">
-                    <asp:Label ID="lblname" runat="server" Text="Name" Font-Size="Small"></asp:Label>
+                    <asp:Label ID="lblname" runat="server" Text="Name" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
-                    <asp:Label ID="lblrelation" runat="server" Text="Relation" Font-Size="Small"></asp:Label>
+                    <asp:Label ID="lblrelation" runat="server" Text="Relation" CssClass="Label" ></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -101,10 +101,10 @@
             <br />
             <div class="row">
                 <div class="col-md-6">
-                    <asp:Label ID="lblfathername" runat="server" Text=" Father Name" Font-Size="Small"></asp:Label>
+                    <asp:Label ID="lblfathername" runat="server" Text=" Father Name" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
-                    <asp:Label ID="lblmothername" runat="server" Text="Mother Name" Font-Size="Small"></asp:Label>
+                    <asp:Label ID="lblmothername" runat="server" Text="Mother Name" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -120,13 +120,13 @@
             <br />
             <div class="row">
                 <div class="col-md-4">
-                    <asp:Label ID="lbloccupation" runat="server" Text=" Occupation" Font-Size="Small"></asp:Label>
+                    <asp:Label ID="lbloccupation" runat="server" Text=" Occupation" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-4">
-                    <asp:Label ID="lblincome" runat="server" Text="Income" Font-Size="Small"></asp:Label>
+                    <asp:Label ID="lblincome" runat="server" Text="Income" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-4">
-                    <asp:Label ID="lbleducation" runat="server" Text="Education" Font-Size="Small"></asp:Label>
+                    <asp:Label ID="lbleducation" runat="server" Text="Education" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -146,16 +146,16 @@
             <br />
             <div class="row">
                 <div class="col-md-3">
-                    <asp:Label ID="lblcity" runat="server" Text=" City" Font-Size="Small"></asp:Label>
+                    <asp:Label ID="lblcity" runat="server" Text=" City" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lblstate" runat="server" Text="State" Font-Size="Small"></asp:Label>
+                    <asp:Label ID="lblstate" runat="server" Text="State" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lblmobile" runat="server" Text="Mobile" Font-Size="Small"></asp:Label>
+                    <asp:Label ID="lblmobile" runat="server" Text="Mobile" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:Label ID="lblemail" runat="server" Text="Email" Font-Size="Small"></asp:Label>
+                    <asp:Label ID="lblemail" runat="server" Text="Email" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -180,7 +180,7 @@
             <br />
             <div class="row">
                 <div class="col-md-10">
-                    <asp:Label ID="lbladdress" runat="server" Text="Address" Font-Size="Small"></asp:Label>
+                    <asp:Label ID="lbladdress" runat="server" Text="Address" CssClass="Label"></asp:Label>
                 </div>
             </div>
              <div class="row">
@@ -191,7 +191,7 @@
             <br />
                 <div class="row">
                 <div class="col-md-10">
-                    <asp:Label ID="lblprofile" runat="server" Text="Profile Picture" Font-Size="Small"></asp:Label>
+                    <asp:Label ID="lblprofile" runat="server" Text="Profile Picture" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">
@@ -203,13 +203,13 @@
             <hr />
             <div class="row">
                 <div class="col-md-4">
-                    <asp:Label ID="lblfacebook" runat="server" Text=" Facebook" Font-Size="Small"></asp:Label>
+                    <asp:Label ID="lblfacebook" runat="server" Text=" Facebook" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-4">
-                    <asp:Label ID="lbltwitter" runat="server" Text="Twitter" Font-Size="Small"></asp:Label>
+                    <asp:Label ID="lbltwitter" runat="server" Text="Twitter" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-4">
-                    <asp:Label ID="lbllinkedin" runat="server" Text="LinkedIn" Font-Size="Small"></asp:Label>
+                    <asp:Label ID="lbllinkedin" runat="server" Text="LinkedIn" CssClass="Label"></asp:Label>
                 </div>
             </div>
             <div class="row">

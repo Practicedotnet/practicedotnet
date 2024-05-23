@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="Adddesignation.aspx.cs" Inherits="school.Adddesignation" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="styles/styles.css" rel="stylesheet" /
+    
+    >
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
@@ -15,7 +18,6 @@
             font-size: 10px;
             background-color: white;
         }
-
         .container1 {
             width: 340px;
             height: 270px;
@@ -54,13 +56,13 @@
 
                         <div class="row">
                             <div class="col-md-3">
-                                <asp:Label ID="lblbranch" runat="server" Text="Branch:"></asp:Label>
+                                <asp:Label ID="lblbranch" runat="server" Text="Branch:" CssClass="Label"></asp:Label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <asp:DropDownList runat="server" CssClass="form-control" Height="28px" Width="250px" Font-Size="10px">
-                                    <asp:ListItem>select</asp:ListItem>
+                                <asp:DropDownList runat="server" CssClass="form-control"  Height="28px" Width="250px" Font-Size="10px">
+                                    <asp:ListItem>select</asp:ListItem> 
                                     <asp:ListItem>Test</asp:ListItem>
                                 </asp:DropDownList>
                             </div>
@@ -69,7 +71,7 @@
                     <br />
                     <div class="row">
                         <div class="col-md-3">
-                            <asp:Label ID="lbldesignationname" runat="server" Text="Designation Name"></asp:Label>
+                            <asp:Label ID="lbldesignationname" runat="server" Text="Designation Name" CssClass="Label"></asp:Label>
                         </div>
                     </div>
                     <div class="row">

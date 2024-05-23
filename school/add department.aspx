@@ -1,6 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="add department.aspx.cs" Inherits="school.add_department" %>
+﻿    <%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="add department.aspx.cs" Inherits="school.add_department" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="styles/styles.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
@@ -12,7 +13,7 @@
             border-color: lightgrey;
             margin-left: 40px;
             box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
-            font-size: 10px;
+            font-size: 15px;
             background-color:white;
         }
 
@@ -54,7 +55,7 @@
                         <div class="row">
                             <div class="col-md-1"></div>
                             <div class="col-md-2">
-                                <asp:Label ID="lblbranch" runat="server" Text="Branch:"></asp:Label>
+                                <asp:Label ID="lblbranch" runat="server" CssClass="Label" Text="Branch:"></asp:Label>
                             </div>
                         </div>
                         <div class="row">
@@ -71,7 +72,7 @@
                     <div class="row">
                   <div class="col-md-1"></div>
                         <div class="col-md-2">
-                        <asp:Label ID="lblunitname" runat="server" Text="Department Name"></asp:Label></div>
+                        <asp:Label ID="lblunitname" runat="server" Text="Department Name" CssClass="Label"></asp:Label></div>
                     </div>
                     <div class="row">
                         <div class="col-md-1"></div>

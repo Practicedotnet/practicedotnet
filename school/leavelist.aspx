@@ -46,13 +46,13 @@
             <br />
             <div class="row">
                 <div class="col-md-6">
-                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control" Height="25px" Width="300px" Font-Size="10px">
+                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control" Height="25px" Width="300px" CssClass="Label">
                         <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Test</asp:ListItem>
                     </asp:DropDownList>
                 </div>
                 <div class="col-md-6">
-                    <asp:DropDownList ID="DropDownList2" runat="server" CssClass="form-control" Height="25px" Width="300px" Font-Size="10px">
+                    <asp:DropDownList ID="DropDownList2" runat="server" CssClass="form-control" Height="25px" Width="300px" CssClass="Label">
                         <asp:ListItem>Select</asp:ListItem>
                         <asp:ListItem>Admin</asp:ListItem>
                         <asp:ListItem>Teacher</asp:ListItem>
@@ -66,7 +66,7 @@
             <div class="row">
                 <div class="col-md-8"></div>
                 <div class="col-md-3">
-                    <asp:Button ID="btnfilter" runat="server" Text="Filter" CssClass="form-control" Height="25px" Width="100px" Font-Size="10px" />
+                    <asp:Button ID="btnfilter" runat="server" Text="Filter" CssClass="form-control" Height="25px" Width="100px" CssClass="Label" />
                 </div>
             </div>
         </div>
