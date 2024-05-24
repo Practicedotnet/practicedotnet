@@ -17,6 +17,15 @@
     </style>
     <div class="container">
         <h1> welcome to the school!!!</h1></div>
+
+
+
+
+
+
+
+
+
     </asp:Content>
 
 

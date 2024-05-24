@@ -29,7 +29,7 @@
             font-size: 10px;
             background-color:white;
         }
-        h6{
+        h5{
            font-size:large;
                        color:white;
                        padding-left:5px;
@@ -40,7 +40,7 @@
             <div class="col-md-5">
                 <div class="container">
                     <div class="row" style="background-color:cornflowerblue">
-                    <h6>Class Teacher Allocation</h6></div>
+                    <h5>Class Teacher Allocation</h5></div>
                     <hr />
                     <div class="row">
                         <div class="col-md-2">

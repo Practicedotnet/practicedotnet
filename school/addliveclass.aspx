@@ -6,9 +6,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
         .container {
-            width: 700px;
+            width: 1000px;
             height: 750px;
-            margin-top: 70px;
+            margin-top: 10px;
             border: solid 1px;
             border-color: lightgrey;
             margin-left: 10px;
@@ -23,7 +23,7 @@
                        padding-left:5px;
         }
     </style>
-    <main style="margin-top: 65px">
+    <main style="margin-top: 5px">
         <div class="container">
              <div class="row" style="background-color:cornflowerblue">
                  <h5>Live Class Rooms</h5></div>

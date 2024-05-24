@@ -226,10 +226,13 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="bin\school.dll" />
     <Content Include="bin\school.pdb" />
+    <Content Include="book.aspx" />
     <Content Include="branch.aspx" />
+    <Content Include="bulk_sms_mail.aspx" />
     <Content Include="cirtificatetemplate.aspx" />
     <Content Include="Compose.aspx" />
     <Content Include="controlclasses.aspx" />
+    <Content Include="createevents.aspx" />
     <Content Include="create employee.aspx" />
     <Content Include="createadmission.aspx" />
     <Content Include="createhostel.aspx" />
@@ -340,12 +343,26 @@
     <Compile Include="Award.aspx.designer.cs">
       <DependentUpon>Award.aspx</DependentUpon>
     </Compile>
+    <Compile Include="book.aspx.cs">
+      <DependentUpon>book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="book.aspx.designer.cs">
+      <DependentUpon>book.aspx</DependentUpon>
+    </Compile>
     <Compile Include="branch.aspx.cs">
       <DependentUpon>branch.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="branch.aspx.designer.cs">
       <DependentUpon>branch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bulk_sms_mail.aspx.cs">
+      <DependentUpon>bulk_sms_mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bulk_sms_mail.aspx.designer.cs">
+      <DependentUpon>bulk_sms_mail.aspx</DependentUpon>
     </Compile>
     <Compile Include="cirtificatetemplate.aspx.cs">
       <DependentUpon>cirtificatetemplate.aspx</DependentUpon>
@@ -367,6 +384,13 @@
     </Compile>
     <Compile Include="controlclasses.aspx.designer.cs">
       <DependentUpon>controlclasses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="createevents.aspx.cs">
+      <DependentUpon>createevents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="createevents.aspx.designer.cs">
+      <DependentUpon>createevents.aspx</DependentUpon>
     </Compile>
     <Compile Include="create employee.aspx.cs">
       <DependentUpon>create employee.aspx</DependentUpon>

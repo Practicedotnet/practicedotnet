@@ -6,7 +6,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
         .container {
-            width: 700px;
+            width: 1000px;
             height: 550px;
             margin-top: 70px;
             border: solid 1px;
