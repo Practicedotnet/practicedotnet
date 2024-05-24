@@ -5,9 +5,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <style>
         .container {
-            width: 700px;
+            width: 1000px;
             height: auto;
-            margin-top: 70px;
+            margin-top: 10px;
             border: solid 1px;
             border-color: lightgrey;
             margin-left: 10px;

@@ -8,7 +8,7 @@
         .container {
             width: 1000px;
             height: 400px;
-            margin-top: 70px;
+            margin-top: 10px;
             border: solid 1px;
             border-color: lightgrey;
             margin-left: 10px;
@@ -36,7 +36,7 @@
     </style>
 
 
-    <main style="margin-top: 65px">
+    <main style="margin-top: 5px">
        
             <div class="row">
                 <div class="col-md-2">
