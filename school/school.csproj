@@ -243,9 +243,11 @@
     <Content Include="deactivatereason.aspx" />
     <Content Include="deactiveaccount.aspx" />
     <Content Include="docs\documentation.html" />
+    <Content Include="emailtemplate.aspx" />
     <Content Include="employeeidcard.aspx" />
     <Content Include="empregistration.aspx" />
     <Content Include="examsetup.aspx" />
+    <Content Include="feestype.aspx" />
     <Content Include="idcardtemplatestd.aspx" />
     <Content Include="images\Delete.png" />
     <Content Include="images\logout.png" />
@@ -265,6 +267,7 @@
     <Content Include="salaryadvance.aspx" />
     <Content Include="settingselectground.aspx" />
     <Content Include="site2masterpage.aspx" />
+    <Content Include="smstemplate.aspx" />
     <Content Include="studentidcardgenerator.aspx" />
     <Content Include="studentidtemplate.aspx" />
     <Content Include="styles\styles.css" />
@@ -460,6 +463,13 @@
     <Compile Include="deactiveaccount.aspx.designer.cs">
       <DependentUpon>deactiveaccount.aspx</DependentUpon>
     </Compile>
+    <Compile Include="emailtemplate.aspx.cs">
+      <DependentUpon>emailtemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="emailtemplate.aspx.designer.cs">
+      <DependentUpon>emailtemplate.aspx</DependentUpon>
+    </Compile>
     <Compile Include="employeeidcard.aspx.cs">
       <DependentUpon>employeeidcard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -480,6 +490,13 @@
     </Compile>
     <Compile Include="examsetup.aspx.designer.cs">
       <DependentUpon>examsetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feestype.aspx.cs">
+      <DependentUpon>feestype.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feestype.aspx.designer.cs">
+      <DependentUpon>feestype.aspx</DependentUpon>
     </Compile>
     <Compile Include="idcardtemplatestd.aspx.cs">
       <DependentUpon>idcardtemplatestd.aspx</DependentUpon>
@@ -596,6 +613,13 @@
     </Compile>
     <Compile Include="site2masterpage.aspx.designer.cs">
       <DependentUpon>site2masterpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="smstemplate.aspx.cs">
+      <DependentUpon>smstemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="smstemplate.aspx.designer.cs">
+      <DependentUpon>smstemplate.aspx</DependentUpon>
     </Compile>
     <Compile Include="studentidcardgenerator.aspx.cs">
       <DependentUpon>studentidcardgenerator.aspx</DependentUpon>
