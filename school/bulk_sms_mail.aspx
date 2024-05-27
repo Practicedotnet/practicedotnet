@@ -32,7 +32,7 @@
              <div class="row">
                 <div class="col-md-8"></div>
                 <div class="col-md-2">
-                    <asp:Button ID="btnsms" runat="server" Text="SMS" Height="28px"  CssClass="form-control" OnClick="btnsms_Click" />
+                    <asp:Button ID="btnsms" runat="server" Text="SMS" Height="28px"  CssClass="form-control"  OnClick="btnsms_Click" />
                 </div>
                 <div class="col-md-2">
                     <asp:Button ID="btnemail" runat="server" Text="EMail" CssClass="form-control" Height="28px" OnClick="btnemail_Click"  />
@@ -41,7 +41,7 @@
             <hr />
             
         <div  runat="server" id="divsms" visible="true">
-              <h6>sms</h6>
+            
           <div class="row">
               <div class="col-md-3">
                   <asp:Label ID="lblbranch" runat="server" Text="Branch" CssClass="Label"></asp:Label>
@@ -129,12 +129,85 @@
             
             </div>
                <div runat="server" id="divemail" visible="false">
-                     <h6>email</h6>
-                   <div class="row">
-                       <div class=" col-md-3">
-                           <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-                       </div>
+                    
+                           <div class="row">
+              <div class="col-md-3">
+                  <asp:Label ID="Label1" runat="server" Text="Branch" CssClass="Label"></asp:Label>
+              </div>
+              <div class="col-md-3">
+                  <asp:Label ID="Label2" runat="server" Text="Campaign Name" CssClass="Label"></asp:Label>
+              </div>
+              <div class="col-md-3">
+                  <asp:Label ID="Label3" runat="server" Text="lbltemplate" CssClass="Label"></asp:Label>
+              </div>
+          </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <asp:DropDownList ID="DropDownList5" runat="server" CssClass="form-control" Height="30px" Width="180px">
+                        <asp:ListItem>Select</asp:ListItem>
+                        <asp:ListItem>Test</asp:ListItem>
+                    </asp:DropDownList>
+                </div>
+                <div class="col-md-3">
+                    <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" Height="30px" Width="180px"></asp:TextBox>
+                </div>
+                <div class="col-md-3">
+                    <asp:DropDownList ID="DropDownList6" runat="server" CssClass="form-control" Height="30px" Width="180px">
+                        <asp:ListItem>No information available</asp:ListItem>
+                    </asp:DropDownList>
+                </div>
+            </div><br />
+           <div class="row">
+               <div class="col-md-2">
+                   <asp:Label ID="lblmessagemail" runat="server" Text="Message" CssClass="Label"></asp:Label>
+               </div>
+               <div class="col-md-5">
+                   <textarea id="txtareamessagemail" cols="45" rows="2" class="form-control"></textarea>
+               </div>
+           </div><br />
+            <div class="row">
+               <div class="col-md-3">
+                   <asp:Label ID="lblemailsubject" runat="server" Text="Email Subject" CssClass="Label"></asp:Label>
+               </div>
+               <div class="col-md-3">
+                   <asp:Label ID="lblmailtype" runat="server" Text="Type" CssClass="Label"></asp:Label>
+               </div>
+                 
+           </div>
+             <div class="row">
+         
+               <div class="col-md-3">
+                   <asp:TextBox ID="txtemailsubject" runat="server" CssClass="form-control" Height="30px" Width="180px"></asp:TextBox>
+               </div>
+                 <div class="col-md-3">
+                     <asp:DropDownList ID="DropDownList8" runat="server" CssClass="form-control" Height="30px" Width="180px">
+                         <asp:ListItem> group</asp:ListItem>
+                         <asp:ListItem>Individual</asp:ListItem>
+                         <asp:ListItem>Class</asp:ListItem>
+                     </asp:DropDownList>
+               </div>
+           </div><br />
+            <div class="row">
+               <div class="col-md-3">
+                   <asp:CheckBox ID="CheckBox2" Text="Send Later" runat="server" />
                    </div>
+                </div><br />
+            <div class="row">
+               <div class="col-md-3">
+                   <asp:Label ID="Label8" runat="server" Text="Schedule Date" CssClass="Label"></asp:Label>
+               </div>
+               <div class="col-md-3">
+                   <asp:Label ID="Label9" runat="server" Text="Schedule Time" CssClass="Label"></asp:Label>
+               </div>
+                </div>
+            <div class="row">
+               <div class="col-md-3">
+                   <asp:TextBox ID="TextBox3" runat="server" TextMode="Time" CssClass="form-control" Height="30px" Width="180px"></asp:TextBox>
+               </div>
+               <div class="col-md-3">
+                   <asp:TextBox ID="TextBox4" runat="server" TextMode="Date" CssClass="form-control" Height="30px" Width="180px"></asp:TextBox>
+               </div>
+                </div>
             </div>
         </div>
     </main>
