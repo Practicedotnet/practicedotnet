@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="feestype.aspx.cs" Inherits="school.feestype" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="feesgroup.aspx.cs" Inherits="school.feesgroup" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -25,24 +25,24 @@
     <main style="margin-top: 15px">
         <div class="container">
             <div class="row" style="background-color: cornflowerblue">
-                <h5>Fees Type</h5>
+                <h5>Fees Group</h5>
             </div>
             <hr />
             <div class="row">
                 <div class="col-md-8"></div>
                 <div class="col-md-2">
-                    <asp:Button ID="btntemplatelist" runat="server" Text="Template List" Height="28px" CssClass="form-control" OnClick="btntemplatelist_Click"  />
+                    <asp:Button ID="btnfeegrouplist" runat="server" Text="Fees Group List" Height="28px" CssClass="form-control" OnClick="btnfeegrouplist_Click"  />
                 </div>
                 <div class="col-md-2">
-                    <asp:Button ID="btncreatetemplate" runat="server" Text="Create Template" CssClass="form-control" Height="28px" OnClick="btncreatetemplate_Click"  />
+                    <asp:Button ID="btncreatefeesgroup" runat="server" Text="Create Fees Group" CssClass="form-control" Height="28px" OnClick="btncreatefeesgroup_Click"  />
                 </div>
             </div>
             <hr />
-            <div runat="server" id="divtemplatelist" visible="true">
-                <h6>template list</h6>
+            <div runat="server" id="divfeesgrouplist" visible="true">
+                <h6>Fees Group list</h6>
 
             </div>
-            <div runat="server" id="divcreatetemplate" visible="false">
+            <div runat="server" id="divcreatefeesgroup" visible="false">
 
                 <div class="row">
                     <div class="col-md-2"></div>
@@ -61,10 +61,10 @@
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-2">
-                        <asp:Label ID="lblname" runat="server" Text="Name:" CssClass="Label"></asp:Label>
+                        <asp:Label ID="lblgroupname" runat="server" Text=" Group Name:" CssClass="Label"></asp:Label>
                     </div>
                     <div class="col-md-6">
-                        <asp:TextBox ID="txtname" runat="server" CssClass="form-control" Height="25px" Width="350px"></asp:TextBox>
+                        <asp:TextBox ID="txtgroupname" runat="server" CssClass="form-control" Height="25px" Width="350px"></asp:TextBox>
                     </div>
                 </div>
                 <br />
