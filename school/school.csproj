@@ -247,7 +247,9 @@
     <Content Include="employeeidcard.aspx" />
     <Content Include="empregistration.aspx" />
     <Content Include="examsetup.aspx" />
+    <Content Include="feesgroup.aspx" />
     <Content Include="feestype.aspx" />
+    <Content Include="finesetup.aspx" />
     <Content Include="idcardtemplatestd.aspx" />
     <Content Include="images\Delete.png" />
     <Content Include="images\Excel.jpg" />
@@ -494,12 +496,26 @@
     <Compile Include="examsetup.aspx.designer.cs">
       <DependentUpon>examsetup.aspx</DependentUpon>
     </Compile>
+    <Compile Include="feesgroup.aspx.cs">
+      <DependentUpon>feesgroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feesgroup.aspx.designer.cs">
+      <DependentUpon>feesgroup.aspx</DependentUpon>
+    </Compile>
     <Compile Include="feestype.aspx.cs">
       <DependentUpon>feestype.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="feestype.aspx.designer.cs">
       <DependentUpon>feestype.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="finesetup.aspx.cs">
+      <DependentUpon>finesetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="finesetup.aspx.designer.cs">
+      <DependentUpon>finesetup.aspx</DependentUpon>
     </Compile>
     <Compile Include="idcardtemplatestd.aspx.cs">
       <DependentUpon>idcardtemplatestd.aspx</DependentUpon>
