@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="feesremainder.aspx.cs" Inherits="school.feesremainder" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="accountdeposit.aspx.cs" Inherits="school.accountdeposit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
- <style>
+     <style>
         .container {
             width: 1000px;
             height: auto;
@@ -25,23 +25,23 @@
     <main style="margin-top: 15px">
         <div class="container">
             <div class="row" style="background-color: cornflowerblue">
-                <h5>Fees Remainder</h5>
+                <h5>Office Accounting</h5>
             </div>
             <hr />
             <div class="row">
                 <div class="col-md-8"></div>
                 <div class="col-md-2">
-                    <asp:Button ID="btnremainderlist" runat="server" Text="Remainder List" Height="28px" CssClass="form-control" OnClick="btnremainderlist_Click"  />
+                    <asp:Button ID="btnaccountlist" runat="server" Text="Account List" Height="28px" CssClass="form-control" OnClick="btnaccountlist_Click"   />
                 </div>
                 <div class="col-md-2">
-                    <asp:Button ID="btnaddremainder" runat="server" Text="Add Remainder" CssClass="form-control" Height="28px" OnClick="btnaddremainder_Click" />
+                    <asp:Button ID="btncreateaccont" runat="server" Text="Create Account" CssClass="form-control" Height="28px" OnClick="btncreateaccont_Click"  />
                 </div>
             </div>
             <hr />
-            <div runat="server" id="divremainderlist" visible="true">
-                <h6>Remainder list</h6>
+            <div runat="server" id="divaccountlist" visible="true">
+                <h6>Account list</h6>
             </div>
-            <div runat="server" id="divaddremainder" visible="false">
+            <div runat="server" id="divcreateaccount" visible="false">
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-2">
@@ -58,30 +58,27 @@
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-2">
-                        <asp:Label ID="lblfrequency" runat="server" Text=" Frequency:" CssClass="Label"></asp:Label>
+                        <asp:Label ID="lblaccountname" runat="server" Text=" Account Name:" CssClass="Label"></asp:Label>
                     </div>
                     <div class="col-md-6">
-                        <asp:DropDownList ID="DropDownList5" runat="server" CssClass="form-control" Height="25px" Width="350px" >
-                            <asp:ListItem>Before</asp:ListItem>
-                            <asp:ListItem>After</asp:ListItem>
-                        </asp:DropDownList>
+                        <asp:TextBox ID="txtaccountname" runat="server" CssClass="form-control" Height="25px" Width="350px"></asp:TextBox>
                     </div>
                 </div>
                 <br />
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-2">
-                        <asp:Label ID="lbldays" runat="server" Text="Days:" CssClass="Label"></asp:Label>
+                        <asp:Label ID="lblaccountnumber" runat="server" Text="Account Number:" CssClass="Label"></asp:Label>
                     </div>
                     <div class="col-md-6">
-                        <asp:TextBox ID="txtdays" runat="server" CssClass="form-control" Height="25px" Width="350px"></asp:TextBox>
+                        <asp:TextBox ID="txtaccountnumber" runat="server" CssClass="form-control" Height="25px" Width="350px"></asp:TextBox>
                     </div>
                 </div>
                 <br />
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-2">
-                        <asp:Label ID="lblmessage" runat="server" Text="Message:" CssClass="Label"></asp:Label>
+                        <asp:Label ID="lbldescription" runat="server" Text="Description:" CssClass="Label"></asp:Label>
                     </div>
                     <div class="col-md-6">
                         <textarea id="TextArea1" cols="20" rows="2" class="form-control"></textarea>
@@ -91,23 +88,13 @@
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-2">
-                        <asp:Label ID="lbldlttemplateid" runat="server" Text="Fine Value:" CssClass="Label"></asp:Label>
+                        <asp:Label ID="lblopeningbalance" runat="server" Text="Opening Balance:" CssClass="Label"></asp:Label>
                     </div>
                     <div class="col-md-2">
-                        <asp:TextBox ID="txttemplateid" runat="server" CssClass="form-control" Height="25px" Width="350px"></asp:TextBox>
+                        <asp:TextBox ID="txtopeningbalance" runat="server" CssClass="form-control" Height="25px" Width="350px"></asp:TextBox>
                     </div>
                 </div>
                 <br />
-                                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-2">
-                        <asp:Label ID="lblnotify" runat="server" Text=" Notify:" CssClass="Label"></asp:Label>
-                    </div>
-                    <div class="col-md-6">
-                        <asp:CheckBox ID="CheckBox1" Text="Student" runat="server" />
-                        <asp:CheckBox ID="CheckBox2" Text="Guardian" runat="server" />
-                    </div>
-                </div>
                 <br />
                 <hr />
                 <div class="row">

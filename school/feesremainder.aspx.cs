@@ -13,5 +13,17 @@ namespace school
         {
 
         }
+
+        protected void btnremainderlist_Click(object sender, EventArgs e)
+        {
+            divremainderlist.Visible = true;
+            divaddremainder.Visible = false;
+        }
+
+        protected void btnaddremainder_Click(object sender, EventArgs e)
+        {
+            divremainderlist.Visible = false;
+            divaddremainder.Visible = true;
+        }
     }
 }
