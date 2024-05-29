@@ -86,8 +86,10 @@
                             <asp:MenuItem Text="Add Department" Value="Add Department" NavigateUrl="~/add department.aspx"></asp:MenuItem>
                         </asp:MenuItem>
 
-                        <asp:MenuItem Text="Create Parent" Value="Create Parent" NavigateUrl="~/Add parent.aspx" ImageUrl="~/images/f25.png">
-                        </asp:MenuItem>
+                        <asp:MenuItem Text="Parent" Value="Create Parent" ImageUrl="~/images/f25.png">
+                        <asp:MenuItem Text="Add Parent" Value="Add Parent" NavigateUrl="~/Add parent.aspx"></asp:MenuItem>
+                             <asp:MenuItem Text="Parent List" Value="Parent" NavigateUrl="~/Addparentlist.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
 
                         <asp:MenuItem Text="Human Resource" Value="humaresource"  ImageUrl="~/images/f25.png">
                             <asp:MenuItem Text="Payroll" Value="Payroll" NavigateUrl="~/payrolltemplate.aspx"></asp:MenuItem>
