@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="branch.aspx.cs" Inherits="school.branch" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="branch.aspx.cs" Inherits="school.branch" EnableEventValidation="false" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="styles/styles.css" rel="stylesheet" />
@@ -23,6 +23,7 @@
             margin-left:10px;
         }
     </style>
+
   <%--  Printcode----%>
     <script type="text/javascript">
         function PrintGridData() {
@@ -36,6 +37,36 @@
             prtwin.close();
        }
    </script>
+    <%------Excel--------%>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="table2excel.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $("body").on("click", "#btnExport", function () {
+        $("[id*=GridView1]").table2excel({
+            filename: "Table.xls"
+        });
+    });
+</script>
+ <%-- PDF--%>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+<script type="text/javascript">
+    $("body").on("click", "#btnExport1", function () {
+        html2canvas($('[id*=GridView1]')[0], {
+            onrendered: function (canvas) {
+                var data = canvas.toDataURL();
+                var docDefinition = {
+                    content: [{
+                        image: data,
+                        width: 500
+                    }]
+                };
+                pdfMake.createPdf(docDefinition).download("Table.pdf");
+            }
+        });
+    });
+</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <main style="margin-top: 15px">
@@ -47,23 +78,28 @@
             <div class="col-md-2">
                 <asp:Button ID="btncreatebranch" runat="server" Text="Create Branch" class="btn btn-primary" Height="25px" Width="100px" Font-Size="10px" OnClick="btncreatebranch_Click"  Font-Bold="true"  />
             </div>
-        </div>
-         <div class="container" id ="divlist" runat="server" visible="true">
+            </div>
+                <div class="container" id ="divlist" runat="server" visible="true">
              <div class="row" style="background-color: cornflowerblue">
             <h5>Branch List</h5>
         </div>
-             <br />
-               <div class="row"><div class="col-md-5"> <asp:ImageButton ID="ImgBExcel" runat="server" ImageUrl="images/Excel.jpg" />
-                 <asp:ImageButton ID="ImgBpdf" runat="server" ImageUrl="images/Pdf.png" />
-                 <asp:ImageButton ID="ImgBPrint" runat="server" ImageUrl="images/Print.png" /></div>
-                 <div class="glyphicon">
-	              <i class="glyphicon glyphicon-search form-control-feedback"></i>
-	              <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control glyphicon glyphicon-search"  Height="25px" ></asp:TextBox>
-                  </div>                                                     
+              <br />
+             
+             <%--<input type="button" id="btnExport" value="Export" />--%>
+         <div class="row"><div class="col-md-4"> 
+                    <asp:Button ID="Button1" runat="server" Text="Excel" />
+                    <input type="button" id="btnPrint" value="Print" onclick="PrintGridData()" />
+                    <input type="button" id="btnExport1" value="PDF" />
+                <%--<input type="button" id="btnExport" value="Export"  onclick="Export()"/>--%>
+             </div>
+             <div class="col-md-5"> 
+                 <asp:TextBox ID="txtSearch" runat="server" placeholder="BranchName"></asp:TextBox>
+                 <asp:Button ID="btnSearch" runat="server" Text="Search"  CausesValidation="false"  OnClick="btnSearch_Click" />
+             </div>
              </div>
              <br />
-              <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-hover "  AutoGenerateColumns="False"  DataKeyNames="Branchid" DataSourceID="SqlDataSource1" Height="35px" Width="100
-                 px" ForeColor="#333333" GridLines="None" RowHeaderColumn="Address">
+                   <div>
+              <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-hover "  AutoGenerateColumns="False"  DataKeyNames="Branchid"  Height="35px" Width="100px" ForeColor="#333333" GridLines="None" RowHeaderColumn="Address" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                  <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                  <Columns>
                      <asp:BoundField DataField="Branchid" HeaderText="Branchid" InsertVisible="False" ReadOnly="True" SortExpression="Branchid" />
@@ -94,11 +130,17 @@
                  <SortedDescendingCellStyle BackColor="#FFFDF8" HorizontalAlign="Center" VerticalAlign="Middle" />
                  <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
              </asp:GridView>
-             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SchoolConnectionString %>" SelectCommand="SELECT * FROM [Branch]"></asp:SqlDataSource>
-             </div>
+             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SchoolConnectionString %>" SelectCommand="SELECT * FROM [Branch]" DeleteCommand="delete from [Branch] where @BranchId=BranchId" FilterExpression="UserName LIKE '%{0}%'">
+<FilterParameters>
+<asp:ControlParameter Name="BranchName" ControlID="txtSearch" PropertyName="Text" />
+</FilterParameters></asp:SqlDataSource>
+            
+                       </div>
         <br />
         <br />
-        <div class="container1" runat="server" id="divcreate" visible="false">
+                    </div>
+        <br />
+          <div class="container1" runat="server" id="divcreate" visible="True">
          <div class="row" style="background-color: cornflowerblue">
                 <h5>Create Branch</h5>
             </div>
@@ -118,7 +160,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
-                    <asp:Label ID="lblschoolname" runat="server" Text="School Name:" ></asp:Label>
+                    <asp:Label ID="lblschoolname" runat="server" Text="School Name:"></asp:Label>
                 </div>
                 <div class="col-md-6">
                     <asp:TextBox ID="txtschoolname" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px" placeholder="Enter SchoolName" ></asp:TextBox>
@@ -207,7 +249,6 @@
                     <asp:Button ID="btnsave" runat="server" Text="Save" CssClass="btn btn-success" Height="25px" Width="100px" Font-Size="10px" OnClick="btnsave_Click1" />
                 </div>
             </div>
-
-        </div>
-        </main>
+            </div>
+             </main>
 </asp:Content>

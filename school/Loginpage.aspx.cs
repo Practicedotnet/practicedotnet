@@ -33,11 +33,23 @@ namespace school
             conn.Close();
             if (dt.Rows.Count > 0)
             {
+                Session["id"] = TxtUname.Text;
                 Response.Redirect("Dashboard.aspx");
+                Session.RemoveAll();
             }
-            
+            //else
+            //{
+            //    Label1.Text = "You're username and word is incorrect";
+            //    Label1.ForeColor = System.Drawing.Color.Red;
 
-            }
+            //}
+            //if (dt.Rows.Count > 0)
+            //{
+            //    Response.Redirect("Dashboard.aspx");
+            //}
+
+
+        }
 
 
 
