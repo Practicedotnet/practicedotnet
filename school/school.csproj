@@ -255,6 +255,7 @@
     <Content Include="empregistration.aspx" />
     <Content Include="examsetup.aspx" />
     <Content Include="feesgroup.aspx" />
+    <Content Include="feesremainder.aspx" />
     <Content Include="feestype.aspx" />
     <Content Include="finesetup.aspx" />
     <Content Include="idcardtemplatestd.aspx" />
@@ -651,6 +652,13 @@
     </Compile>
     <Compile Include="feesgroup.aspx.designer.cs">
       <DependentUpon>feesgroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feesremainder.aspx.cs">
+      <DependentUpon>feesremainder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feesremainder.aspx.designer.cs">
+      <DependentUpon>feesremainder.aspx</DependentUpon>
     </Compile>
     <Compile Include="feestype.aspx.cs">
       <DependentUpon>feestype.aspx</DependentUpon>
