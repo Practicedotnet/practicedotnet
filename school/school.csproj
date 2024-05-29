@@ -227,7 +227,9 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="bin\school.dll" />
     <Content Include="bin\school.pdb" />
+    <Content Include="book.aspx" />
     <Content Include="branch.aspx" />
+    <Content Include="bulk_sms_mail.aspx" />
     <Content Include="cirtificatetemplate.aspx" />
     <Content Include="Compose.aspx" />
     <Content Include="Content\bootstrap-select.css" />
@@ -237,6 +239,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="controlclasses.aspx" />
+    <Content Include="createevents.aspx" />
     <Content Include="create employee.aspx" />
     <Content Include="createadmission.aspx" />
     <Content Include="createhostel.aspx" />
@@ -247,10 +250,13 @@
     <Content Include="deactivatereason.aspx" />
     <Content Include="deactiveaccount.aspx" />
     <Content Include="docs\documentation.html" />
+    <Content Include="emailtemplate.aspx" />
     <Content Include="employeeidcard.aspx" />
     <Content Include="empregistration.aspx" />
     <Content Include="examsetup.aspx" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="feesgroup.aspx" />
+    <Content Include="feestype.aspx" />
+    <Content Include="finesetup.aspx" />
     <Content Include="idcardtemplatestd.aspx" />
     <Content Include="images\Delete.png" />
     <Content Include="images\Excel.jpg" />
@@ -408,6 +414,7 @@
     <Content Include="Scripts\jquery-3.7.1.slim.min.js" />
     <Content Include="settingselectground.aspx" />
     <Content Include="site2masterpage.aspx" />
+    <Content Include="smstemplate.aspx" />
     <Content Include="studentidcardgenerator.aspx" />
     <Content Include="studentidtemplate.aspx" />
     <Content Include="styles\styles.css" />
@@ -490,12 +497,26 @@
     <Compile Include="Award.aspx.designer.cs">
       <DependentUpon>Award.aspx</DependentUpon>
     </Compile>
+    <Compile Include="book.aspx.cs">
+      <DependentUpon>book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="book.aspx.designer.cs">
+      <DependentUpon>book.aspx</DependentUpon>
+    </Compile>
     <Compile Include="branch.aspx.cs">
       <DependentUpon>branch.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="branch.aspx.designer.cs">
       <DependentUpon>branch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bulk_sms_mail.aspx.cs">
+      <DependentUpon>bulk_sms_mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bulk_sms_mail.aspx.designer.cs">
+      <DependentUpon>bulk_sms_mail.aspx</DependentUpon>
     </Compile>
     <Compile Include="cirtificatetemplate.aspx.cs">
       <DependentUpon>cirtificatetemplate.aspx</DependentUpon>
@@ -517,6 +538,13 @@
     </Compile>
     <Compile Include="controlclasses.aspx.designer.cs">
       <DependentUpon>controlclasses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="createevents.aspx.cs">
+      <DependentUpon>createevents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="createevents.aspx.designer.cs">
+      <DependentUpon>createevents.aspx</DependentUpon>
     </Compile>
     <Compile Include="create employee.aspx.cs">
       <DependentUpon>create employee.aspx</DependentUpon>
@@ -589,6 +617,13 @@
     <Compile Include="deactiveaccount.aspx.designer.cs">
       <DependentUpon>deactiveaccount.aspx</DependentUpon>
     </Compile>
+    <Compile Include="emailtemplate.aspx.cs">
+      <DependentUpon>emailtemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="emailtemplate.aspx.designer.cs">
+      <DependentUpon>emailtemplate.aspx</DependentUpon>
+    </Compile>
     <Compile Include="employeeidcard.aspx.cs">
       <DependentUpon>employeeidcard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -609,6 +644,27 @@
     </Compile>
     <Compile Include="examsetup.aspx.designer.cs">
       <DependentUpon>examsetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feesgroup.aspx.cs">
+      <DependentUpon>feesgroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feesgroup.aspx.designer.cs">
+      <DependentUpon>feesgroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feestype.aspx.cs">
+      <DependentUpon>feestype.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feestype.aspx.designer.cs">
+      <DependentUpon>feestype.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="finesetup.aspx.cs">
+      <DependentUpon>finesetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="finesetup.aspx.designer.cs">
+      <DependentUpon>finesetup.aspx</DependentUpon>
     </Compile>
     <Compile Include="idcardtemplatestd.aspx.cs">
       <DependentUpon>idcardtemplatestd.aspx</DependentUpon>
@@ -725,6 +781,13 @@
     </Compile>
     <Compile Include="site2masterpage.aspx.designer.cs">
       <DependentUpon>site2masterpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="smstemplate.aspx.cs">
+      <DependentUpon>smstemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="smstemplate.aspx.designer.cs">
+      <DependentUpon>smstemplate.aspx</DependentUpon>
     </Compile>
     <Compile Include="studentidcardgenerator.aspx.cs">
       <DependentUpon>studentidcardgenerator.aspx</DependentUpon>

@@ -7,12 +7,12 @@
   <%--  <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>--%>
     <style>
         .container {
-            width: 750px;
+            width: 970px;
             height: auto;
             margin-top: auto;
             border: solid;
             border-color: lightgrey;
-            margin-left: 40px;
+            margin-left: 10px;
             box-shadow: 0px 0px 5px 0px rgba(252, 250, 250, 0.23);
             font-size: 12px;
             background-color:white;

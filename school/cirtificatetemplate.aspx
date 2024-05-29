@@ -5,24 +5,28 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
         .container {
-            width: 750px;
+           width: 1000px;
             height: auto;
-            margin-top: 80px;
-            border: solid;
+            margin-top: 10px;
+            border: solid 1px;
             border-color: lightgrey;
             margin-left: 10px;
-            box-shadow: 0px 0px 1px 0px rgb(177, 172, 172);
-            padding: 10px;
+            box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+            font-size: 10px;
+            background-color:white;
         }
 
 
-        h6 {
-            color: gold;
+        h5 {
+            font-size:large;
+                       color:white;
+                       padding-left:5px;
         }
     </style>
-    <main style="margin-top: 58px;">
+    <main style="margin-top: 10px;">
         <div class="container">
-            <h6>Cirtificate Template</h6>
+              <div class="row" style="background-color: cornflowerblue; margin-top: 0px; margin-left: 0px; margin-right : 0px;"  >
+            <h5>Cirtificate Template</h5></div>
             <hr />
             <div class="row">
                 <div class="col-md-3">

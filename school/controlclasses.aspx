@@ -32,7 +32,7 @@
         }
 
         .container2 {
-            width: 800px;
+            width: 1000px;
             height: 915px; 
             margin-top: 0px;
             border: solid 0px;
@@ -52,7 +52,7 @@
     </style>
     <main style="margin-top: 10px">
         <div class="container2">
-            <div class="row" style="background-color:cornflowerblue; width:800px; margin-left:0px">
+            <div class="row" style="background-color:cornflowerblue; width:1000px; margin-left:0px; margin-right:0px">
             <h6>Control Classes</h6></div>
             <div class="row">
                 <div class="col-md-2">
