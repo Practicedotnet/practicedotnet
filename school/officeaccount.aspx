@@ -39,8 +39,27 @@
             </div>
             <hr />
             <div runat="server" id="divaccountlist" visible="true">
-                <h6>Account list</h6>
-
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" Height="126px" Width="958px">
+                    <AlternatingRowStyle BackColor="White" />
+                    <Columns>
+                        <asp:BoundField DataField="branch" HeaderText="branch" SortExpression="branch" />
+                        <asp:BoundField DataField="account_name" HeaderText="account_name" SortExpression="account_name" />
+                        <asp:BoundField DataField="account_number" HeaderText="account_number" SortExpression="account_number" />
+                        <asp:BoundField DataField="desciption" HeaderText="desciption" SortExpression="desciption" />
+                        <asp:BoundField DataField="opening_balance" HeaderText="opening_balance" SortExpression="opening_balance" />
+                    </Columns>
+                    <EditRowStyle BackColor="#2461BF" />
+                    <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                    <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                    <RowStyle BackColor="#EFF3FB" />
+                    <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                    <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                    <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                    <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                    <SortedDescendingHeaderStyle BackColor="#4870BE" />
+                </asp:GridView>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:test1ConnectionString %>" SelectCommand="SELECT * FROM [office_account]"></asp:SqlDataSource>
             </div>
             <div runat="server" id="divcreateaccount" visible="false">
                 <div class="row">

@@ -54,5 +54,10 @@ namespace school
             ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "myalert", "alert('saved successfully');", true);
 
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

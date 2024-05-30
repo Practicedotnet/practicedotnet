@@ -13,40 +13,40 @@ namespace school {
     public partial class accountdeposit {
         
         /// <summary>
-        /// btnaccountlist control.
+        /// btndepositlist control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnaccountlist;
+        protected global::System.Web.UI.WebControls.Button btndepositlist;
         
         /// <summary>
-        /// btncreateaccont control.
+        /// btncreatedeposit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btncreateaccont;
+        protected global::System.Web.UI.WebControls.Button btncreatedeposit;
         
         /// <summary>
-        /// divaccountlist control.
+        /// divdepositlist control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divaccountlist;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divdepositlist;
         
         /// <summary>
-        /// divcreateaccount control.
+        /// divcreatedeposit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divcreateaccount;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divcreatedeposit;
         
         /// <summary>
         /// lblbranch control.
@@ -58,6 +58,60 @@ namespace school {
         protected global::System.Web.UI.WebControls.Label lblbranch;
         
         /// <summary>
+        /// ddlbranch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlbranch;
+        
+        /// <summary>
+        /// lblaccount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblaccount;
+        
+        /// <summary>
+        /// ddlaccount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlaccount;
+        
+        /// <summary>
+        /// lblvoucherhead control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblvoucherhead;
+        
+        /// <summary>
+        /// ddlvoucherhead control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlvoucherhead;
+        
+        /// <summary>
+        /// lblref control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblref;
+        
+        /// <summary>
         /// DropDownList1 control.
         /// </summary>
         /// <remarks>
@@ -65,42 +119,6 @@ namespace school {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
-        
-        /// <summary>
-        /// lblaccountname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblaccountname;
-        
-        /// <summary>
-        /// txtaccountname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtaccountname;
-        
-        /// <summary>
-        /// lblaccountnumber control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblaccountnumber;
-        
-        /// <summary>
-        /// txtaccountnumber control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtaccountnumber;
         
         /// <summary>
         /// lbldescription control.
@@ -112,22 +130,22 @@ namespace school {
         protected global::System.Web.UI.WebControls.Label lbldescription;
         
         /// <summary>
-        /// lblopeningbalance control.
+        /// lblattachment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblopeningbalance;
+        protected global::System.Web.UI.WebControls.Label lblattachment;
         
         /// <summary>
-        /// txtopeningbalance control.
+        /// fileuploadattachment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtopeningbalance;
+        protected global::System.Web.UI.WebControls.FileUpload fileuploadattachment;
         
         /// <summary>
         /// btnsave control.

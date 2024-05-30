@@ -13,22 +13,22 @@ namespace school {
     public partial class feesremainder {
         
         /// <summary>
-        /// btnremainderlist control.
+        /// btndepositlist control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnremainderlist;
+        protected global::System.Web.UI.WebControls.Button btndepositlist;
         
         /// <summary>
-        /// btnaddremainder control.
+        /// btnadddeposit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnaddremainder;
+        protected global::System.Web.UI.WebControls.Button btnadddeposit;
         
         /// <summary>
         /// divremainderlist control.
@@ -58,103 +58,121 @@ namespace school {
         protected global::System.Web.UI.WebControls.Label lblbranch;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// ddlbranch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList ddlbranch;
         
         /// <summary>
-        /// lblfrequency control.
+        /// lblaccount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblfrequency;
+        protected global::System.Web.UI.WebControls.Label lblaccount;
         
         /// <summary>
-        /// DropDownList5 control.
+        /// ddlaccount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList5;
+        protected global::System.Web.UI.WebControls.DropDownList ddlaccount;
         
         /// <summary>
-        /// lbldays control.
+        /// lblvoucherhead control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbldays;
+        protected global::System.Web.UI.WebControls.Label lblvoucherhead;
         
         /// <summary>
-        /// txtdays control.
+        /// ddlvoucherhead control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtdays;
+        protected global::System.Web.UI.WebControls.DropDownList ddlvoucherhead;
         
         /// <summary>
-        /// lblmessage control.
+        /// lblref control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblmessage;
+        protected global::System.Web.UI.WebControls.Label lblref;
         
         /// <summary>
-        /// lbldlttemplateid control.
+        /// txtref control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbldlttemplateid;
+        protected global::System.Web.UI.WebControls.TextBox txtref;
         
         /// <summary>
-        /// txttemplateid control.
+        /// lblamount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txttemplateid;
+        protected global::System.Web.UI.WebControls.Label lblamount;
         
         /// <summary>
-        /// lblnotify control.
+        /// txtamount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblnotify;
+        protected global::System.Web.UI.WebControls.TextBox txtamount;
         
         /// <summary>
-        /// CheckBox1 control.
+        /// lbldate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
+        protected global::System.Web.UI.WebControls.Label lbldate;
         
         /// <summary>
-        /// CheckBox2 control.
+        /// txtdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox2;
+        protected global::System.Web.UI.WebControls.TextBox txtdate;
+        
+        /// <summary>
+        /// lblpayvia control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblpayvia;
+        
+        /// <summary>
+        /// ddlpayvia control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlpayvia;
         
         /// <summary>
         /// btnsave control.
