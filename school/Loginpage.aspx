@@ -59,7 +59,7 @@
             <div class="text-center mt-3">
                 <a href="forgotpassword.aspx">Forgot Password?</a> | <a href="empregistration.aspx">Register</a>
               </div>
-        
+           <%--<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>--%>
     </div>
    
     </div>
