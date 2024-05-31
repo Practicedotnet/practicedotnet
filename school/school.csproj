@@ -82,7 +82,10 @@
     <Content Include="Adddesignation.aspx" />
     <Content Include="Addleavecategory.aspx" />
     <Content Include="addliveclass.aspx" />
+    <Content Include="add_expense.aspx" />
+
     <Content Include="Addparentlist.aspx" />
+
     <Content Include="admitcardtemplate.aspx" />
     <Content Include="assets\css\material-dashboard.css" />
     <Content Include="assets\css\material-dashboard.min.css" />
@@ -437,10 +440,6 @@
     <Compile Include="accountdeposit.aspx.designer.cs">
       <DependentUpon>accountdeposit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="add department.aspx.cs">
-      <DependentUpon>add department.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="add department.aspx.designer.cs">
       <DependentUpon>add department.aspx</DependentUpon>
     </Compile>
@@ -479,12 +478,21 @@
     <Compile Include="addliveclass.aspx.designer.cs">
       <DependentUpon>addliveclass.aspx</DependentUpon>
     </Compile>
+
+    <Compile Include="add_expense.aspx.cs">
+      <DependentUpon>add_expense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add_expense.aspx.designer.cs">
+      <DependentUpon>add_expense.aspx</DependentUpon>
+
     <Compile Include="Addparentlist.aspx.cs">
       <DependentUpon>Addparentlist.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Addparentlist.aspx.designer.cs">
       <DependentUpon>Addparentlist.aspx</DependentUpon>
+
     </Compile>
     <Compile Include="admitcardtemplate.aspx.cs">
       <DependentUpon>admitcardtemplate.aspx</DependentUpon>

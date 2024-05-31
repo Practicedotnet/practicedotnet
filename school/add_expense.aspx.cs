@@ -1,40 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data;
-using System.Data.Sql;
-using System.Data.SqlClient;
-using System.IO;
-using System.Configuration;
-using school.Data_access_layer;
+
 namespace school
 {
-    public partial class accountdeposit : System.Web.UI.Page
+    public partial class add_expense : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-
-        protected void btndepositlist_Click(object sender, EventArgs e)
+        protected void btnexpenselist_Click(object sender, EventArgs e)
         {
-            divdepositlist.Visible = true;
-           
-            divcreatedeposit.Visible = false;
-            
-
+            divexpenselist.Visible = true;
+            divaddexpense.Visible = false;
         }
-     
 
-        protected void btncreatedeposit_Click(object sender, EventArgs e)
+        protected void btnaddexpense_Click(object sender, EventArgs e)
         {
-            divdepositlist.Visible = false;
-            divcreatedeposit.Visible = true;
-
+            divexpenselist.Visible = false;
+            divaddexpense.Visible = true;
         }
 
         protected void btnsave_Click(object sender, EventArgs e)
@@ -45,16 +37,16 @@ namespace school
 
             string text = TextAreadescription.InnerText;
 
-            SqlCommand cmd = new SqlCommand("insertdata_deposit", conn);
+            SqlCommand cmd = new SqlCommand("insertdata_expense", conn);
             cmd.Parameters.AddWithValue("@branch", ddlbranch.SelectedValue);
             cmd.Parameters.AddWithValue("@account", ddlaccount.SelectedValue);
             cmd.Parameters.AddWithValue("@voucherhead", ddlvoucherhead.SelectedValue);
             cmd.Parameters.AddWithValue("@ref", ddlref.SelectedValue);
             cmd.Parameters.AddWithValue("@amount", txtamount.Text);
-            cmd.Parameters.AddWithValue("@deposit_date", txtdate.Text);
+            cmd.Parameters.AddWithValue("@date_expense", txtdate.Text);
             cmd.Parameters.AddWithValue("@payvia", ddlpayvia.SelectedValue);
-            cmd.Parameters.AddWithValue("@deposit_description", TextAreadescription.InnerText);
-            
+            cmd.Parameters.AddWithValue("@description_expense", TextAreadescription.InnerText);
+
             cmd.CommandType = CommandType.StoredProcedure;
             int res = cmd.ExecuteNonQuery();
             ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "myalert", "alert('saved successfully');", true);

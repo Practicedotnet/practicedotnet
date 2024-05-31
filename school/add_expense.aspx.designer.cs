@@ -10,43 +10,43 @@
 namespace school {
     
     
-    public partial class feesremainder {
+    public partial class add_expense {
         
         /// <summary>
-        /// btndepositlist control.
+        /// btnexpenselist control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btndepositlist;
+        protected global::System.Web.UI.WebControls.Button btnexpenselist;
         
         /// <summary>
-        /// btnadddeposit control.
+        /// btnaddexpense control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnadddeposit;
+        protected global::System.Web.UI.WebControls.Button btnaddexpense;
         
         /// <summary>
-        /// divremainderlist control.
+        /// divexpenselist control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divremainderlist;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divexpenselist;
         
         /// <summary>
-        /// divaddremainder control.
+        /// divaddexpense control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divaddremainder;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divaddexpense;
         
         /// <summary>
         /// lblbranch control.
@@ -112,13 +112,13 @@ namespace school {
         protected global::System.Web.UI.WebControls.Label lblref;
         
         /// <summary>
-        /// txtref control.
+        /// ddlref control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtref;
+        protected global::System.Web.UI.WebControls.DropDownList ddlref;
         
         /// <summary>
         /// lblamount control.
@@ -173,6 +173,42 @@ namespace school {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlpayvia;
+        
+        /// <summary>
+        /// lbldescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbldescription;
+        
+        /// <summary>
+        /// TextAreadescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea TextAreadescription;
+        
+        /// <summary>
+        /// lblattachment control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblattachment;
+        
+        /// <summary>
+        /// fileuploadattachment control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fileuploadattachment;
         
         /// <summary>
         /// btnsave control.
