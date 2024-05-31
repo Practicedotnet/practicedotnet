@@ -10,43 +10,43 @@
 namespace school {
     
     
-    public partial class accountdeposit {
+    public partial class add_expense {
         
         /// <summary>
-        /// btndepositlist control.
+        /// btnexpenselist control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btndepositlist;
+        protected global::System.Web.UI.WebControls.Button btnexpenselist;
         
         /// <summary>
-        /// btncreatedeposit control.
+        /// btnaddexpense control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btncreatedeposit;
+        protected global::System.Web.UI.WebControls.Button btnaddexpense;
         
         /// <summary>
-        /// divdepositlist control.
+        /// divexpenselist control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divdepositlist;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divexpenselist;
         
         /// <summary>
-        /// divcreatedeposit control.
+        /// divaddexpense control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divcreatedeposit;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divaddexpense;
         
         /// <summary>
         /// lblbranch control.

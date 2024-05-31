@@ -1,9 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="accountdeposit.aspx.cs" Inherits="school.accountdeposit" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/School.Master" AutoEventWireup="true" CodeBehind="add_expense.aspx.cs" Inherits="school.add_expense" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <style>
+     <style>
         .container {
             width: 1000px;
             height: auto;
@@ -32,17 +31,17 @@
             <div class="row">
                 <div class="col-md-8"></div>
                 <div class="col-md-2">
-                    <asp:Button ID="btndepositlist" runat="server" Text="Deposit List" Height="28px" CssClass="form-control" OnClick="btndepositlist_Click" />
+                    <asp:Button ID="btnexpenselist" runat="server" Text="Expense List" Height="28px" CssClass="form-control" OnClick="btnexpenselist_Click"  />
                 </div>
                 <div class="col-md-2">
-                    <asp:Button ID="btncreatedeposit" runat="server" Text="Create Deposit" CssClass="form-control" Height="28px" OnClick="btncreatedeposit_Click" />
+                    <asp:Button ID="btnaddexpense" runat="server" Text="Add Expense" CssClass="form-control" Height="28px" OnClick="btnaddexpense_Click" />
                 </div>
             </div>
             <hr />
-            <div runat="server" id="divdepositlist" visible="true">
+            <div runat="server" id="divexpenselist" visible="true">
                 <h6>Account list</h6>
             </div>
-            <div runat="server" id="divcreatedeposit" visible="false">
+            <div runat="server" id="divaddexpense" visible="false">
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-2">
