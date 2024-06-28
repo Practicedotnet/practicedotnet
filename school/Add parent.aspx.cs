@@ -39,10 +39,10 @@ namespace school
             DropDownListbranch.DataBind();
             DropDownListbranch.Items.Insert(0, new ListItem("--Select--", "0"));
             conn.Close();
-            
+
         }
 
-             protected void btnsave_Click(object sender, EventArgs e)
+        protected void btnsave_Click(object sender, EventArgs e)
 
         {
             string ImageName = Path.GetFileName(Fuimage.FileName);

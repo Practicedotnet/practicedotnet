@@ -22,10 +22,17 @@ namespace school
         {
             if (!this.IsPostBack)
             {
+                ShowData();
                 //this.SearchBranch();
             }
 
         }
+
+        private void ShowData()
+        {
+            throw new NotImplementedException();
+        }
+
         //public string HighlightText(string InputTxt)
         //{
         //    string Search_Str = txtSearch.Text;
@@ -136,7 +143,39 @@ namespace school
 
         }
 
-      
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+            GridView1.EditIndex = e.NewEditIndex;
+            ShowData();
+        }
+
+        protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+            TextBox BranchName = GridView1.Rows[e.RowIndex].FindControl("txtbranchname") as TextBox;
+            TextBox SchoolName = GridView1.Rows[e.RowIndex].FindControl("txtschoolname") as TextBox;
+            TextBox Email = GridView1.Rows[e.RowIndex].FindControl("txtemail") as TextBox;
+            TextBox MobileNumber = GridView1.Rows[e.RowIndex].FindControl("txtmobileno") as TextBox;
+            TextBox Currency = GridView1.Rows[e.RowIndex].FindControl("txtcurrency") as TextBox;
+            TextBox CurrencySymbol = GridView1.Rows[e.RowIndex].FindControl("txtcurrencysymbol") as TextBox;
+            TextBox City =  GridView1.Rows[e.RowIndex].FindControl("txtcity") as TextBox;
+            TextBox State = GridView1.Rows[e.RowIndex].FindControl("txtstate") as TextBox;
+            string strcon = ConfigurationManager.ConnectionStrings["SchoolConnectionString"].ConnectionString;
+            SqlConnection conn = new SqlConnection(strcon);
+            conn.Open();
+            //updating the record
+            SqlCommand cmd = new SqlCommand("Update tbl_Employee set BranchName ='" + BranchName.Text + "',SchoolName='" + txtschoolname.Text + "' ,Email='" + txtemail.Text + "',MobileNumber='" + txtmobileno.Text + "',Currency='" + txtcurrency.Text + "',  CurrencySymbol='" + txtcurrencysymbol.Text + "' ,City='" + txtcity.Text + "',State='" + txtstate.Text + "' where Branchid=" + Convert.ToInt32(txtBranchid.Text), conn);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            //Setting the EditIndex property to -1 to cancel the Edit mode in Gridview
+            GridView1.EditIndex = -1;
+            //Call ShowData method for displaying updated data
+            ShowData();
+        }
     }
 }
 

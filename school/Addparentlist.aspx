@@ -86,12 +86,12 @@
              </div>
               <div class="col-md-5"> 
                  <asp:TextBox ID="txtSearch" runat="server"></asp:TextBox>
-                 <asp:Button ID="btnSearch" runat="server" Text="Search"  />
+                 <asp:Button ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_Click" />
 
              </div>
              </div>
              <br />
-           <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover " OnRowEditing="GridView1_RowEditing" CellPadding="4" DataKeyNames="ParentId" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="141px" Width="1003px" >
+           <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover " OnRowEditing="GridView1_RowEditing" CellPadding="4" DataKeyNames="ParentId"  ForeColor="#333333" GridLines="None" Height="141px" Width="1003px" >
                <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                <Columns>
                    <asp:BoundField DataField="ParentId" HeaderText="ParentId" InsertVisible="False" ReadOnly="True" SortExpression="ParentId" />
@@ -124,7 +124,7 @@
                <SortedDescendingCellStyle BackColor="#FFFDF8" />
                <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
              </asp:GridView>
-             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SchoolConnectionString %>" SelectCommand="SELECT * FROM [Parent_T]" DeleteCommand="Delete from [Parent_T] where @ParentId=ParentId"></asp:SqlDataSource>
+             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SchoolConnectionString %>" SelectCommand="SELECT * FROM [Parent_T]" DeleteCommand="Delete from [Parent_T] where @ParentId=ParentId"  UpdateCommand= "Update Parent_T set @Name=Name,@Relation=Relation,@FatherName=FatherName,@Mother=Mother,@Occupation=Occupation,@Income=Income,@Education=Education,@City=City,@State=State,@Mobile=Mobile,@Email=Email,@ProfilePic=ProfilePic,@Address=Address,@Facebook=Facebook,@Twitter=Twitter,@LinkedIn=LinkedIn"></asp:SqlDataSource>
            </div>
         </main>
 </asp:Content>

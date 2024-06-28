@@ -13,5 +13,10 @@ namespace school
         {
 
         }
+
+        protected void btnsave_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

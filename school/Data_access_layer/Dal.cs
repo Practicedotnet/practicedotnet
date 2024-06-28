@@ -15,9 +15,26 @@ namespace school.Data_access_layer
     public class Dal
     {
         string strcon;
+        //Connection _conn = new Connection();
+        DataTable dt = new DataTable();
+        SqlDataAdapter da = new SqlDataAdapter();
+        DataSet ds = new DataSet();
+        //SqlConnection _ConSch;
         public Dal()
         {
             strcon = ConfigurationManager.ConnectionStrings["SchoolConnectionString"].ConnectionString;
+        }
+        public void ClearDataTable()
+        {
+            if (dt != null)
+            {
+                if (dt.Rows.Count > 0)
+                {
+                    dt.Rows.Clear();
+                    dt.Columns.Clear();
+                    dt.Clear();
+                }
+            }
         }
         public void Addparent(string Name, string Relation, string Fathername, string Mother, string Occupation, string Income, string Education, string City, string State, string Mobile, string Email, string Address, string ProfilePic, string Facebook, string Twitter, string LinkedIn)
         {
@@ -65,5 +82,35 @@ namespace school.Data_access_layer
             cmd.Parameters.AddWithValue("@Address", Address);
             cmd.ExecuteNonQuery();
         }
-    }
+
+        //public DataTable Fun_CreateAdmission(string RecId, string Username, string Password, string ConfirmPassword, string Address, string MobileNo, string EmailId, Nullable<DateTime> CreatedOn, string CreatedBy, string Status, int RoleId, string Tran)
+
+        //{
+        //    ClearDataTable();
+        //    da = new SqlDataAdapter("Exec CustRegistration_P '" + RecId + "','" + Username + "','" + Password + "','" + ConfirmPassword + "','" + Address + "','" + MobileNo + "','" + EmailId + "','" + CreatedOn + "','" + CreatedBy + "','" + Status + "','" + RoleId + "','" + Tran + "'", strcon);
+        //    da.SelectCommand.CommandTimeout = 300;
+        //    ds.Clear();
+        //    da.Fill(ds, "Register");
+        //    dt = ds.Tables["Register"];
+        //    return dt;
+        //}
+        public DataTable Fun_createsubject(string Subjectid, string Branch, string SubjectName, string SubjectCode, string SubjectAuthor, string SubjectType,  string Trans)
+
+        {
+            ClearDataTable();
+            da = new SqlDataAdapter("Exec Subject_P '" + Subjectid + "','" + Branch + "','" + SubjectName + "','" + SubjectCode + "','" + SubjectAuthor + "','" + SubjectType + "','" + Trans + "'", strcon);
+            da.SelectCommand.CommandTimeout = 300;
+            ds.Clear();
+            da.Fill(ds, "Subject");
+            dt = ds.Tables["Subject"];
+            return dt;
+
+        }
+
+
+
+
+
+}
+
 }

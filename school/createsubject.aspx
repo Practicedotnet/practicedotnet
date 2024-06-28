@@ -62,7 +62,7 @@
                     <asp:Label ID="lblbranch" runat="server" Text="Branch" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
-                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px">
+                    <asp:DropDownList ID="DDL1" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px">
                         <asp:ListItem>select</asp:ListItem>
                         <asp:ListItem>Test</asp:ListItem>
                     </asp:DropDownList>
@@ -105,7 +105,7 @@
                     <asp:Label ID="lblsubjecttype" runat="server" Text="Subject Type:" CssClass="Label"></asp:Label>
                 </div>
                 <div class="col-md-6">
-                    <asp:DropDownList ID="DropDownList2" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px">
+                    <asp:DropDownList ID="DDL2" runat="server" CssClass="form-control" Height="25px" Width="350px" Font-Size="10px">
                         <asp:ListItem>theory</asp:ListItem>
                         <asp:ListItem>practical</asp:ListItem>
                         <asp:ListItem>optional</asp:ListItem>
@@ -118,7 +118,7 @@
             <div class="row">
                 <div class="col-md-6"></div>
                 <div class="col-md-3">
-                    <asp:Button ID="btnsave" runat="server" Text="Save" CssClass="btn btn-success" Height="25px" Width="100px" Font-Size="10px" />
+                      
                 </div>
             </div>
      

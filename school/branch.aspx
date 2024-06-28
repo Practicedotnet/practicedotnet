@@ -73,10 +73,10 @@
 
         <div class="row">
             <div class="col-md-2">
-                <asp:Button ID="btnbranchlist" CausesValidation="false" runat="server" Text="Branch List"  Height="25px" Width="80px" Font-Size="10px" OnClick="btnbranchlist_Click" Font-Bold="true"  class="btn btn-primary"/>
+                <asp:Button ID="btnbranchlist" CausesValidation="false" runat="server" Text="Branch List"  Height="25px" Width="80px" Font-Size="10px" OnClick="btnbranchlist_Click" Font-Bold="true"  Cssclass="btn btn-primary"/>
             </div>
             <div class="col-md-2">
-                <asp:Button ID="btncreatebranch" runat="server" Text="Create Branch" class="btn btn-primary" Height="25px" Width="100px" Font-Size="10px" OnClick="btncreatebranch_Click"  Font-Bold="true"  />
+                <asp:Button ID="btncreatebranch" runat="server" Text="Create Branch" Cssclass="btn btn-primary" Height="25px" Width="100px" Font-Size="10px" OnClick="btncreatebranch_Click"  Font-Bold="true"  />
             </div>
             </div>
                 <div class="container" id ="divlist" runat="server" visible="true">
@@ -93,13 +93,13 @@
                 <%--<input type="button" id="btnExport" value="Export"  onclick="Export()"/>--%>
              </div>
              <div class="col-md-5"> 
-                 <asp:TextBox ID="txtSearch" runat="server" placeholder="BranchName"></asp:TextBox>
+                 <asp:TextBox ID="txtSearch" runat="server" Placeholder="BranchName"></asp:TextBox>
                  <asp:Button ID="btnSearch" runat="server" Text="Search"  CausesValidation="false"  OnClick="btnSearch_Click" />
              </div>
              </div>
              <br />
                    <div>
-              <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-hover "  AutoGenerateColumns="False"  DataKeyNames="Branchid"  Height="35px" Width="100px" ForeColor="#333333" GridLines="None" RowHeaderColumn="Address" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+              <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-hover "  AutoGenerateColumns="False"  DataKeyNames="Branchid"  Height="35px" Width="100px" ForeColor="#333333" GridLines="None" RowHeaderColumn="Address" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" >
                  <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                  <Columns>
                      <asp:BoundField DataField="Branchid" HeaderText="Branchid" InsertVisible="False" ReadOnly="True" SortExpression="Branchid" />
